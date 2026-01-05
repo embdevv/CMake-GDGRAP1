@@ -1,0 +1,142 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.10"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0
+					]
+				},
+				{
+					"build" : "C:/Users/erica/source/repos/CMakeProjectGRAP1/thirdparty/glfw-build",
+					"childIndexes" : 
+					[
+						2
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-thirdparty.glfw-src-Debug-affc14201864e0c95740.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.4"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 1,
+					"source" : "thirdparty/glfw-src",
+					"targetIndexes" : 
+					[
+						2
+					]
+				},
+				{
+					"build" : "C:/Users/erica/source/repos/CMakeProjectGRAP1/thirdparty/glfw-build/src",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-thirdparty.glfw-src.src-Debug-54c8ca6388bc035aa151.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.4"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 1,
+					"source" : "thirdparty/glfw-src/src",
+					"targetIndexes" : 
+					[
+						1,
+						3
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"childIndexes" : 
+					[
+						1
+					],
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "CMakeProjectGRAP1",
+					"targetIndexes" : 
+					[
+						0
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						1,
+						2
+					],
+					"name" : "GLFW",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "CMakeProjectGRAP1::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-CMakeProjectGRAP1-Debug-85eb1f274a522b2d6093.json",
+					"name" : "CMakeProjectGRAP1",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "glfw::@e31515acfdc2af976597",
+					"jsonFile" : "target-glfw-Debug-56234cda62e54797a086.json",
+					"name" : "glfw",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "uninstall::@946702ce068667de9832",
+					"jsonFile" : "target-uninstall-Debug-b6ebb5976b73432f763c.json",
+					"name" : "uninstall",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "update_mappings::@e31515acfdc2af976597",
+					"jsonFile" : "target-update_mappings-Debug-4a05f2ba3fd880ddffda.json",
+					"name" : "update_mappings",
+					"projectIndex" : 1
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "C:/Users/erica/source/repos/CMakeProjectGRAP1/out/build/x64-debug",
+		"source" : "C:/Users/erica/source/repos/CMakeProjectGRAP1"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 8
+	}
+}
