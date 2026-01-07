@@ -1,0 +1,45 @@
+# ninja log v6
+123	879	7894791021746447	C:/Users/Erica Barundia/source/repos/CMake-GDGRAP1/thirdparty/glfw-build/src/CMakeFiles/glfw.dir/null_monitor.c.obj	f06a800fdc755e19
+80	896	7894791021316386	C:/Users/Erica Barundia/source/repos/CMake-GDGRAP1/thirdparty/glfw-build/src/CMakeFiles/glfw.dir/platform.c.obj	31471a75ccf935a2
+136	919	7894791021878519	C:/Users/Erica Barundia/source/repos/CMake-GDGRAP1/thirdparty/glfw-build/src/CMakeFiles/glfw.dir/null_joystick.c.obj	83c27bb2ba32a729
+142	936	7894791021935589	C:/Users/Erica Barundia/source/repos/CMake-GDGRAP1/thirdparty/glfw-build/src/CMakeFiles/glfw.dir/win32_module.c.obj	aca8135941128a4c
+94	951	7894791021452713	C:/Users/Erica Barundia/source/repos/CMake-GDGRAP1/thirdparty/glfw-build/src/CMakeFiles/glfw.dir/window.c.obj	4637a8179e6d9095
+62	969	7894791021131731	C:/Users/Erica Barundia/source/repos/CMake-GDGRAP1/thirdparty/glfw-build/src/CMakeFiles/glfw.dir/init.c.obj	6143fa3c03ab93f
+130	983	7894791021815618	C:/Users/Erica Barundia/source/repos/CMake-GDGRAP1/thirdparty/glfw-build/src/CMakeFiles/glfw.dir/null_window.c.obj	9155c0e1891eeb22
+101	1003	7894791021520554	C:/Users/Erica Barundia/source/repos/CMake-GDGRAP1/thirdparty/glfw-build/src/CMakeFiles/glfw.dir/egl_context.c.obj	de83dd0b96999e0f
+87	1019	7894791021390137	C:/Users/Erica Barundia/source/repos/CMake-GDGRAP1/thirdparty/glfw-build/src/CMakeFiles/glfw.dir/vulkan.c.obj	d925d6eebecb8e31
+74	1026	7894791021257732	C:/Users/Erica Barundia/source/repos/CMake-GDGRAP1/thirdparty/glfw-build/src/CMakeFiles/glfw.dir/monitor.c.obj	53b0d113b201a43d
+116	1032	7894791021672620	C:/Users/Erica Barundia/source/repos/CMake-GDGRAP1/thirdparty/glfw-build/src/CMakeFiles/glfw.dir/null_init.c.obj	e5d67d5012737192
+107	1037	7894791021588811	C:/Users/Erica Barundia/source/repos/CMake-GDGRAP1/thirdparty/glfw-build/src/CMakeFiles/glfw.dir/osmesa_context.c.obj	8b54d2d1767f7475
+69	1044	7894791021204265	C:/Users/Erica Barundia/source/repos/CMake-GDGRAP1/thirdparty/glfw-build/src/CMakeFiles/glfw.dir/input.c.obj	e7af2f5e6fbdd810
+54	1050	7894791021059084	C:/Users/Erica Barundia/source/repos/CMake-GDGRAP1/thirdparty/glfw-build/src/CMakeFiles/glfw.dir/context.c.obj	c34def753eeb109c
+1003	1264	7894791030548990	CMakeFiles/CMakeProjectGRAP1.dir/CMakeProjectGRAP1.cpp.obj	2eb22fa57cda8510
+882	1358	7894791029335449	C:/Users/Erica Barundia/source/repos/CMake-GDGRAP1/thirdparty/glfw-build/src/CMakeFiles/glfw.dir/win32_time.c.obj	2c289579c9d23326
+897	1368	7894791029486227	C:/Users/Erica Barundia/source/repos/CMake-GDGRAP1/thirdparty/glfw-build/src/CMakeFiles/glfw.dir/win32_thread.c.obj	3f8033743918a499
+919	1375	7894791029746872	C:/Users/Erica Barundia/source/repos/CMake-GDGRAP1/thirdparty/glfw-build/src/CMakeFiles/glfw.dir/win32_init.c.obj	e5de71f9d17b8b9e
+983	1413	7894791030349820	C:/Users/Erica Barundia/source/repos/CMake-GDGRAP1/thirdparty/glfw-build/src/CMakeFiles/glfw.dir/wgl_context.c.obj	3a3ec8a941dc33e5
+937	1419	7894791029882565	C:/Users/Erica Barundia/source/repos/CMake-GDGRAP1/thirdparty/glfw-build/src/CMakeFiles/glfw.dir/win32_joystick.c.obj	f4ff898524ebec07
+969	1461	7894791030212549	C:/Users/Erica Barundia/source/repos/CMake-GDGRAP1/thirdparty/glfw-build/src/CMakeFiles/glfw.dir/win32_window.c.obj	e36258b27410164b
+953	1570	7894791030050083	C:/Users/Erica Barundia/source/repos/CMake-GDGRAP1/thirdparty/glfw-build/src/CMakeFiles/glfw.dir/win32_monitor.c.obj	eb72e411bcfb99ca
+1571	1715	7894791036222888	C:/Users/Erica Barundia/source/repos/CMake-GDGRAP1/thirdparty/glfw-build/src/glfw3.lib	1f052536ff04d0e6
+1715	2891	7894791037665137	CMakeProjectGRAP1.exe	1eda11b72b0e7fb3
+67	194	7894791589323257	CMakeFiles/CMakeProjectGRAP1.dir/CMakeProjectGRAP1.cpp.obj	2eb22fa57cda8510
+195	431	7894791590602753	CMakeProjectGRAP1.exe	1eda11b72b0e7fb3
+71	215	7894795816638163	CMakeFiles/CMakeProjectGRAP1.dir/CMakeProjectGRAP1.cpp.obj	2eb22fa57cda8510
+217	482	7894795818093370	CMakeProjectGRAP1.exe	1eda11b72b0e7fb3
+50	249	7894797979811742	CMakeFiles/CMakeProjectGRAP1.dir/CMakeProjectGRAP1.cpp.obj	2eb22fa57cda8510
+250	486	7894797981812713	CMakeProjectGRAP1.exe	1eda11b72b0e7fb3
+50	150	7894800280427306	CMakeFiles/CMakeProjectGRAP1.dir/CMakeProjectGRAP1.cpp.obj	2eb22fa57cda8510
+152	327	7894800281441706	CMakeProjectGRAP1.exe	1eda11b72b0e7fb3
+57	159	7894800681479632	CMakeFiles/CMakeProjectGRAP1.dir/CMakeProjectGRAP1.cpp.obj	2eb22fa57cda8510
+160	360	7894800682510366	CMakeProjectGRAP1.exe	1eda11b72b0e7fb3
+45	125	7894801006676432	CMakeFiles/CMakeProjectGRAP1.dir/CMakeProjectGRAP1.cpp.obj	2eb22fa57cda8510
+126	298	7894801007478996	CMakeProjectGRAP1.exe	1eda11b72b0e7fb3
+47	129	7894801108592074	CMakeFiles/CMakeProjectGRAP1.dir/CMakeProjectGRAP1.cpp.obj	2eb22fa57cda8510
+130	308	7894801109428052	CMakeProjectGRAP1.exe	1eda11b72b0e7fb3
+45	127	7894801313628867	CMakeFiles/CMakeProjectGRAP1.dir/CMakeProjectGRAP1.cpp.obj	2eb22fa57cda8510
+128	295	7894801314459278	CMakeProjectGRAP1.exe	1eda11b72b0e7fb3
+57	136	7894801436084012	CMakeFiles/CMakeProjectGRAP1.dir/CMakeProjectGRAP1.cpp.obj	2eb22fa57cda8510
+137	295	7894801436882925	CMakeProjectGRAP1.exe	1eda11b72b0e7fb3
+49	125	7894801535253257	CMakeFiles/CMakeProjectGRAP1.dir/CMakeProjectGRAP1.cpp.obj	2eb22fa57cda8510
+127	284	7894801536028504	CMakeProjectGRAP1.exe	1eda11b72b0e7fb3
