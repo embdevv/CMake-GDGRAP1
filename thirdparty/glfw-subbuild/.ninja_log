@@ -1,0 +1,21 @@
+# ninja log v6
+8	102	7894766409793820	glfw-populate-prefix/src/glfw-populate-stamp/glfw-populate-mkdir	b18d8d17e0ed8b1c
+8	102	7894766409793820	C:/Users/Erica Barundia/source/repos/CMake-GDGRAP1/thirdparty/glfw-subbuild/glfw-populate-prefix/src/glfw-populate-stamp/glfw-populate-mkdir	b18d8d17e0ed8b1c
+103	5346	7894766462226690	glfw-populate-prefix/src/glfw-populate-stamp/glfw-populate-download	949ede0d05bac52
+103	5346	7894766462226690	C:/Users/Erica Barundia/source/repos/CMake-GDGRAP1/thirdparty/glfw-subbuild/glfw-populate-prefix/src/glfw-populate-stamp/glfw-populate-download	949ede0d05bac52
+5346	5604	7894766462327049	glfw-populate-prefix/src/glfw-populate-stamp/glfw-populate-update	bd2cbaf504fdfc52
+5346	5604	7894766462327049	C:/Users/Erica Barundia/source/repos/CMake-GDGRAP1/thirdparty/glfw-subbuild/glfw-populate-prefix/src/glfw-populate-stamp/glfw-populate-update	bd2cbaf504fdfc52
+5604	5693	7894766465705149	glfw-populate-prefix/src/glfw-populate-stamp/glfw-populate-patch	e3730c01387aa3c
+5604	5693	7894766465705149	C:/Users/Erica Barundia/source/repos/CMake-GDGRAP1/thirdparty/glfw-subbuild/glfw-populate-prefix/src/glfw-populate-stamp/glfw-populate-patch	e3730c01387aa3c
+5694	5783	7894766466592849	glfw-populate-prefix/src/glfw-populate-stamp/glfw-populate-configure	4aba62721cf8d3d1
+5694	5783	7894766466592849	C:/Users/Erica Barundia/source/repos/CMake-GDGRAP1/thirdparty/glfw-subbuild/glfw-populate-prefix/src/glfw-populate-stamp/glfw-populate-configure	4aba62721cf8d3d1
+5784	5878	7894766467548428	glfw-populate-prefix/src/glfw-populate-stamp/glfw-populate-build	701f5cc853a3623f
+5784	5878	7894766467548428	C:/Users/Erica Barundia/source/repos/CMake-GDGRAP1/thirdparty/glfw-subbuild/glfw-populate-prefix/src/glfw-populate-stamp/glfw-populate-build	701f5cc853a3623f
+5878	5963	7894766468409758	glfw-populate-prefix/src/glfw-populate-stamp/glfw-populate-install	26862c412d12b149
+5878	5963	7894766468409758	C:/Users/Erica Barundia/source/repos/CMake-GDGRAP1/thirdparty/glfw-subbuild/glfw-populate-prefix/src/glfw-populate-stamp/glfw-populate-install	26862c412d12b149
+5963	6042	7894766469184439	glfw-populate-prefix/src/glfw-populate-stamp/glfw-populate-test	198b0662a2aef62f
+5963	6042	7894766469184439	C:/Users/Erica Barundia/source/repos/CMake-GDGRAP1/thirdparty/glfw-subbuild/glfw-populate-prefix/src/glfw-populate-stamp/glfw-populate-test	198b0662a2aef62f
+6042	6175	7894766470515802	CMakeFiles/glfw-populate-complete	32f2f4bb04fc29df
+6042	6175	7894766470515802	glfw-populate-prefix/src/glfw-populate-stamp/glfw-populate-done	32f2f4bb04fc29df
+6042	6175	7894766470515802	C:/Users/Erica Barundia/source/repos/CMake-GDGRAP1/thirdparty/glfw-subbuild/CMakeFiles/glfw-populate-complete	32f2f4bb04fc29df
+6042	6175	7894766470515802	C:/Users/Erica Barundia/source/repos/CMake-GDGRAP1/thirdparty/glfw-subbuild/glfw-populate-prefix/src/glfw-populate-stamp/glfw-populate-done	32f2f4bb04fc29df
