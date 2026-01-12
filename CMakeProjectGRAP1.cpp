@@ -24,14 +24,20 @@ int main(void)
 	gladLoadGL(glfwGetProcAddress);
 
     GLfloat vertices[]{
-        0.f,  0.5f, 0.f,  //> (0, 0.5, 0)    top vertex
-        -1.f, -0.5f, 0.f, //> (-1, -0.5, 0)  bottom left verteex
-        0.5f, -0.5f, 0.f  //> (0.5, -0.5, 0) bottom right vertex
+        0.f,  0.5f, 0.f,  //> [0] (0, 0.5, 0)    top vertex
+        -1.f, -0.5f, 0.f, //> [1] (-1, -0.5, 0)  bottom left verteex
+        0.5f, -0.5f, 0.f  //> [2] (0.5, -0.5, 0) bottom right vertex
+    
     };
 
-    GLuint VAO, VBO;
+    GLuint indices[]{
+        0,1,2
+    };
+
+    GLuint VAO, VBO, EBO;
 	glGenVertexArrays(1, &VAO);
 	glGenBuffers(1, &VBO);
+	glGenBuffers(1, &EBO);
 
     // Strictly in order
 
@@ -65,10 +71,18 @@ int main(void)
     // Enable index 0
     glEnableVertexAttribArray(0);
 
+	glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, EBO);
+    glBufferData(GL_ELEMENT_ARRAY_BUFFER,
+                 sizeof(indices),
+                 indices,
+                 GL_STATIC_DRAW
+	    );
+
     glBindBuffer(GL_ARRAY_BUFFER, 0);
     // currVBO = null
     glBindVertexArray(0);
     // currVAO = null
+	glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, 0);
 
     /* Loop until the user closes the window */
     while (!glfwWindowShouldClose(window))
@@ -77,8 +91,13 @@ int main(void)
         glClear(GL_COLOR_BUFFER_BIT);
 
 		glBindVertexArray(VAO);
-		// Primitive type, start index, number of vertices
+        glDrawElements(GL_TRIANGLES, sizeof(indices), GL_UNSIGNED_INT, 0);
+
+        /*
+        // Primitive type, start index, number of vertices
 		glDrawArrays(GL_TRIANGLES, 0, 3);
+        */
+
 
         /* Swap front and back buffers */
         glfwSwapBuffers(window);
@@ -89,6 +108,7 @@ int main(void)
     // Clean-up
 	glDeleteVertexArrays(1, &VAO);
 	glDeleteBuffers(1, &VBO);
+	glDeleteBuffers(1, &EBO);
 
     glfwTerminate();
     return 0;
