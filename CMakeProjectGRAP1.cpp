@@ -44,6 +44,27 @@ int main(void)
 	// currVBO = VBO <- GL_ARRAY_BUFFER
     // currVAO.push(currVBO)
 
+	// Assigns vertex data to buffer (currVBO)
+    glBufferData(GL_ARRAY_BUFFER,               // What type of buffer
+		         sizeof(vertices),              // Size of data in bytes
+                 vertices,                      // data
+                 // Optimization only
+	             GL_STATIC_DRAW                 // Static if almost no movement, Dynamic if constantly moving
+                );
+
+	// Tells OpenGL how to interpret vertex data (currVAO)
+    glVertexAttribPointer(
+		                0,                      // Index/Buffer Index (0 reserved for positions)
+		                3,                      // size (num components) = 3 (x,y,z)
+		                GL_FLOAT,               // type of data
+                        GL_FALSE,               // normalized?
+                        3 * sizeof(GLfloat),    // stride (size of data per vertex)
+                        (void*)0                // array buffer offset
+	);
+
+    // Enable index 0
+    glEnableVertexAttribArray(0);
+
     /* Loop until the user closes the window */
     while (!glfwWindowShouldClose(window))
     {

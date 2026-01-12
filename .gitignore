@@ -1,3 +1,5 @@
 *.vsidx
 .vs/CMake-GDGRAP1/v17/Browse.VC.db
 *.db
+*.db-wal
+*.sqlite
