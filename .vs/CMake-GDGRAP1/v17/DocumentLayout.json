@@ -18,11 +18,20 @@
       "DocumentGroups": [
         {
           "DockedWidth": 338,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CMakeProjectGRAP1.cpp",
+              "DocumentMoniker": "C:\\Users\\Erica Barundia\\source\\repos\\CMake-GDGRAP1\\CMakeProjectGRAP1.cpp",
+              "RelativeDocumentMoniker": "CMakeProjectGRAP1.cpp",
+              "ToolTip": "C:\\Users\\Erica Barundia\\source\\repos\\CMake-GDGRAP1\\CMakeProjectGRAP1.cpp",
+              "RelativeToolTip": "CMakeProjectGRAP1.cpp",
+              "ViewState": "AgIAADIAAAAAAAAAAAAcwFMAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2026-01-07T08:10:56.672Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -35,19 +44,6 @@
               "ViewState": "AgIAACQAAAAAAAAAAAAAAD8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
               "WhenOpened": "2026-01-12T05:16:45.201Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "CMakeProjectGRAP1.cpp",
-              "DocumentMoniker": "C:\\Users\\Erica Barundia\\source\\repos\\CMake-GDGRAP1\\CMakeProjectGRAP1.cpp",
-              "RelativeDocumentMoniker": "CMakeProjectGRAP1.cpp",
-              "ToolTip": "C:\\Users\\Erica Barundia\\source\\repos\\CMake-GDGRAP1\\CMakeProjectGRAP1.cpp",
-              "RelativeToolTip": "CMakeProjectGRAP1.cpp",
-              "ViewState": "AgIAABYAAAAAAAAAAAAAAB0AAAAGAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2026-01-07T08:10:56.672Z",
               "EditorCaption": ""
             }
           ]

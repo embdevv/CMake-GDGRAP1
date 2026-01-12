@@ -66,3 +66,5 @@
 2540	2910	7899087979385067	CMakeFiles/glad_gl_core_46.dir/gladsources/glad_gl_core_46/src/gl.c.obj	57e2f35b6e642d8b
 2911	2966	7899087983092760	glad_gl_core_46.lib	dc84bfea9480050b
 2966	3290	7899087983638743	CMakeProjectGRAP1.exe	da3343ad6a77b26b
+28	391	7899102169719672	CMakeFiles/CMakeProjectGRAP1.dir/CMakeProjectGRAP1.cpp.obj	61b4736b09e4fb5d
+392	547	7899102173351477	CMakeProjectGRAP1.exe	da3343ad6a77b26b

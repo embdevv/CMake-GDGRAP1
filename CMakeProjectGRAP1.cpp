@@ -65,17 +65,31 @@ int main(void)
     // Enable index 0
     glEnableVertexAttribArray(0);
 
+    glBindBuffer(GL_ARRAY_BUFFER, 0);
+    // currVBO = null
+    glBindVertexArray(0);
+    // currVAO = null
+
     /* Loop until the user closes the window */
     while (!glfwWindowShouldClose(window))
     {
         /* Render here */
         glClear(GL_COLOR_BUFFER_BIT);
 
+		glBindVertexArray(VAO);
+		// Primitive type, start index, number of vertices
+		glDrawArrays(GL_TRIANGLES, 0, 3);
+
         /* Swap front and back buffers */
         glfwSwapBuffers(window);
         /* Poll for and process events */
         glfwPollEvents();
     }
+
+    // Clean-up
+	glDeleteVertexArrays(1, &VAO);
+	glDeleteBuffers(1, &VBO);
+
     glfwTerminate();
     return 0;
 }
