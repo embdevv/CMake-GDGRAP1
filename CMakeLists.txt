@@ -2,7 +2,6 @@
 # project specific logic here.
 #
 cmake_minimum_required(VERSION 3.10)
-
 set(CMAKE_MSVC_RUNTIME_LIBRARY "MultiThreaded$<$<CONFIG:Debug>:Debug>")
 
 # Enable Hot Reload for MSVC compilers if supported.
@@ -38,16 +37,37 @@ set(GLFW_BUILD_DOCS OFF CACHE BOOL "" FORCE)
 # Set GLFW for this project
 FetchContent_MakeAvailable(glfw)
 
+# Get Glad v2
+FetchContent_Declare(
+    glad
+    GIT_REPOSITORY https://github.com/Dav1dde/glad.git
+    GIT_TAG v2.0.6
+    SOURCE_SUBDIR cmake
+)
+
+# Set glad for this project
+FetchContent_MakeAvailable(glad)
+
+# Generate Glad library for OpenGL 4.6 Core
+glad_add_library(glad_gl_core_46 STATIC
+    REPRODUCIBLE 
+    LOADER
+    API gl:core=4.6
+)
+
 # OpenGL should be preinstalled
 find_package(OpenGL REQUIRED)
 
 # Add source to this project's executable.
+
 add_executable(CMakeProjectGRAP1 "CMakeProjectGRAP1.cpp" "CMakeProjectGRAP1.h")
 
-# Link the required libraries - FIXED: Changed GDGRAP-CMake to CMakeProjectGRAP1
+
+# Link the required libraries
 target_link_libraries(CMakeProjectGRAP1
     glfw
     OpenGL::GL
+    glad_gl_core_46
 )
 
 if (CMAKE_VERSION VERSION_GREATER 3.12)

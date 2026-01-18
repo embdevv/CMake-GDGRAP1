@@ -1,0 +1,37 @@
+# ninja log v6
+6	67	7899067353054494	glad-populate-prefix/src/glad-populate-stamp/glad-populate-mkdir	2266433ab901c763
+6	67	7899067353054494	C:/Users/Erica Barundia/source/repos/CMake-GDGRAP1/thirdparty/glad-subbuild/glad-populate-prefix/src/glad-populate-stamp/glad-populate-mkdir	2266433ab901c763
+7	3629	7899081236168267	glad-populate-prefix/src/glad-populate-stamp/glad-populate-download	a7af8d289b39a1e1
+16	157	7899087662141376	glad-populate-prefix/src/glad-populate-stamp/glad-populate-update	a830c1daf554abae
+219	276	7899087664681845	glad-populate-prefix/src/glad-populate-stamp/glad-populate-configure	95491aa3bf268caa
+16	157	7899087662141376	C:/Users/Erica Barundia/source/repos/CMake-GDGRAP1/thirdparty/glad-subbuild/glad-populate-prefix/src/glad-populate-stamp/glad-populate-update	a830c1daf554abae
+7	3629	7899081236168267	C:/Users/Erica Barundia/source/repos/CMake-GDGRAP1/thirdparty/glad-subbuild/glad-populate-prefix/src/glad-populate-stamp/glad-populate-download	a7af8d289b39a1e1
+157	218	7899087664085604	C:/Users/Erica Barundia/source/repos/CMake-GDGRAP1/thirdparty/glad-subbuild/glad-populate-prefix/src/glad-populate-stamp/glad-populate-patch	5af41696c4cd9382
+157	218	7899087664085604	glad-populate-prefix/src/glad-populate-stamp/glad-populate-patch	5af41696c4cd9382
+219	276	7899087664681845	C:/Users/Erica Barundia/source/repos/CMake-GDGRAP1/thirdparty/glad-subbuild/glad-populate-prefix/src/glad-populate-stamp/glad-populate-configure	95491aa3bf268caa
+276	331	7899087665237835	glad-populate-prefix/src/glad-populate-stamp/glad-populate-build	29ade37733a3a4a
+276	331	7899087665237835	C:/Users/Erica Barundia/source/repos/CMake-GDGRAP1/thirdparty/glad-subbuild/glad-populate-prefix/src/glad-populate-stamp/glad-populate-build	29ade37733a3a4a
+442	520	7899087667126498	CMakeFiles/glad-populate-complete	7f8da216e504a7b
+332	388	7899087665793989	glad-populate-prefix/src/glad-populate-stamp/glad-populate-install	6ae0be6bfbc88682
+332	388	7899087665793989	C:/Users/Erica Barundia/source/repos/CMake-GDGRAP1/thirdparty/glad-subbuild/glad-populate-prefix/src/glad-populate-stamp/glad-populate-install	6ae0be6bfbc88682
+388	442	7899087666350001	glad-populate-prefix/src/glad-populate-stamp/glad-populate-test	6ba108db3edc1df2
+388	442	7899087666350001	C:/Users/Erica Barundia/source/repos/CMake-GDGRAP1/thirdparty/glad-subbuild/glad-populate-prefix/src/glad-populate-stamp/glad-populate-test	6ba108db3edc1df2
+442	520	7899087667126498	glad-populate-prefix/src/glad-populate-stamp/glad-populate-done	7f8da216e504a7b
+442	520	7899087667126498	C:/Users/Erica Barundia/source/repos/CMake-GDGRAP1/thirdparty/glad-subbuild/CMakeFiles/glad-populate-complete	7f8da216e504a7b
+442	520	7899087667126498	C:/Users/Erica Barundia/source/repos/CMake-GDGRAP1/thirdparty/glad-subbuild/glad-populate-prefix/src/glad-populate-stamp/glad-populate-done	7f8da216e504a7b
+16	156	7899087783274278	glad-populate-prefix/src/glad-populate-stamp/glad-populate-update	a830c1daf554abae
+16	156	7899087783274278	C:/Users/Erica Barundia/source/repos/CMake-GDGRAP1/thirdparty/glad-subbuild/glad-populate-prefix/src/glad-populate-stamp/glad-populate-update	a830c1daf554abae
+156	214	7899087785193090	glad-populate-prefix/src/glad-populate-stamp/glad-populate-patch	5af41696c4cd9382
+156	214	7899087785193090	C:/Users/Erica Barundia/source/repos/CMake-GDGRAP1/thirdparty/glad-subbuild/glad-populate-prefix/src/glad-populate-stamp/glad-populate-patch	5af41696c4cd9382
+215	275	7899087785789376	glad-populate-prefix/src/glad-populate-stamp/glad-populate-configure	95491aa3bf268caa
+215	275	7899087785789376	C:/Users/Erica Barundia/source/repos/CMake-GDGRAP1/thirdparty/glad-subbuild/glad-populate-prefix/src/glad-populate-stamp/glad-populate-configure	95491aa3bf268caa
+275	332	7899087786370402	glad-populate-prefix/src/glad-populate-stamp/glad-populate-build	29ade37733a3a4a
+275	332	7899087786370402	C:/Users/Erica Barundia/source/repos/CMake-GDGRAP1/thirdparty/glad-subbuild/glad-populate-prefix/src/glad-populate-stamp/glad-populate-build	29ade37733a3a4a
+333	388	7899087786931523	glad-populate-prefix/src/glad-populate-stamp/glad-populate-install	6ae0be6bfbc88682
+333	388	7899087786931523	C:/Users/Erica Barundia/source/repos/CMake-GDGRAP1/thirdparty/glad-subbuild/glad-populate-prefix/src/glad-populate-stamp/glad-populate-install	6ae0be6bfbc88682
+388	445	7899087787492684	glad-populate-prefix/src/glad-populate-stamp/glad-populate-test	6ba108db3edc1df2
+388	445	7899087787492684	C:/Users/Erica Barundia/source/repos/CMake-GDGRAP1/thirdparty/glad-subbuild/glad-populate-prefix/src/glad-populate-stamp/glad-populate-test	6ba108db3edc1df2
+445	521	7899087788269439	CMakeFiles/glad-populate-complete	7f8da216e504a7b
+445	521	7899087788269439	glad-populate-prefix/src/glad-populate-stamp/glad-populate-done	7f8da216e504a7b
+445	521	7899087788269439	C:/Users/Erica Barundia/source/repos/CMake-GDGRAP1/thirdparty/glad-subbuild/CMakeFiles/glad-populate-complete	7f8da216e504a7b
+445	521	7899087788269439	C:/Users/Erica Barundia/source/repos/CMake-GDGRAP1/thirdparty/glad-subbuild/glad-populate-prefix/src/glad-populate-stamp/glad-populate-done	7f8da216e504a7b

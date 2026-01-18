@@ -1,4 +1,5 @@
-﻿#include <GLFW/glfw3.h>
+﻿#include <glad/gl.h>
+#include <GLFW/glfw3.h>
 #include <math.h>
 
 #ifndef M_PI
@@ -20,6 +21,68 @@ int main(void)
     }
     /* Make the window's context current */
     glfwMakeContextCurrent(window);
+	gladLoadGL(glfwGetProcAddress);
+
+    GLfloat vertices[]{
+        0.f,  0.5f, 0.f,  //> [0] (0, 0.5, 0)    top vertex
+        -1.f, -0.5f, 0.f, //> [1] (-1, -0.5, 0)  bottom left verteex
+        0.5f, -0.5f, 0.f  //> [2] (0.5, -0.5, 0) bottom right vertex
+    
+    };
+
+    GLuint indices[]{
+        0,1,2
+    };
+
+    GLuint VAO, VBO, EBO;
+	glGenVertexArrays(1, &VAO);
+	glGenBuffers(1, &VBO);
+	glGenBuffers(1, &EBO);
+
+    // Strictly in order
+
+    // currVAO = null
+	glBindVertexArray(VAO);
+    // currVAO = VAO
+
+	// currVBO = null
+    glBindBuffer(GL_ARRAY_BUFFER, VBO);
+	// currVBO = VBO <- GL_ARRAY_BUFFER
+    // currVAO.push(currVBO)
+
+	// Assigns vertex data to buffer (currVBO)
+    glBufferData(GL_ARRAY_BUFFER,               // What type of buffer
+		         sizeof(vertices),              // Size of data in bytes
+                 vertices,                      // data
+                 // Optimization only
+	             GL_STATIC_DRAW                 // Static if almost no movement, Dynamic if constantly moving
+                );
+
+	// Tells OpenGL how to interpret vertex data (currVAO)
+    glVertexAttribPointer(
+		                0,                      // Index/Buffer Index (0 reserved for positions)
+		                3,                      // size (num components) = 3 (x,y,z)
+		                GL_FLOAT,               // type of data
+                        GL_FALSE,               // normalized?
+                        3 * sizeof(GLfloat),    // stride (size of data per vertex)
+                        (void*)0                // array buffer offset
+	);
+
+    // Enable index 0
+    glEnableVertexAttribArray(0);
+
+	glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, EBO);
+    glBufferData(GL_ELEMENT_ARRAY_BUFFER,
+                 sizeof(indices),
+                 indices,
+                 GL_STATIC_DRAW
+	    );
+
+    glBindBuffer(GL_ARRAY_BUFFER, 0);
+    // currVBO = null
+    glBindVertexArray(0);
+    // currVAO = null
+	glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, 0);
 
     /* Loop until the user closes the window */
     while (!glfwWindowShouldClose(window))
@@ -27,72 +90,26 @@ int main(void)
         /* Render here */
         glClear(GL_COLOR_BUFFER_BIT);
 
-        // Calculate nonagon vertices
-        float radius = 0.9f;
-        float centerX = 0.0f;
-        float centerY = 1.0f - radius; // Position so top vertices touch y=1.0
-        float angleOffset = M_PI / 2.0f + M_PI / 9.0f; // Top side horizontal
+		glBindVertexArray(VAO);
+        glDrawElements(GL_TRIANGLES, sizeof(indices), GL_UNSIGNED_INT, 0);
 
-        float vertices[9][2];
-        for (int i = 0; i < 9; i++) {
-            float angle = angleOffset + (2.0f * M_PI * i) / 9.0f;
-            vertices[i][0] = centerX + radius * cos(angle);
-            vertices[i][1] = centerY + radius * sin(angle);
-        }
+        /*
+        // Primitive type, start index, number of vertices
+		glDrawArrays(GL_TRIANGLES, 0, 3);
+        */
 
-        // Draw triangles from center to each edge
-        glBegin(GL_TRIANGLES);
-        glVertex2f(centerX, centerY);
-        glVertex2f(vertices[0][0], vertices[0][1]);
-        glVertex2f(vertices[1][0], vertices[1][1]);
-
-        glBegin(GL_TRIANGLES);
-        glVertex2f(centerX, centerY);
-        glVertex2f(vertices[1][0], vertices[1][1]);
-        glVertex2f(vertices[2][0], vertices[2][1]);
-
-        glBegin(GL_TRIANGLES);
-        glVertex2f(centerX, centerY);
-        glVertex2f(vertices[2][0], vertices[2][1]);
-        glVertex2f(vertices[3][0], vertices[3][1]);
-
-        glBegin(GL_TRIANGLES);
-        glVertex2f(centerX, centerY);
-        glVertex2f(vertices[3][0], vertices[3][1]);
-        glVertex2f(vertices[4][0], vertices[4][1]);
-
-        glBegin(GL_TRIANGLES);
-        glVertex2f(centerX, centerY);
-        glVertex2f(vertices[4][0], vertices[4][1]);
-        glVertex2f(vertices[5][0], vertices[5][1]);
-
-        glBegin(GL_TRIANGLES);
-        glVertex2f(centerX, centerY);
-        glVertex2f(vertices[5][0], vertices[5][1]);
-        glVertex2f(vertices[6][0], vertices[6][1]);
-
-        glBegin(GL_TRIANGLES);
-        glVertex2f(centerX, centerY);
-        glVertex2f(vertices[6][0], vertices[6][1]);
-        glVertex2f(vertices[7][0], vertices[7][1]);
-
-        glBegin(GL_TRIANGLES);
-        glVertex2f(centerX, centerY);
-        glVertex2f(vertices[7][0], vertices[7][1]);
-        glVertex2f(vertices[8][0], vertices[8][1]);
-
-        glBegin(GL_TRIANGLES);
-        glVertex2f(centerX, centerY);
-        glVertex2f(vertices[8][0], vertices[8][1]);
-        glVertex2f(vertices[0][0], vertices[0][1]);
-
-        glEnd();
 
         /* Swap front and back buffers */
         glfwSwapBuffers(window);
         /* Poll for and process events */
         glfwPollEvents();
     }
+
+    // Clean-up
+	glDeleteVertexArrays(1, &VAO);
+	glDeleteBuffers(1, &VBO);
+	glDeleteBuffers(1, &EBO);
+
     glfwTerminate();
     return 0;
 }

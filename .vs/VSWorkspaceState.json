@@ -12,7 +12,9 @@
     ]
   },
   "ExpandedNodes": [
-    ""
+    "",
+    "\\thirdparty"
   ],
+  "SelectedNode": "\\CMakeLists.txt",
   "PreviewInSolutionExplorer": false
 }
