@@ -1,0 +1,21 @@
+# ninja log v6
+6	73	7907134007447539	glm-populate-prefix/src/glm-populate-stamp/glm-populate-mkdir	67fd32b4a335528a
+6	73	7907134007447539	C:/Users/Erica Barundia/source/repos/CMake-GDGRAP1/thirdparty/glm-subbuild/glm-populate-prefix/src/glm-populate-stamp/glm-populate-mkdir	67fd32b4a335528a
+74	12410	7907134130806362	glm-populate-prefix/src/glm-populate-stamp/glm-populate-download	14f724447fae7b12
+74	12410	7907134130806362	C:/Users/Erica Barundia/source/repos/CMake-GDGRAP1/thirdparty/glm-subbuild/glm-populate-prefix/src/glm-populate-stamp/glm-populate-download	14f724447fae7b12
+12410	12595	7907134130891640	glm-populate-prefix/src/glm-populate-stamp/glm-populate-update	e6a9401f5d736f58
+12410	12595	7907134130891640	C:/Users/Erica Barundia/source/repos/CMake-GDGRAP1/thirdparty/glm-subbuild/glm-populate-prefix/src/glm-populate-stamp/glm-populate-update	e6a9401f5d736f58
+12595	12669	7907134133404663	glm-populate-prefix/src/glm-populate-stamp/glm-populate-patch	43069c3c3bf3f098
+12595	12669	7907134133404663	C:/Users/Erica Barundia/source/repos/CMake-GDGRAP1/thirdparty/glm-subbuild/glm-populate-prefix/src/glm-populate-stamp/glm-populate-patch	43069c3c3bf3f098
+12669	12758	7907134134273391	glm-populate-prefix/src/glm-populate-stamp/glm-populate-configure	15d324480a2308ec
+12669	12758	7907134134273391	C:/Users/Erica Barundia/source/repos/CMake-GDGRAP1/thirdparty/glm-subbuild/glm-populate-prefix/src/glm-populate-stamp/glm-populate-configure	15d324480a2308ec
+12758	12846	7907134135172763	glm-populate-prefix/src/glm-populate-stamp/glm-populate-build	61618f536cc050b4
+12758	12846	7907134135172763	C:/Users/Erica Barundia/source/repos/CMake-GDGRAP1/thirdparty/glm-subbuild/glm-populate-prefix/src/glm-populate-stamp/glm-populate-build	61618f536cc050b4
+12846	12913	7907134135863357	glm-populate-prefix/src/glm-populate-stamp/glm-populate-install	56576af971ce9d09
+12846	12913	7907134135863357	C:/Users/Erica Barundia/source/repos/CMake-GDGRAP1/thirdparty/glm-subbuild/glm-populate-prefix/src/glm-populate-stamp/glm-populate-install	56576af971ce9d09
+12914	12982	7907134136545713	glm-populate-prefix/src/glm-populate-stamp/glm-populate-test	931d7bbc9154fc2c
+12914	12982	7907134136545713	C:/Users/Erica Barundia/source/repos/CMake-GDGRAP1/thirdparty/glm-subbuild/glm-populate-prefix/src/glm-populate-stamp/glm-populate-test	931d7bbc9154fc2c
+12983	13074	7907134137463560	CMakeFiles/glm-populate-complete	91712dc17c017b53
+12983	13074	7907134137463560	glm-populate-prefix/src/glm-populate-stamp/glm-populate-done	91712dc17c017b53
+12983	13074	7907134137463560	C:/Users/Erica Barundia/source/repos/CMake-GDGRAP1/thirdparty/glm-subbuild/CMakeFiles/glm-populate-complete	91712dc17c017b53
+12983	13074	7907134137463560	C:/Users/Erica Barundia/source/repos/CMake-GDGRAP1/thirdparty/glm-subbuild/glm-populate-prefix/src/glm-populate-stamp/glm-populate-done	91712dc17c017b53

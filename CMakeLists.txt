@@ -11,6 +11,7 @@ if (POLICY CMP0141)
         "$<IF:$<AND:$<C_COMPILER_ID:MSVC>,$<CXX_COMPILER_ID:MSVC>>,$<$<CONFIG:Debug,RelWithDebInfo>:EditAndContinue>,$<$<CONFIG:Debug,RelWithDebInfo>:ProgramDatabase>>")
 endif()
 
+
 project("CMakeProjectGRAP1")
 
 # Set C++ standard
@@ -55,6 +56,16 @@ glad_add_library(glad_gl_core_46 STATIC
     API gl:core=4.6
 )
 
+include(FetchContent)
+
+FetchContent_Declare(
+    glm
+    GIT_REPOSITORY https://github.com/g-truc/glm.git
+    GIT_TAG 1.0.1
+)
+
+FetchContent_MakeAvailable(glm)
+
 # OpenGL should be preinstalled
 find_package(OpenGL REQUIRED)
 
@@ -68,8 +79,32 @@ target_link_libraries(CMakeProjectGRAP1
     glfw
     OpenGL::GL
     glad_gl_core_46
+    glm::glm
 )
 
+<<<<<<< Updated upstream
+=======
+add_custom_command(
+    TARGET CMakeProjectGRAP1
+    POST_BUILD
+    COMMAND ${CMAKE_COMMAND} -E copy_directory
+        "${CMAKE_CURRENT_SOURCE_DIR}/3D"
+        "$<TARGET_FILE_DIR:CMakeProjectGRAP1>/3D"
+    COMMENT "Copying assets to build directory"
+)
+
+add_custom_command(
+    TARGET CMakeProjectGRAP1
+    POST_BUILD
+    COMMAND ${CMAKE_COMMAND} -E copy_directory
+        "${CMAKE_CURRENT_SOURCE_DIR}/Shaders"
+        "$<TARGET_FILE_DIR:CMakeProjectGRAP1>/Shaders"
+    COMMENT "Copying assets to build directory"
+)
+
+
+
+>>>>>>> Stashed changes
 if (CMAKE_VERSION VERSION_GREATER 3.12)
     set_property(TARGET CMakeProjectGRAP1 PROPERTY CXX_STANDARD 20)
 endif()

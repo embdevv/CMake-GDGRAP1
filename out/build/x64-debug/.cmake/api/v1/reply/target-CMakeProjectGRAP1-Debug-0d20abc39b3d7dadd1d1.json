@@ -29,19 +29,23 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 63,
+				"line" : 74,
 				"parent" : 0
 			},
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 67,
+				"line" : 78,
 				"parent" : 0
 			},
 			{
 				"command" : 2,
 				"file" : 0,
+<<<<<<<< Updated upstream:out/build/x64-debug/.cmake/api/v1/reply/target-CMakeProjectGRAP1-Debug-0d20abc39b3d7dadd1d1.json
 				"line" : 74,
+========
+				"line" : 106,
+>>>>>>>> Stashed changes:out/build/x64-debug/.cmake/api/v1/reply/target-CMakeProjectGRAP1-Debug-702aca7b89282ad5f5ab.json
 				"parent" : 0
 			}
 		]
@@ -64,6 +68,10 @@
 				{
 					"backtrace" : 2,
 					"path" : "C:/Users/Erica Barundia/source/repos/CMake-GDGRAP1/out/build/x64-debug/gladsources/glad_gl_core_46/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/Users/Erica Barundia/source/repos/CMake-GDGRAP1/thirdparty/glm-src"
 				}
 			],
 			"language" : "CXX",
@@ -90,6 +98,10 @@
 		{
 			"backtrace" : 2,
 			"id" : "glfw::@cd15da548cb3fd7e15e8"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "glm::@02a213bc3b0f48961f84"
 		}
 	],
 	"id" : "CMakeProjectGRAP1::@6890427a1f51a3e7e1df",
@@ -118,6 +130,11 @@
 			{
 				"backtrace" : 2,
 				"fragment" : "glad_gl_core_46.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "\"C:\\Users\\Erica Barundia\\source\\repos\\CMake-GDGRAP1\\thirdparty\\glm-build\\glm\\glm.lib\"",
 				"role" : "libraries"
 			},
 			{

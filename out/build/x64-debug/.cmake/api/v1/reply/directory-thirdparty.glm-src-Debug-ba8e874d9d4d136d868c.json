@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "C:/Users/Erica Barundia/source/repos/CMake-GDGRAP1/thirdparty/glm-build",
+		"source" : "thirdparty/glm-src"
+	}
+}
