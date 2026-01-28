@@ -26,6 +26,9 @@
 .vs/VSWorkspaceState.json
 out/build/x64-debug/cmake_install.cmake
 out/build/x64-debug/CMakeCache.txt
+out/build/x64-debug/CMakeFiles/rules.ninja
 out/build/x64-debug/CMakeFiles/TargetDirectories.txt
 /.vs/CMake-GDGRAP1/v17/ipch
 .vs/CMake-GDGRAP1/v17/ipch/AutoPCH/402e943b1f0666f5/CMAKEPROJECTGRAP1.ipch
+*.ipch
+*.ipch
