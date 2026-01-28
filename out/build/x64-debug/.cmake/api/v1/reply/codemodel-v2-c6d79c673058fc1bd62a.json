@@ -168,11 +168,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "CMakeProjectGRAP1::@6890427a1f51a3e7e1df",
-<<<<<<<< Updated upstream:out/build/x64-debug/.cmake/api/v1/reply/codemodel-v2-7e928f7594df6f9f6109.json
-					"jsonFile" : "target-CMakeProjectGRAP1-Debug-0d20abc39b3d7dadd1d1.json",
-========
 					"jsonFile" : "target-CMakeProjectGRAP1-Debug-702aca7b89282ad5f5ab.json",
->>>>>>>> Stashed changes:out/build/x64-debug/.cmake/api/v1/reply/codemodel-v2-c6d79c673058fc1bd62a.json
 					"name" : "CMakeProjectGRAP1",
 					"projectIndex" : 0
 				},

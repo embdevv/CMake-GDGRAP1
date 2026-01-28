@@ -41,11 +41,7 @@
 			{
 				"command" : 2,
 				"file" : 0,
-<<<<<<<< Updated upstream:out/build/x64-debug/.cmake/api/v1/reply/target-CMakeProjectGRAP1-Debug-0d20abc39b3d7dadd1d1.json
-				"line" : 74,
-========
 				"line" : 106,
->>>>>>>> Stashed changes:out/build/x64-debug/.cmake/api/v1/reply/target-CMakeProjectGRAP1-Debug-702aca7b89282ad5f5ab.json
 				"parent" : 0
 			}
 		]
@@ -164,7 +160,8 @@
 			"name" : "Header Files",
 			"sourceIndexes" : 
 			[
-				1
+				1,
+				2
 			]
 		}
 	],
@@ -179,6 +176,11 @@
 		{
 			"backtrace" : 1,
 			"path" : "CMakeProjectGRAP1.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "tiny_obj_loader.h",
 			"sourceGroupIndex" : 1
 		}
 	],

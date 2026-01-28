@@ -23,3 +23,14 @@ C:/Users/Erica Barundia/source/repos/CMake-GDGRAP1/thirdparty/glad-build/CMakeFi
 C:/Users/Erica Barundia/source/repos/CMake-GDGRAP1/thirdparty/glad-build/CMakeFiles/list_install_components.dir
 C:/Users/Erica Barundia/source/repos/CMake-GDGRAP1/thirdparty/glad-build/CMakeFiles/install.dir
 C:/Users/Erica Barundia/source/repos/CMake-GDGRAP1/thirdparty/glad-build/CMakeFiles/install/local.dir
+C:/Users/Erica Barundia/source/repos/CMake-GDGRAP1/thirdparty/glm-build/CMakeFiles/edit_cache.dir
+C:/Users/Erica Barundia/source/repos/CMake-GDGRAP1/thirdparty/glm-build/CMakeFiles/rebuild_cache.dir
+C:/Users/Erica Barundia/source/repos/CMake-GDGRAP1/thirdparty/glm-build/CMakeFiles/list_install_components.dir
+C:/Users/Erica Barundia/source/repos/CMake-GDGRAP1/thirdparty/glm-build/CMakeFiles/install.dir
+C:/Users/Erica Barundia/source/repos/CMake-GDGRAP1/thirdparty/glm-build/CMakeFiles/install/local.dir
+C:/Users/Erica Barundia/source/repos/CMake-GDGRAP1/thirdparty/glm-build/glm/CMakeFiles/glm.dir
+C:/Users/Erica Barundia/source/repos/CMake-GDGRAP1/thirdparty/glm-build/glm/CMakeFiles/edit_cache.dir
+C:/Users/Erica Barundia/source/repos/CMake-GDGRAP1/thirdparty/glm-build/glm/CMakeFiles/rebuild_cache.dir
+C:/Users/Erica Barundia/source/repos/CMake-GDGRAP1/thirdparty/glm-build/glm/CMakeFiles/list_install_components.dir
+C:/Users/Erica Barundia/source/repos/CMake-GDGRAP1/thirdparty/glm-build/glm/CMakeFiles/install.dir
+C:/Users/Erica Barundia/source/repos/CMake-GDGRAP1/thirdparty/glm-build/glm/CMakeFiles/install/local.dir

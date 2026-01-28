@@ -71,7 +71,7 @@ find_package(OpenGL REQUIRED)
 
 # Add source to this project's executable.
 
-add_executable(CMakeProjectGRAP1 "CMakeProjectGRAP1.cpp" "CMakeProjectGRAP1.h")
+add_executable(CMakeProjectGRAP1 "CMakeProjectGRAP1.cpp" "CMakeProjectGRAP1.h" "tiny_obj_loader.h")
 
 
 # Link the required libraries
@@ -82,8 +82,6 @@ target_link_libraries(CMakeProjectGRAP1
     glm::glm
 )
 
-<<<<<<< Updated upstream
-=======
 add_custom_command(
     TARGET CMakeProjectGRAP1
     POST_BUILD
@@ -104,7 +102,6 @@ add_custom_command(
 
 
 
->>>>>>> Stashed changes
 if (CMAKE_VERSION VERSION_GREATER 3.12)
     set_property(TARGET CMakeProjectGRAP1 PROPERTY CXX_STANDARD 20)
 endif()

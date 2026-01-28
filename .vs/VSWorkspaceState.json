@@ -13,8 +13,9 @@
   },
   "ExpandedNodes": [
     "",
+    "\\Shaders",
     "\\thirdparty"
   ],
-  "SelectedNode": "\\CMakeLists.txt",
+  "SelectedNode": "\\3D",
   "PreviewInSolutionExplorer": false
 }

@@ -6,11 +6,6 @@
 #include <sstream>
 #include <vector>
 
-<<<<<<< Updated upstream
-#ifndef M_PI
-#define M_PI 3.14159265358979323846
-#endif
-=======
 // GLAD library
 #include <glad/gl.h>
 #include <GLFW/glfw3.h>
@@ -25,13 +20,16 @@
 #include <glm/gtc/type_ptr.hpp>
 
 using namespace std;
->>>>>>> Stashed changes
+
+float SCALE_VALUE = 5.f;
 
 // Initialize transformation values
 float x = 0.0f, y = 0.0f, z = 0.0f;
-float x_scale = 1.0f, y_scale = 1.0f, z_scale = 1.0f;
+float x_scale = SCALE_VALUE, y_scale = SCALE_VALUE, z_scale = SCALE_VALUE;
 float theta = 0.0f;
 float axisv_x = 0.0f, axisv_y = 1.0f, axisv_z = 0.0f;
+
+//float x_mod = 0, z_mod = -5.f;
 
 // Key callback function for handling input
 void Key_Callback(GLFWwindow* window, // Pointer to GLFW window
@@ -41,8 +39,10 @@ void Key_Callback(GLFWwindow* window, // Pointer to GLFW window
     int mods)                         // Modifier keys 
 {
 	// Use PRESS or REPEAT so a single press and holding (auto-repeat) both work.
-	bool down = (action == GLFW_HOLD) || (action == GLFW_REPEAT);
-
+	bool down = (action == GLFW_PRESS) || (action == GLFW_REPEAT);
+                       	// if ^ has red text, change (GLFW_PRESS || GLFW_HOLD) 
+                        // to (GLFW_PRESS || GLFW_REPEAT)
+               
 	// WASD = Movement X/Y
 	if (key == GLFW_KEY_W && down)
 		y += 0.1f;
@@ -89,6 +89,12 @@ void Key_Callback(GLFWwindow* window, // Pointer to GLFW window
         theta += 5.0f;
     }
 
+	// Zoom In/Out = Z/C
+    if (key == GLFW_KEY_Z && down)
+		z += 0.1f;
+	if (key == GLFW_KEY_C && down)
+		z -= 0.1f;
+
 	// Escape Key = Close Window
     if (key == GLFW_KEY_ESCAPE && down)
 		glfwSetWindowShouldClose(window, GLFW_TRUE);
@@ -100,8 +106,12 @@ int main(void)
     /* Initialize the library */
     if (!glfwInit())
         return -1;
+    
+    float windowWidth = 800;
+    float windowHeight = 800;
+    
     /* Create a windowed mode window and its OpenGL context */
-    window = glfwCreateWindow(640, 480, "Erica Barundia", NULL, NULL);
+    window = glfwCreateWindow(windowWidth, windowHeight, "Erica Barundia", NULL, NULL);
     if (!window)
     {
         glfwTerminate();
@@ -109,7 +119,7 @@ int main(void)
     }
     /* Make the window's context current */
     glfwMakeContextCurrent(window);
-	gladLoadGL(glfwGetProcAddress);
+    gladLoadGL(glfwGetProcAddress);
 
 	glfwSetKeyCallback(window, Key_Callback);
 
@@ -123,8 +133,6 @@ int main(void)
         0,1,2
     };
 
-<<<<<<< Updated upstream
-=======
     // Load the vertex shader file
     fstream vertSrc("Shaders/sample.vert");
     stringstream vertBuffer;
@@ -180,28 +188,18 @@ int main(void)
         );
     }
 
->>>>>>> Stashed changes
     GLuint VAO, VBO, EBO;
-	glGenVertexArrays(1, &VAO);
+    glGenVertexArrays(1, &VAO);
 	glGenBuffers(1, &VBO);
 	glGenBuffers(1, &EBO);
 
 	glBindVertexArray(VAO);
     glBindBuffer(GL_ARRAY_BUFFER, VBO);
 
-<<<<<<< Updated upstream
-	// Assigns vertex data to buffer (currVBO)
-    glBufferData(GL_ARRAY_BUFFER,               // What type of buffer
-		         sizeof(vertices),              // Size of data in bytes
-                 vertices,                      // data
-                 // Optimization only
-	             GL_STATIC_DRAW                 // Static if almost no movement, Dynamic if constantly moving
-=======
     glBufferData(GL_ARRAY_BUFFER,
 		         sizeof(GLfloat) * attributes.vertices.size(),
                  &attributes.vertices[0],
 	             GL_STATIC_DRAW
->>>>>>> Stashed changes
                 );
 
 	glVertexAttribPointer(
@@ -217,14 +215,55 @@ int main(void)
 
 	glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, EBO);
     glBufferData(GL_ELEMENT_ARRAY_BUFFER,
-                 sizeof(indices),
-                 indices,
+                 sizeof(GLuint) * mesh_indices.size(),
+                 mesh_indices.data(),
                  GL_STATIC_DRAW
 	    );
 
     glBindBuffer(GL_ARRAY_BUFFER, 0);
     glBindVertexArray(0);
 	glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, 0);
+
+    /*
+		FOR VISUALIZATION PURPOSES 
+
+
+        2
+         -------------------
+        | -2                | 2
+
+
+
+
+
+
+         --------------------
+        -2
+    
+		The SMALLER the value, the more zoomed IN the model will be.
+		The LARGER the value, the more zoomed OUT the model will be.
+    */
+
+    //glm::mat4 projection = glm::ortho(
+    //    -2.f, // Left
+    //    2.f,  // Right
+    //    -2.f, // Down
+    //    2.f,  // Up
+    //    -1.f, // Near
+    //    1.f   // Far
+    //);
+
+    //   BEHIND CAMERA   CAMERA         FRONT CAMERA
+	//    5.0             0.0         0.1        -5,0f        100.0
+	//    Bunny          Camera    Near Plane    Bunny      Far Plane
+    glm::mat4 projection = glm::perspective(
+        glm::radians(60.0f),               // Field of View Angle - DEFAULT 60
+        windowWidth / windowHeight,        // Aspect Ratio
+		0.1f,                              // Near Plane (must be > 0)
+        100.0f                             // Far Plane
+    );
+
+	z = -5.0f; // Move the model away from the camera
 
     /* Loop until the user closes the window */
     while (!glfwWindowShouldClose(window))
@@ -242,8 +281,13 @@ int main(void)
 		unsigned int transformLoc = glGetUniformLocation(shaderProgram, "transform");
         glUniformMatrix4fv(transformLoc, 1, GL_FALSE, glm::value_ptr(transformation_matrix));
 
+		// Get location of projection matrix uniform and set matrix
+		unsigned int projLoc = glGetUniformLocation(shaderProgram, "projection");
+		// Apply the projection matrix
+        glUniformMatrix4fv(projLoc, 1, GL_FALSE, glm::value_ptr(projection));
+
 		glBindVertexArray(VAO);
-        glDrawElements(GL_TRIANGLES, sizeof(indices), GL_UNSIGNED_INT, 0);
+        glDrawElements(GL_TRIANGLES, mesh_indices.size(), GL_UNSIGNED_INT, 0);                                                                                  
 
         /* Swap front and back buffers */
         glfwSwapBuffers(window);
