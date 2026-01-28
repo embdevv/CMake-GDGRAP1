@@ -276,6 +276,47 @@ int main(void)
         /* Render here */
         glClear(GL_COLOR_BUFFER_BIT);
 
+		glm::vec3 cameraPos = glm::vec3(0.0f, 0.0f, 10.0f);
+        glm::mat4 cameraPosMatrix =
+			glm::translate(identity_matrix, cameraPos * -1.0f);
+
+		glm::vec3 WorldUp = glm::vec3(0.0f, 1.0f, 0.0f);
+        glm::vec3 cameraCenter = glm::vec3(0.0f, 3.f, 0.f);
+
+        // F - model
+        glm::vec3 F = cameraCenter - cameraPos;
+		F = glm::normalize(F);
+        
+        // R - view
+		glm::vec3 R = glm::cross(F, WorldUp);
+		R = glm::normalize(R);
+
+        // U - projection
+		glm::vec3 U = glm::cross(R, F);
+		U = glm::normalize(U);
+
+        // Construct the orientation matrix
+		glm::mat4 cameraRotationMatrix = glm::mat4(1.0f); // identity matrix
+        
+        // Matrix [Col] [Row]
+		// R
+        cameraRotationMatrix[0][0] = R.x;
+		cameraRotationMatrix[1][0] = R.y;
+		cameraRotationMatrix[2][0] = R.z;
+		// U
+        cameraRotationMatrix[0][1] = U.x;
+        cameraRotationMatrix[1][1] = U.y;
+        cameraRotationMatrix[2][1] = U.z;
+		// -F
+        cameraRotationMatrix[0][2] = -F.x;
+        cameraRotationMatrix[1][2] = -F.y;
+        cameraRotationMatrix[2][2] = -F.z;
+
+        // V = cR * cP
+		//glm::mat4 view = cameraRotationMatrix * cameraPosMatrix;
+        
+        glm::mat4 view = glm::lookAt(cameraPos, cameraCenter, WorldUp);
+
 		// Activate the shader program BEFORE setting uniforms
         glUseProgram(shaderProgram);
 		unsigned int transformLoc = glGetUniformLocation(shaderProgram, "transform");
@@ -285,6 +326,11 @@ int main(void)
 		unsigned int projLoc = glGetUniformLocation(shaderProgram, "projection");
 		// Apply the projection matrix
         glUniformMatrix4fv(projLoc, 1, GL_FALSE, glm::value_ptr(projection));
+
+        // Get location of view matrix uniform and set matrix
+        unsigned int viewLoc = glGetUniformLocation(shaderProgram, "view");
+        // Apply the view matrix
+        glUniformMatrix4fv(viewLoc, 1, GL_FALSE, glm::value_ptr(view));
 
 		glBindVertexArray(VAO);
         glDrawElements(GL_TRIANGLES, mesh_indices.size(), GL_UNSIGNED_INT, 0);                                                                                  

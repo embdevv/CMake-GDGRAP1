@@ -14,11 +14,15 @@ uniform mat4 projection;
 
 uniform mat4 transform;
 
+// View / camera mat
+uniform mat4 view;
+
 void main()
 {
 	//vec3 newPos = vec3(aPos.x + aPos.y, aPos.z);
-	gl_Position = 
-	projection *
-	transform * vec4(aPos, 1.0);
+	gl_Position =  // Shutter
+	projection * // Apply the lens
+	view * // Position the camera
+	transform * vec4(aPos, 1.0); // Position model
 }
 
