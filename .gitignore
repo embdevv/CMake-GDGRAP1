@@ -32,3 +32,7 @@ out/build/x64-debug/CMakeFiles/TargetDirectories.txt
 .vs/CMake-GDGRAP1/v17/ipch/AutoPCH/402e943b1f0666f5/CMAKEPROJECTGRAP1.ipch
 *.ipch
 *.ipch
+.vs/CMake-GDGRAP1/v17/ipch/AutoPCH/402e943b1f0666f5/CMAKEPROJECTGRAP1.ipch
+*.ipch
+*.json
+/.vs/CMake-GDGRAP1/v17
