@@ -19,9 +19,13 @@
 #include <glm/gtc/matrix_transform.hpp>
 #include <glm/gtc/type_ptr.hpp>
 
+// STB Image library
+#define STB_IMAGE_IMPLEMENTATION
+#include "stb_image.h"
+
 using namespace std;
 
-float SCALE_VALUE = 5.f;
+float SCALE_VALUE = 1.f;
 
 // Initialize transformation values
 float x = 0.0f, y = 0.0f, z = 0.0f;
@@ -121,6 +125,10 @@ int main(void)
     glfwMakeContextCurrent(window);
     gladLoadGL(glfwGetProcAddress);
 
+    int img_width,
+        img_height,
+        colorChannels;
+
 	glfwSetKeyCallback(window, Key_Callback);
 
     GLfloat vertices[]{
@@ -132,6 +140,55 @@ int main(void)
     GLuint indices[]{
         0,1,2
     };
+
+    GLfloat UV[]{
+        0.f, 1.f,
+        0.f, 0.f,
+        1.f, 1.f,
+        1.f, 0.f,
+        1.f, 1.f,
+        1.f, 0.f,
+        0.f, 1.f,
+        0.f, 0.f
+    };
+
+    unsigned char* tex_bytes = 
+		stbi_load("3D/ayaya.png",       // path to image
+			      &img_width,           // fills out the image width
+			      &img_height,          // fills out the image height
+                  &colorChannels,       // fills out the color channel (3 | 4)
+                  0                     // border (fills out the color channel)
+		);
+
+	// Load/dump texture into OpenGL from unsigned char array 
+	// OpenGL texture reference
+    GLuint texture;
+    // Generate a reference
+	glGenTextures(1, &texture);
+	// Set the current texture to the one we just generated/working on (Texture 0)
+    glActiveTexture(GL_TEXTURE0);
+	// Bind our next tasks to Texture 0
+    // To our current reference
+	// Similar to what we're doing to VAO/VBO/EBO
+	glBindTexture(GL_TEXTURE_2D, texture);
+
+	// Assign the loaded image to the OpenGL Texture or the OpenGL reference
+    glTexImage2D(GL_TEXTURE_2D,
+        0,                              // Texture 0
+        GL_RGBA,                        // or RGB - target color format of the texture | PNG: RGBA, JPG: RGB
+        img_width,              
+        img_height,
+		0,                              // Border
+		GL_RGBA,                        // or RGB - format of the loaded image (should match above) | PNG: RGBA, JPG: RGB
+		GL_UNSIGNED_BYTE,               // Type of data
+		tex_bytes                       // The actual image data
+    );
+
+	// Generate Mipmaps to the current texture
+    glGenerateMipmap(GL_TEXTURE_2D);
+    // Free up the loaded bytes
+	stbi_image_free(tex_bytes);
+
 
     // Load the vertex shader file
     fstream vertSrc("Shaders/sample.vert");
@@ -148,7 +205,7 @@ int main(void)
 	const char* fragChar = fragString.c_str();
 
     // Load .obj file
-    string path = "3D/bunny.obj";
+    string path = "3D/myCube.obj";
 	vector<tinyobj::shape_t> shapes;
 	vector<tinyobj::material_t> material;
     string error;
@@ -188,11 +245,13 @@ int main(void)
         );
     }
 
-    GLuint VAO, VBO, EBO;
+	// add a new VBO for the UVs
+    GLuint VAO, VBO, EBO, VBO_UV;
     glGenVertexArrays(1, &VAO);
 	glGenBuffers(1, &VBO);
-	glGenBuffers(1, &EBO);
-
+    glGenBuffers(1, &VBO_UV);
+    glGenBuffers(1, &EBO);
+	
 	glBindVertexArray(VAO);
     glBindBuffer(GL_ARRAY_BUFFER, VBO);
 
@@ -217,12 +276,29 @@ int main(void)
     glBufferData(GL_ELEMENT_ARRAY_BUFFER,
                  sizeof(GLuint) * mesh_indices.size(),
                  mesh_indices.data(),
-                 GL_STATIC_DRAW
-	    );
+                 GL_STATIC_DRAW	    );
 
-    glBindBuffer(GL_ARRAY_BUFFER, 0);
-    glBindVertexArray(0);
-	glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, 0);
+    glBindBuffer(GL_ARRAY_BUFFER, VBO_UV);
+
+    glBufferData(GL_ARRAY_BUFFER,
+        sizeof(GLfloat) * (sizeof(UV) / sizeof(UV[0])),
+        &UV[0],
+        GL_DYNAMIC_DRAW
+    );
+
+	// Add in how to interpret the UV data
+    glVertexAttribPointer(2, 
+        2, 
+        GL_FLOAT, 
+        GL_FALSE, 
+        2 * sizeof(float), 
+        (void*)0
+    );
+
+	// Enable 2 for our UV / Texture Coordinates
+    glEnableVertexAttribArray(2);
+
+
 
     /*
 		FOR VISUALIZATION PURPOSES 
@@ -268,6 +344,7 @@ int main(void)
     /* Loop until the user closes the window */
     while (!glfwWindowShouldClose(window))
     {
+      
 		glm::mat4 identity_matrix = glm::mat4(1.0f);
 		glm::mat4 transformation_matrix = glm::translate(identity_matrix, glm::vec3(x, y, z));
         transformation_matrix = glm::scale(transformation_matrix, glm::vec3(x_scale, y_scale, z_scale));
@@ -316,6 +393,10 @@ int main(void)
 		//glm::mat4 view = cameraRotationMatrix * cameraPosMatrix;
         
         glm::mat4 view = glm::lookAt(cameraPos, cameraCenter, WorldUp);
+
+        GLuint tex0Address = glGetUniformLocation(shaderProgram, "tex0");
+        glBindTexture(GL_TEXTURE_2D, texture);
+        glUniform1i(tex0Address, 0);
 
 		// Activate the shader program BEFORE setting uniforms
         glUseProgram(shaderProgram);

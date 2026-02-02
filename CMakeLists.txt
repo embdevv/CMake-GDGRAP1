@@ -71,7 +71,10 @@ find_package(OpenGL REQUIRED)
 
 # Add source to this project's executable.
 
-add_executable(CMakeProjectGRAP1 "CMakeProjectGRAP1.cpp" "CMakeProjectGRAP1.h" "tiny_obj_loader.h")
+add_executable(CMakeProjectGRAP1 "CMakeProjectGRAP1.cpp" 
+"CMakeProjectGRAP1.h" 
+"tiny_obj_loader.h" 
+"stb_image.h")
 
 
 # Link the required libraries

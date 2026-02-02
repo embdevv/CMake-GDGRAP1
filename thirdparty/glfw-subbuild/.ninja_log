@@ -1,21 +1,37 @@
 # ninja log v6
-6	86	7912842572575367	glfw-populate-prefix/src/glfw-populate-stamp/glfw-populate-mkdir	b18d8d17e0ed8b1c
-6	86	7912842572575367	C:/Users/Erica Barundia/source/repos/CMake-GDGRAP1/thirdparty/glfw-subbuild/glfw-populate-prefix/src/glfw-populate-stamp/glfw-populate-mkdir	b18d8d17e0ed8b1c
-86	5769	7912842629411335	glfw-populate-prefix/src/glfw-populate-stamp/glfw-populate-download	949ede0d05bac52
-86	5769	7912842629411335	C:/Users/Erica Barundia/source/repos/CMake-GDGRAP1/thirdparty/glfw-subbuild/glfw-populate-prefix/src/glfw-populate-stamp/glfw-populate-download	949ede0d05bac52
-5769	5953	7912842629501497	glfw-populate-prefix/src/glfw-populate-stamp/glfw-populate-update	bd2cbaf504fdfc52
-5769	5953	7912842629501497	C:/Users/Erica Barundia/source/repos/CMake-GDGRAP1/thirdparty/glfw-subbuild/glfw-populate-prefix/src/glfw-populate-stamp/glfw-populate-update	bd2cbaf504fdfc52
-5955	6028	7912842631990340	glfw-populate-prefix/src/glfw-populate-stamp/glfw-populate-patch	e3730c01387aa3c
-5955	6028	7912842631990340	C:/Users/Erica Barundia/source/repos/CMake-GDGRAP1/thirdparty/glfw-subbuild/glfw-populate-prefix/src/glfw-populate-stamp/glfw-populate-patch	e3730c01387aa3c
-6028	6102	7912842632739102	glfw-populate-prefix/src/glfw-populate-stamp/glfw-populate-configure	4aba62721cf8d3d1
-6028	6102	7912842632739102	C:/Users/Erica Barundia/source/repos/CMake-GDGRAP1/thirdparty/glfw-subbuild/glfw-populate-prefix/src/glfw-populate-stamp/glfw-populate-configure	4aba62721cf8d3d1
-6103	6181	7912842633497398	glfw-populate-prefix/src/glfw-populate-stamp/glfw-populate-build	701f5cc853a3623f
-6103	6181	7912842633497398	C:/Users/Erica Barundia/source/repos/CMake-GDGRAP1/thirdparty/glfw-subbuild/glfw-populate-prefix/src/glfw-populate-stamp/glfw-populate-build	701f5cc853a3623f
-6182	6277	7912842634491515	glfw-populate-prefix/src/glfw-populate-stamp/glfw-populate-install	26862c412d12b149
-6182	6277	7912842634491515	C:/Users/Erica Barundia/source/repos/CMake-GDGRAP1/thirdparty/glfw-subbuild/glfw-populate-prefix/src/glfw-populate-stamp/glfw-populate-install	26862c412d12b149
-6277	6349	7912842635209482	glfw-populate-prefix/src/glfw-populate-stamp/glfw-populate-test	198b0662a2aef62f
-6277	6349	7912842635209482	C:/Users/Erica Barundia/source/repos/CMake-GDGRAP1/thirdparty/glfw-subbuild/glfw-populate-prefix/src/glfw-populate-stamp/glfw-populate-test	198b0662a2aef62f
-6349	6451	7912842636212838	CMakeFiles/glfw-populate-complete	32f2f4bb04fc29df
-6349	6451	7912842636212838	glfw-populate-prefix/src/glfw-populate-stamp/glfw-populate-done	32f2f4bb04fc29df
-6349	6451	7912842636212838	C:/Users/Erica Barundia/source/repos/CMake-GDGRAP1/thirdparty/glfw-subbuild/CMakeFiles/glfw-populate-complete	32f2f4bb04fc29df
-6349	6451	7912842636212838	C:/Users/Erica Barundia/source/repos/CMake-GDGRAP1/thirdparty/glfw-subbuild/glfw-populate-prefix/src/glfw-populate-stamp/glfw-populate-done	32f2f4bb04fc29df
+6	82	7916998839942776	glfw-populate-prefix/src/glfw-populate-stamp/glfw-populate-mkdir	af85ab6ce78e2f1c
+5533	5724	7916998894530352	glfw-populate-prefix/src/glfw-populate-stamp/glfw-populate-update	7581856e72cf10d5
+6026	6098	7916998900100066	C:/Users/erica/OneDrive/Documents/_Acads/gdgrapGIT/thirdparty/glfw-subbuild/glfw-populate-prefix/src/glfw-populate-stamp/glfw-populate-test	889d8c53ec66da0
+5725	5799	7916998897122840	glfw-populate-prefix/src/glfw-populate-stamp/glfw-populate-patch	78350edae954dd90
+6	82	7916998839942776	C:/Users/erica/OneDrive/Documents/_Acads/gdgrapGIT/thirdparty/glfw-subbuild/glfw-populate-prefix/src/glfw-populate-stamp/glfw-populate-mkdir	af85ab6ce78e2f1c
+83	5533	7916998894456714	glfw-populate-prefix/src/glfw-populate-stamp/glfw-populate-download	80895a4a1c16cba9
+83	5533	7916998894456714	C:/Users/erica/OneDrive/Documents/_Acads/gdgrapGIT/thirdparty/glfw-subbuild/glfw-populate-prefix/src/glfw-populate-stamp/glfw-populate-download	80895a4a1c16cba9
+5725	5799	7916998897122840	C:/Users/erica/OneDrive/Documents/_Acads/gdgrapGIT/thirdparty/glfw-subbuild/glfw-populate-prefix/src/glfw-populate-stamp/glfw-populate-patch	78350edae954dd90
+6098	6200	7916998901120207	C:/Users/erica/OneDrive/Documents/_Acads/gdgrapGIT/thirdparty/glfw-subbuild/glfw-populate-prefix/src/glfw-populate-stamp/glfw-populate-done	27e434fb85f994a4
+5533	5724	7916998894530352	C:/Users/erica/OneDrive/Documents/_Acads/gdgrapGIT/thirdparty/glfw-subbuild/glfw-populate-prefix/src/glfw-populate-stamp/glfw-populate-update	7581856e72cf10d5
+5800	5876	7916998897880630	glfw-populate-prefix/src/glfw-populate-stamp/glfw-populate-configure	dd7c4287fc06a4cd
+6098	6200	7916998901120207	CMakeFiles/glfw-populate-complete	27e434fb85f994a4
+5800	5876	7916998897880630	C:/Users/erica/OneDrive/Documents/_Acads/gdgrapGIT/thirdparty/glfw-subbuild/glfw-populate-prefix/src/glfw-populate-stamp/glfw-populate-configure	dd7c4287fc06a4cd
+5876	5949	7916998898618534	glfw-populate-prefix/src/glfw-populate-stamp/glfw-populate-build	9092bd98a882f83b
+5876	5949	7916998898618534	C:/Users/erica/OneDrive/Documents/_Acads/gdgrapGIT/thirdparty/glfw-subbuild/glfw-populate-prefix/src/glfw-populate-stamp/glfw-populate-build	9092bd98a882f83b
+5950	6026	7916998899385674	C:/Users/erica/OneDrive/Documents/_Acads/gdgrapGIT/thirdparty/glfw-subbuild/glfw-populate-prefix/src/glfw-populate-stamp/glfw-populate-install	f6585a7697f7e03f
+5950	6026	7916998899385674	glfw-populate-prefix/src/glfw-populate-stamp/glfw-populate-install	f6585a7697f7e03f
+6026	6098	7916998900100066	glfw-populate-prefix/src/glfw-populate-stamp/glfw-populate-test	889d8c53ec66da0
+6098	6200	7916998901120207	glfw-populate-prefix/src/glfw-populate-stamp/glfw-populate-done	27e434fb85f994a4
+6098	6200	7916998901120207	C:/Users/erica/OneDrive/Documents/_Acads/gdgrapGIT/thirdparty/glfw-subbuild/CMakeFiles/glfw-populate-complete	27e434fb85f994a4
+18	188	7917001174941165	glfw-populate-prefix/src/glfw-populate-stamp/glfw-populate-update	7581856e72cf10d5
+18	188	7917001174941165	C:/Users/erica/OneDrive/Documents/_Acads/gdgrapGIT/thirdparty/glfw-subbuild/glfw-populate-prefix/src/glfw-populate-stamp/glfw-populate-update	7581856e72cf10d5
+188	262	7917001177312685	glfw-populate-prefix/src/glfw-populate-stamp/glfw-populate-patch	78350edae954dd90
+188	262	7917001177312685	C:/Users/erica/OneDrive/Documents/_Acads/gdgrapGIT/thirdparty/glfw-subbuild/glfw-populate-prefix/src/glfw-populate-stamp/glfw-populate-patch	78350edae954dd90
+263	337	7917001178046482	glfw-populate-prefix/src/glfw-populate-stamp/glfw-populate-configure	dd7c4287fc06a4cd
+263	337	7917001178046482	C:/Users/erica/OneDrive/Documents/_Acads/gdgrapGIT/thirdparty/glfw-subbuild/glfw-populate-prefix/src/glfw-populate-stamp/glfw-populate-configure	dd7c4287fc06a4cd
+337	413	7917001178804288	glfw-populate-prefix/src/glfw-populate-stamp/glfw-populate-build	9092bd98a882f83b
+337	413	7917001178804288	C:/Users/erica/OneDrive/Documents/_Acads/gdgrapGIT/thirdparty/glfw-subbuild/glfw-populate-prefix/src/glfw-populate-stamp/glfw-populate-build	9092bd98a882f83b
+414	489	7917001179584982	glfw-populate-prefix/src/glfw-populate-stamp/glfw-populate-install	f6585a7697f7e03f
+414	489	7917001179584982	C:/Users/erica/OneDrive/Documents/_Acads/gdgrapGIT/thirdparty/glfw-subbuild/glfw-populate-prefix/src/glfw-populate-stamp/glfw-populate-install	f6585a7697f7e03f
+490	564	7917001180322999	glfw-populate-prefix/src/glfw-populate-stamp/glfw-populate-test	889d8c53ec66da0
+490	564	7917001180322999	C:/Users/erica/OneDrive/Documents/_Acads/gdgrapGIT/thirdparty/glfw-subbuild/glfw-populate-prefix/src/glfw-populate-stamp/glfw-populate-test	889d8c53ec66da0
+564	666	7917001181334169	CMakeFiles/glfw-populate-complete	27e434fb85f994a4
+564	666	7917001181334169	glfw-populate-prefix/src/glfw-populate-stamp/glfw-populate-done	27e434fb85f994a4
+564	666	7917001181334169	C:/Users/erica/OneDrive/Documents/_Acads/gdgrapGIT/thirdparty/glfw-subbuild/CMakeFiles/glfw-populate-complete	27e434fb85f994a4
+564	666	7917001181334169	C:/Users/erica/OneDrive/Documents/_Acads/gdgrapGIT/thirdparty/glfw-subbuild/glfw-populate-prefix/src/glfw-populate-stamp/glfw-populate-done	27e434fb85f994a4

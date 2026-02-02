@@ -1,9 +1,9 @@
 
-if (NOT EXISTS "C:/Users/Erica Barundia/source/repos/CMake-GDGRAP1/thirdparty/glfw-build/install_manifest.txt")
-    message(FATAL_ERROR "Cannot find install manifest: \"C:/Users/Erica Barundia/source/repos/CMake-GDGRAP1/thirdparty/glfw-build/install_manifest.txt\"")
+if (NOT EXISTS "C:/Users/erica/OneDrive/Documents/_Acads/gdgrapGIT/thirdparty/glfw-build/install_manifest.txt")
+    message(FATAL_ERROR "Cannot find install manifest: \"C:/Users/erica/OneDrive/Documents/_Acads/gdgrapGIT/thirdparty/glfw-build/install_manifest.txt\"")
 endif()
 
-file(READ "C:/Users/Erica Barundia/source/repos/CMake-GDGRAP1/thirdparty/glfw-build/install_manifest.txt" files)
+file(READ "C:/Users/erica/OneDrive/Documents/_Acads/gdgrapGIT/thirdparty/glfw-build/install_manifest.txt" files)
 string(REGEX REPLACE "\n" ";" files "${files}")
 
 foreach (file ${files})

@@ -1,8 +1,8 @@
-# Install script for directory: C:/Users/Erica Barundia/source/repos/CMake-GDGRAP1/thirdparty/glfw-src/src
+# Install script for directory: C:/Users/erica/OneDrive/Documents/_Acads/gdgrapGIT/thirdparty/glfw-src/src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "C:/Users/Erica Barundia/source/repos/CMake-GDGRAP1/out/install/x64-debug")
+  set(CMAKE_INSTALL_PREFIX "C:/Users/erica/OneDrive/Documents/_Acads/gdgrapGIT/out/install/x64-debug")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -33,12 +33,12 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "C:/Users/Erica Barundia/source/repos/CMake-GDGRAP1/thirdparty/glfw-build/src/glfw3.lib")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "C:/Users/erica/OneDrive/Documents/_Acads/gdgrapGIT/thirdparty/glfw-build/src/glfw3.lib")
 endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
 if(CMAKE_INSTALL_LOCAL_ONLY)
-  file(WRITE "C:/Users/Erica Barundia/source/repos/CMake-GDGRAP1/thirdparty/glfw-build/src/install_local_manifest.txt"
+  file(WRITE "C:/Users/erica/OneDrive/Documents/_Acads/gdgrapGIT/thirdparty/glfw-build/src/install_local_manifest.txt"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
 endif()

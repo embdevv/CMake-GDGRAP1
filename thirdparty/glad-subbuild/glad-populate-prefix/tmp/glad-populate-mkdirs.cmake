@@ -6,22 +6,22 @@ cmake_minimum_required(VERSION ${CMAKE_VERSION}) # this file comes with cmake
 # If CMAKE_DISABLE_SOURCE_CHANGES is set to true and the source directory is an
 # existing directory in our source tree, calling file(MAKE_DIRECTORY) on it
 # would cause a fatal error, even though it would be a no-op.
-if(NOT EXISTS "C:/Users/Erica Barundia/source/repos/CMake-GDGRAP1/thirdparty/glad-src")
-  file(MAKE_DIRECTORY "C:/Users/Erica Barundia/source/repos/CMake-GDGRAP1/thirdparty/glad-src")
+if(NOT EXISTS "C:/Users/erica/OneDrive/Documents/_Acads/gdgrapGIT/thirdparty/glad-src")
+  file(MAKE_DIRECTORY "C:/Users/erica/OneDrive/Documents/_Acads/gdgrapGIT/thirdparty/glad-src")
 endif()
 file(MAKE_DIRECTORY
-  "C:/Users/Erica Barundia/source/repos/CMake-GDGRAP1/thirdparty/glad-build"
-  "C:/Users/Erica Barundia/source/repos/CMake-GDGRAP1/thirdparty/glad-subbuild/glad-populate-prefix"
-  "C:/Users/Erica Barundia/source/repos/CMake-GDGRAP1/thirdparty/glad-subbuild/glad-populate-prefix/tmp"
-  "C:/Users/Erica Barundia/source/repos/CMake-GDGRAP1/thirdparty/glad-subbuild/glad-populate-prefix/src/glad-populate-stamp"
-  "C:/Users/Erica Barundia/source/repos/CMake-GDGRAP1/thirdparty/glad-subbuild/glad-populate-prefix/src"
-  "C:/Users/Erica Barundia/source/repos/CMake-GDGRAP1/thirdparty/glad-subbuild/glad-populate-prefix/src/glad-populate-stamp"
+  "C:/Users/erica/OneDrive/Documents/_Acads/gdgrapGIT/thirdparty/glad-build"
+  "C:/Users/erica/OneDrive/Documents/_Acads/gdgrapGIT/thirdparty/glad-subbuild/glad-populate-prefix"
+  "C:/Users/erica/OneDrive/Documents/_Acads/gdgrapGIT/thirdparty/glad-subbuild/glad-populate-prefix/tmp"
+  "C:/Users/erica/OneDrive/Documents/_Acads/gdgrapGIT/thirdparty/glad-subbuild/glad-populate-prefix/src/glad-populate-stamp"
+  "C:/Users/erica/OneDrive/Documents/_Acads/gdgrapGIT/thirdparty/glad-subbuild/glad-populate-prefix/src"
+  "C:/Users/erica/OneDrive/Documents/_Acads/gdgrapGIT/thirdparty/glad-subbuild/glad-populate-prefix/src/glad-populate-stamp"
 )
 
 set(configSubDirs )
 foreach(subDir IN LISTS configSubDirs)
-    file(MAKE_DIRECTORY "C:/Users/Erica Barundia/source/repos/CMake-GDGRAP1/thirdparty/glad-subbuild/glad-populate-prefix/src/glad-populate-stamp/${subDir}")
+    file(MAKE_DIRECTORY "C:/Users/erica/OneDrive/Documents/_Acads/gdgrapGIT/thirdparty/glad-subbuild/glad-populate-prefix/src/glad-populate-stamp/${subDir}")
 endforeach()
 if(cfgdir)
-  file(MAKE_DIRECTORY "C:/Users/Erica Barundia/source/repos/CMake-GDGRAP1/thirdparty/glad-subbuild/glad-populate-prefix/src/glad-populate-stamp${cfgdir}") # cfgdir has leading slash
+  file(MAKE_DIRECTORY "C:/Users/erica/OneDrive/Documents/_Acads/gdgrapGIT/thirdparty/glad-subbuild/glad-populate-prefix/src/glad-populate-stamp${cfgdir}") # cfgdir has leading slash
 endif()

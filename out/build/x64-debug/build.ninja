@@ -39,7 +39,7 @@ include CMakeFiles\rules.ninja
 #############################################
 # Logical path to working directory; prefix for absolute paths.
 
-cmake_ninja_workdir = C$:\Users\Erica$ Barundia\source\repos\CMake-GDGRAP1\out\build\x64-debug\
+cmake_ninja_workdir = C$:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\out\build\x64-debug\
 # =============================================================================
 # Object build statements for STATIC_LIBRARY target glad_gl_core_46
 
@@ -49,9 +49,9 @@ cmake_ninja_workdir = C$:\Users\Erica$ Barundia\source\repos\CMake-GDGRAP1\out\b
 
 build cmake_object_order_depends_target_glad_gl_core_46: phony || gladsources\glad_gl_core_46\args.txt gladsources\glad_gl_core_46\include\KHR\khrplatform.h gladsources\glad_gl_core_46\include\glad\gl.h gladsources\glad_gl_core_46\src\gl.c
 
-build CMakeFiles\glad_gl_core_46.dir\gladsources\glad_gl_core_46\src\gl.c.obj: C_COMPILER__glad_gl_core_46_unscanned_Debug C$:\Users\Erica$ Barundia\source\repos\CMake-GDGRAP1\out\build\x64-debug\gladsources\glad_gl_core_46\src\gl.c || cmake_object_order_depends_target_glad_gl_core_46
+build CMakeFiles\glad_gl_core_46.dir\gladsources\glad_gl_core_46\src\gl.c.obj: C_COMPILER__glad_gl_core_46_unscanned_Debug C$:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\out\build\x64-debug\gladsources\glad_gl_core_46\src\gl.c || cmake_object_order_depends_target_glad_gl_core_46
   FLAGS = /DWIN32 /D_WINDOWS /W3 /MDd /Ob0 /Od /RTC1 -ZI
-  INCLUDES = -I"C:\Users\Erica Barundia\source\repos\CMake-GDGRAP1\out\build\x64-debug\gladsources\glad_gl_core_46\include"
+  INCLUDES = -IC:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\out\build\x64-debug\gladsources\glad_gl_core_46\include
   OBJECT_DIR = CMakeFiles\glad_gl_core_46.dir
   OBJECT_FILE_DIR = CMakeFiles\glad_gl_core_46.dir\gladsources\glad_gl_core_46\src
   TARGET_COMPILE_PDB = CMakeFiles\glad_gl_core_46.dir\glad_gl_core_46.pdb
@@ -84,9 +84,9 @@ build glad_gl_core_46.lib: C_STATIC_LIBRARY_LINKER__glad_gl_core_46_Debug CMakeF
 
 build cmake_object_order_depends_target_CMakeProjectGRAP1: phony || cmake_object_order_depends_target_glad_gl_core_46 cmake_object_order_depends_target_glfw cmake_object_order_depends_target_glm
 
-build CMakeFiles\CMakeProjectGRAP1.dir\CMakeProjectGRAP1.cpp.obj: CXX_COMPILER__CMakeProjectGRAP1_unscanned_Debug C$:\Users\Erica$ Barundia\source\repos\CMake-GDGRAP1\CMakeProjectGRAP1.cpp || cmake_object_order_depends_target_CMakeProjectGRAP1
+build CMakeFiles\CMakeProjectGRAP1.dir\CMakeProjectGRAP1.cpp.obj: CXX_COMPILER__CMakeProjectGRAP1_unscanned_Debug C$:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\CMakeProjectGRAP1.cpp || cmake_object_order_depends_target_CMakeProjectGRAP1
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Ob0 /Od /RTC1 -std:c++20 -ZI
-  INCLUDES = -I"C:\Users\Erica Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-src\include" -I"C:\Users\Erica Barundia\source\repos\CMake-GDGRAP1\out\build\x64-debug\gladsources\glad_gl_core_46\include" -I"C:\Users\Erica Barundia\source\repos\CMake-GDGRAP1\thirdparty\glm-src"
+  INCLUDES = -IC:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-src\include -IC:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\out\build\x64-debug\gladsources\glad_gl_core_46\include -IC:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glm-src
   OBJECT_DIR = CMakeFiles\CMakeProjectGRAP1.dir
   OBJECT_FILE_DIR = CMakeFiles\CMakeProjectGRAP1.dir
   TARGET_COMPILE_PDB = CMakeFiles\CMakeProjectGRAP1.dir\
@@ -100,12 +100,12 @@ build CMakeFiles\CMakeProjectGRAP1.dir\CMakeProjectGRAP1.cpp.obj: CXX_COMPILER__
 #############################################
 # Link the executable CMakeProjectGRAP1.exe
 
-build CMakeProjectGRAP1.exe: CXX_EXECUTABLE_LINKER__CMakeProjectGRAP1_Debug CMakeFiles\CMakeProjectGRAP1.dir\CMakeProjectGRAP1.cpp.obj | C$:\Users\Erica$ Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-build\src\glfw3.lib glad_gl_core_46.lib C$:\Users\Erica$ Barundia\source\repos\CMake-GDGRAP1\thirdparty\glm-build\glm\glm.lib || C$:\Users\Erica$ Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-build\src\glfw3.lib C$:\Users\Erica$ Barundia\source\repos\CMake-GDGRAP1\thirdparty\glm-build\glm\glm.lib glad_gl_core_46.lib
+build CMakeProjectGRAP1.exe: CXX_EXECUTABLE_LINKER__CMakeProjectGRAP1_Debug CMakeFiles\CMakeProjectGRAP1.dir\CMakeProjectGRAP1.cpp.obj | C$:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-build\src\glfw3.lib glad_gl_core_46.lib C$:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glm-build\glm\glm.lib || C$:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-build\src\glfw3.lib C$:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glm-build\glm\glm.lib glad_gl_core_46.lib
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Ob0 /Od /RTC1 -ZI
   LINK_FLAGS = /machine:x64 /debug /INCREMENTAL /subsystem:console
-  LINK_LIBRARIES = "C:\Users\Erica Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-build\src\glfw3.lib"  opengl32.lib  glad_gl_core_46.lib  "C:\Users\Erica Barundia\source\repos\CMake-GDGRAP1\thirdparty\glm-build\glm\glm.lib"  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
+  LINK_LIBRARIES = C:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-build\src\glfw3.lib  opengl32.lib  glad_gl_core_46.lib  C:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glm-build\glm\glm.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
   OBJECT_DIR = CMakeFiles\CMakeProjectGRAP1.dir
-  POST_BUILD = C:\WINDOWS\system32\cmd.exe /C "cd /D "C:\Users\Erica Barundia\source\repos\CMake-GDGRAP1\out\build\x64-debug" && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E copy_directory "C:/Users/Erica Barundia/source/repos/CMake-GDGRAP1/3D" "C:/Users/Erica Barundia/source/repos/CMake-GDGRAP1/out/build/x64-debug/3D" && cd /D "C:\Users\Erica Barundia\source\repos\CMake-GDGRAP1\out\build\x64-debug" && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E copy_directory "C:/Users/Erica Barundia/source/repos/CMake-GDGRAP1/Shaders" "C:/Users/Erica Barundia/source/repos/CMake-GDGRAP1/out/build/x64-debug/Shaders""
+  POST_BUILD = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\out\build\x64-debug && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E copy_directory C:/Users/erica/OneDrive/Documents/_Acads/gdgrapGIT/3D C:/Users/erica/OneDrive/Documents/_Acads/gdgrapGIT/out/build/x64-debug/3D && cd /D C:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\out\build\x64-debug && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E copy_directory C:/Users/erica/OneDrive/Documents/_Acads/gdgrapGIT/Shaders C:/Users/erica/OneDrive/Documents/_Acads/gdgrapGIT/out/build/x64-debug/Shaders"
   PRE_LINK = cd .
   TARGET_COMPILE_PDB = CMakeFiles\CMakeProjectGRAP1.dir\
   TARGET_FILE = CMakeProjectGRAP1.exe
@@ -117,7 +117,7 @@ build CMakeProjectGRAP1.exe: CXX_EXECUTABLE_LINKER__CMakeProjectGRAP1_Debug CMak
 # Utility command for edit_cache
 
 build CMakeFiles\edit_cache.util: CUSTOM_COMMAND
-  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D "C:\Users\Erica Barundia\source\repos\CMake-GDGRAP1\out\build\x64-debug" && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\out\build\x64-debug && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -128,7 +128,7 @@ build edit_cache: phony CMakeFiles\edit_cache.util
 # Utility command for rebuild_cache
 
 build CMakeFiles\rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D "C:\Users\Erica Barundia\source\repos\CMake-GDGRAP1\out\build\x64-debug" && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" --regenerate-during-build -S"C:\Users\Erica Barundia\source\repos\CMake-GDGRAP1" -B"C:\Users\Erica Barundia\source\repos\CMake-GDGRAP1\out\build\x64-debug""
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\out\build\x64-debug && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" --regenerate-during-build -SC:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT -BC:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\out\build\x64-debug"
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -146,7 +146,7 @@ build list_install_components: phony
 # Utility command for install
 
 build CMakeFiles\install.util: CUSTOM_COMMAND all
-  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D "C:\Users\Erica Barundia\source\repos\CMake-GDGRAP1\out\build\x64-debug" && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -P cmake_install.cmake"
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\out\build\x64-debug && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -P cmake_install.cmake"
   DESC = Install the project...
   pool = console
   restat = 1
@@ -158,7 +158,7 @@ build install: phony CMakeFiles\install.util
 # Utility command for install/local
 
 build CMakeFiles\install\local.util: CUSTOM_COMMAND all
-  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D "C:\Users\Erica Barundia\source\repos\CMake-GDGRAP1\out\build\x64-debug" && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\out\build\x64-debug && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
   DESC = Installing only the local directory...
   pool = console
   restat = 1
@@ -170,85 +170,85 @@ build install\local: phony CMakeFiles\install\local.util
 # Custom command for gladsources\glad_gl_core_46\include\KHR\khrplatform.h
 
 build gladsources\glad_gl_core_46\include\KHR\khrplatform.h gladsources\glad_gl_core_46\include\glad\gl.h gladsources\glad_gl_core_46\src\gl.c gladsources\glad_gl_core_46\args.txt | ${cmake_ninja_workdir}gladsources\glad_gl_core_46\include\KHR\khrplatform.h ${cmake_ninja_workdir}gladsources\glad_gl_core_46\include\glad\gl.h ${cmake_ninja_workdir}gladsources\glad_gl_core_46\src\gl.c ${cmake_ninja_workdir}gladsources\glad_gl_core_46\args.txt: CUSTOM_COMMAND
-  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D "C:\Users\Erica Barundia\source\repos\CMake-GDGRAP1\thirdparty\glad-src" && echo Cleaning "C:/Users/Erica Barundia/source/repos/CMake-GDGRAP1/out/build/x64-debug/gladsources/glad_gl_core_46" && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E remove_directory "C:/Users/Erica Barundia/source/repos/CMake-GDGRAP1/out/build/x64-debug/gladsources/glad_gl_core_46" && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E make_directory "C:/Users/Erica Barundia/source/repos/CMake-GDGRAP1/out/build/x64-debug/gladsources/glad_gl_core_46" && echo Generating with args --out-path "C:/Users/Erica Barundia/source/repos/CMake-GDGRAP1/out/build/x64-debug/gladsources/glad_gl_core_46" --api gl:core=4.6 --reproducible c --loader && "C:\Users\Erica Barundia\AppData\Local\Python\pythoncore-3.14-64\python.exe" -m glad --out-path "C:/Users/Erica Barundia/source/repos/CMake-GDGRAP1/out/build/x64-debug/gladsources/glad_gl_core_46" --api gl:core=4.6 --reproducible c --loader && echo Writing "C:/Users/Erica Barundia/source/repos/CMake-GDGRAP1/out/build/x64-debug/gladsources/glad_gl_core_46/args.txt" && echo --out-path "C:/Users/Erica Barundia/source/repos/CMake-GDGRAP1/out/build/x64-debug/gladsources/glad_gl_core_46" --api gl:core=4.6 --reproducible c --loader > "C:/Users/Erica Barundia/source/repos/CMake-GDGRAP1/out/build/x64-debug/gladsources/glad_gl_core_46/args.txt""
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glad-src && echo Cleaning C:/Users/erica/OneDrive/Documents/_Acads/gdgrapGIT/out/build/x64-debug/gladsources/glad_gl_core_46 && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E remove_directory C:/Users/erica/OneDrive/Documents/_Acads/gdgrapGIT/out/build/x64-debug/gladsources/glad_gl_core_46 && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E make_directory C:/Users/erica/OneDrive/Documents/_Acads/gdgrapGIT/out/build/x64-debug/gladsources/glad_gl_core_46 && echo Generating with args --out-path C:/Users/erica/OneDrive/Documents/_Acads/gdgrapGIT/out/build/x64-debug/gladsources/glad_gl_core_46 --api gl:core=4.6 --reproducible c --loader && C:\Users\erica\AppData\Local\Programs\Python\Python313\python.exe -m glad --out-path C:/Users/erica/OneDrive/Documents/_Acads/gdgrapGIT/out/build/x64-debug/gladsources/glad_gl_core_46 --api gl:core=4.6 --reproducible c --loader && echo Writing C:/Users/erica/OneDrive/Documents/_Acads/gdgrapGIT/out/build/x64-debug/gladsources/glad_gl_core_46/args.txt && echo --out-path C:/Users/erica/OneDrive/Documents/_Acads/gdgrapGIT/out/build/x64-debug/gladsources/glad_gl_core_46 --api gl:core=4.6 --reproducible c --loader > C:/Users/erica/OneDrive/Documents/_Acads/gdgrapGIT/out/build/x64-debug/gladsources/glad_gl_core_46/args.txt"
   DESC = glad_gl_core_46-generate
   pool = console
   restat = 1
 
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
-# C:/Users/Erica Barundia/source/repos/CMake-GDGRAP1/CMakeLists.txt
+# C:/Users/erica/OneDrive/Documents/_Acads/gdgrapGIT/CMakeLists.txt
 # =============================================================================
 
 
 #############################################
 # Utility command for uninstall
 
-build C$:\Users\Erica$ Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-build\uninstall: phony C$:\Users\Erica$ Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-build\CMakeFiles\uninstall
+build C$:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-build\uninstall: phony C$:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-build\CMakeFiles\uninstall
 
 
 #############################################
 # Utility command for edit_cache
 
-build C$:\Users\Erica$ Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-build\CMakeFiles\edit_cache.util: CUSTOM_COMMAND
-  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D "C:\Users\Erica Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-build" && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+build C$:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-build\CMakeFiles\edit_cache.util: CUSTOM_COMMAND
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-build && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
   DESC = No interactive CMake dialog available...
   restat = 1
 
-build C$:\Users\Erica$ Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-build\edit_cache: phony C$:\Users\Erica$ Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-build\CMakeFiles\edit_cache.util
+build C$:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-build\edit_cache: phony C$:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-build\CMakeFiles\edit_cache.util
 
 
 #############################################
 # Utility command for rebuild_cache
 
-build C$:\Users\Erica$ Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-build\CMakeFiles\rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D "C:\Users\Erica Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-build" && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" --regenerate-during-build -S"C:\Users\Erica Barundia\source\repos\CMake-GDGRAP1" -B"C:\Users\Erica Barundia\source\repos\CMake-GDGRAP1\out\build\x64-debug""
+build C$:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-build\CMakeFiles\rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-build && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" --regenerate-during-build -SC:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT -BC:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\out\build\x64-debug"
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
 
-build C$:\Users\Erica$ Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-build\rebuild_cache: phony C$:\Users\Erica$ Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-build\CMakeFiles\rebuild_cache.util
+build C$:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-build\rebuild_cache: phony C$:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-build\CMakeFiles\rebuild_cache.util
 
 
 #############################################
 # Utility command for list_install_components
 
-build C$:\Users\Erica$ Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-build\list_install_components: phony
+build C$:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-build\list_install_components: phony
 
 
 #############################################
 # Utility command for install
 
-build C$:\Users\Erica$ Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-build\CMakeFiles\install.util: CUSTOM_COMMAND C$:\Users\Erica$ Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-build\all
-  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D "C:\Users\Erica Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-build" && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -P cmake_install.cmake"
+build C$:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-build\CMakeFiles\install.util: CUSTOM_COMMAND C$:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-build\all
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-build && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -P cmake_install.cmake"
   DESC = Install the project...
   pool = console
   restat = 1
 
-build C$:\Users\Erica$ Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-build\install: phony C$:\Users\Erica$ Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-build\CMakeFiles\install.util
+build C$:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-build\install: phony C$:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-build\CMakeFiles\install.util
 
 
 #############################################
 # Utility command for install/local
 
-build C$:\Users\Erica$ Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-build\CMakeFiles\install\local.util: CUSTOM_COMMAND C$:\Users\Erica$ Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-build\all
-  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D "C:\Users\Erica Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-build" && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
+build C$:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-build\CMakeFiles\install\local.util: CUSTOM_COMMAND C$:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-build\all
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-build && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
   DESC = Installing only the local directory...
   pool = console
   restat = 1
 
-build C$:\Users\Erica$ Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-build\install\local: phony C$:\Users\Erica$ Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-build\CMakeFiles\install\local.util
+build C$:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-build\install\local: phony C$:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-build\CMakeFiles\install\local.util
 
 
 #############################################
-# Custom command for C:\Users\Erica Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-build\CMakeFiles\uninstall
+# Custom command for C:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-build\CMakeFiles\uninstall
 
-build C$:\Users\Erica$ Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-build\CMakeFiles\uninstall: CUSTOM_COMMAND
-  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D "C:\Users\Erica Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-build" && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -P "C:/Users/Erica Barundia/source/repos/CMake-GDGRAP1/thirdparty/glfw-build/cmake_uninstall.cmake""
+build C$:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-build\CMakeFiles\uninstall: CUSTOM_COMMAND
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-build && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -P C:/Users/erica/OneDrive/Documents/_Acads/gdgrapGIT/thirdparty/glfw-build/cmake_uninstall.cmake"
 
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
-# C:/Users/Erica Barundia/source/repos/CMake-GDGRAP1/thirdparty/glfw-src/CMakeLists.txt
+# C:/Users/erica/OneDrive/Documents/_Acads/gdgrapGIT/thirdparty/glfw-src/CMakeLists.txt
 # =============================================================================
 
 # =============================================================================
@@ -260,194 +260,194 @@ build C$:\Users\Erica$ Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-build
 
 build cmake_object_order_depends_target_glfw: phony || .
 
-build C$:\Users\Erica$ Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-build\src\CMakeFiles\glfw.dir\context.c.obj: C_COMPILER__glfw_unscanned_Debug C$:\Users\Erica$ Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-src\src\context.c || cmake_object_order_depends_target_glfw
+build C$:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-build\src\CMakeFiles\glfw.dir\context.c.obj: C_COMPILER__glfw_unscanned_Debug C$:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-src\src\context.c || cmake_object_order_depends_target_glfw
   DEFINES = -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
   FLAGS = /DWIN32 /D_WINDOWS /W3 /MDd /Ob0 /Od /RTC1 -ZI /W3
-  INCLUDES = -I"C:\Users\Erica Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-src\include" -I"C:\Users\Erica Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-src\src" -I"C:\Users\Erica Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-build\src"
-  OBJECT_DIR = "C:\Users\Erica Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-build\src\CMakeFiles\glfw.dir"
-  OBJECT_FILE_DIR = "C:\Users\Erica Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-build\src\CMakeFiles\glfw.dir"
-  TARGET_COMPILE_PDB = "C:\Users\Erica Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-build\src\CMakeFiles\glfw.dir\glfw.pdb"
-  TARGET_PDB = "C:\Users\Erica Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-build\src\glfw3.pdb"
+  INCLUDES = -IC:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-src\include -IC:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-src\src -IC:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-build\src
+  OBJECT_DIR = C:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-build\src\CMakeFiles\glfw.dir
+  OBJECT_FILE_DIR = C:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-build\src\CMakeFiles\glfw.dir
+  TARGET_COMPILE_PDB = C:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-build\src\CMakeFiles\glfw.dir\glfw.pdb
+  TARGET_PDB = C:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-build\src\glfw3.pdb
 
-build C$:\Users\Erica$ Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-build\src\CMakeFiles\glfw.dir\init.c.obj: C_COMPILER__glfw_unscanned_Debug C$:\Users\Erica$ Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-src\src\init.c || cmake_object_order_depends_target_glfw
+build C$:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-build\src\CMakeFiles\glfw.dir\init.c.obj: C_COMPILER__glfw_unscanned_Debug C$:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-src\src\init.c || cmake_object_order_depends_target_glfw
   DEFINES = -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
   FLAGS = /DWIN32 /D_WINDOWS /W3 /MDd /Ob0 /Od /RTC1 -ZI /W3
-  INCLUDES = -I"C:\Users\Erica Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-src\include" -I"C:\Users\Erica Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-src\src" -I"C:\Users\Erica Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-build\src"
-  OBJECT_DIR = "C:\Users\Erica Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-build\src\CMakeFiles\glfw.dir"
-  OBJECT_FILE_DIR = "C:\Users\Erica Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-build\src\CMakeFiles\glfw.dir"
-  TARGET_COMPILE_PDB = "C:\Users\Erica Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-build\src\CMakeFiles\glfw.dir\glfw.pdb"
-  TARGET_PDB = "C:\Users\Erica Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-build\src\glfw3.pdb"
+  INCLUDES = -IC:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-src\include -IC:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-src\src -IC:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-build\src
+  OBJECT_DIR = C:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-build\src\CMakeFiles\glfw.dir
+  OBJECT_FILE_DIR = C:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-build\src\CMakeFiles\glfw.dir
+  TARGET_COMPILE_PDB = C:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-build\src\CMakeFiles\glfw.dir\glfw.pdb
+  TARGET_PDB = C:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-build\src\glfw3.pdb
 
-build C$:\Users\Erica$ Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-build\src\CMakeFiles\glfw.dir\input.c.obj: C_COMPILER__glfw_unscanned_Debug C$:\Users\Erica$ Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-src\src\input.c || cmake_object_order_depends_target_glfw
+build C$:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-build\src\CMakeFiles\glfw.dir\input.c.obj: C_COMPILER__glfw_unscanned_Debug C$:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-src\src\input.c || cmake_object_order_depends_target_glfw
   DEFINES = -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
   FLAGS = /DWIN32 /D_WINDOWS /W3 /MDd /Ob0 /Od /RTC1 -ZI /W3
-  INCLUDES = -I"C:\Users\Erica Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-src\include" -I"C:\Users\Erica Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-src\src" -I"C:\Users\Erica Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-build\src"
-  OBJECT_DIR = "C:\Users\Erica Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-build\src\CMakeFiles\glfw.dir"
-  OBJECT_FILE_DIR = "C:\Users\Erica Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-build\src\CMakeFiles\glfw.dir"
-  TARGET_COMPILE_PDB = "C:\Users\Erica Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-build\src\CMakeFiles\glfw.dir\glfw.pdb"
-  TARGET_PDB = "C:\Users\Erica Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-build\src\glfw3.pdb"
+  INCLUDES = -IC:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-src\include -IC:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-src\src -IC:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-build\src
+  OBJECT_DIR = C:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-build\src\CMakeFiles\glfw.dir
+  OBJECT_FILE_DIR = C:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-build\src\CMakeFiles\glfw.dir
+  TARGET_COMPILE_PDB = C:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-build\src\CMakeFiles\glfw.dir\glfw.pdb
+  TARGET_PDB = C:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-build\src\glfw3.pdb
 
-build C$:\Users\Erica$ Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-build\src\CMakeFiles\glfw.dir\monitor.c.obj: C_COMPILER__glfw_unscanned_Debug C$:\Users\Erica$ Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-src\src\monitor.c || cmake_object_order_depends_target_glfw
+build C$:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-build\src\CMakeFiles\glfw.dir\monitor.c.obj: C_COMPILER__glfw_unscanned_Debug C$:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-src\src\monitor.c || cmake_object_order_depends_target_glfw
   DEFINES = -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
   FLAGS = /DWIN32 /D_WINDOWS /W3 /MDd /Ob0 /Od /RTC1 -ZI /W3
-  INCLUDES = -I"C:\Users\Erica Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-src\include" -I"C:\Users\Erica Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-src\src" -I"C:\Users\Erica Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-build\src"
-  OBJECT_DIR = "C:\Users\Erica Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-build\src\CMakeFiles\glfw.dir"
-  OBJECT_FILE_DIR = "C:\Users\Erica Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-build\src\CMakeFiles\glfw.dir"
-  TARGET_COMPILE_PDB = "C:\Users\Erica Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-build\src\CMakeFiles\glfw.dir\glfw.pdb"
-  TARGET_PDB = "C:\Users\Erica Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-build\src\glfw3.pdb"
+  INCLUDES = -IC:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-src\include -IC:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-src\src -IC:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-build\src
+  OBJECT_DIR = C:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-build\src\CMakeFiles\glfw.dir
+  OBJECT_FILE_DIR = C:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-build\src\CMakeFiles\glfw.dir
+  TARGET_COMPILE_PDB = C:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-build\src\CMakeFiles\glfw.dir\glfw.pdb
+  TARGET_PDB = C:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-build\src\glfw3.pdb
 
-build C$:\Users\Erica$ Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-build\src\CMakeFiles\glfw.dir\platform.c.obj: C_COMPILER__glfw_unscanned_Debug C$:\Users\Erica$ Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-src\src\platform.c || cmake_object_order_depends_target_glfw
+build C$:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-build\src\CMakeFiles\glfw.dir\platform.c.obj: C_COMPILER__glfw_unscanned_Debug C$:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-src\src\platform.c || cmake_object_order_depends_target_glfw
   DEFINES = -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
   FLAGS = /DWIN32 /D_WINDOWS /W3 /MDd /Ob0 /Od /RTC1 -ZI /W3
-  INCLUDES = -I"C:\Users\Erica Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-src\include" -I"C:\Users\Erica Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-src\src" -I"C:\Users\Erica Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-build\src"
-  OBJECT_DIR = "C:\Users\Erica Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-build\src\CMakeFiles\glfw.dir"
-  OBJECT_FILE_DIR = "C:\Users\Erica Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-build\src\CMakeFiles\glfw.dir"
-  TARGET_COMPILE_PDB = "C:\Users\Erica Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-build\src\CMakeFiles\glfw.dir\glfw.pdb"
-  TARGET_PDB = "C:\Users\Erica Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-build\src\glfw3.pdb"
+  INCLUDES = -IC:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-src\include -IC:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-src\src -IC:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-build\src
+  OBJECT_DIR = C:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-build\src\CMakeFiles\glfw.dir
+  OBJECT_FILE_DIR = C:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-build\src\CMakeFiles\glfw.dir
+  TARGET_COMPILE_PDB = C:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-build\src\CMakeFiles\glfw.dir\glfw.pdb
+  TARGET_PDB = C:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-build\src\glfw3.pdb
 
-build C$:\Users\Erica$ Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-build\src\CMakeFiles\glfw.dir\vulkan.c.obj: C_COMPILER__glfw_unscanned_Debug C$:\Users\Erica$ Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-src\src\vulkan.c || cmake_object_order_depends_target_glfw
+build C$:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-build\src\CMakeFiles\glfw.dir\vulkan.c.obj: C_COMPILER__glfw_unscanned_Debug C$:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-src\src\vulkan.c || cmake_object_order_depends_target_glfw
   DEFINES = -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
   FLAGS = /DWIN32 /D_WINDOWS /W3 /MDd /Ob0 /Od /RTC1 -ZI /W3
-  INCLUDES = -I"C:\Users\Erica Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-src\include" -I"C:\Users\Erica Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-src\src" -I"C:\Users\Erica Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-build\src"
-  OBJECT_DIR = "C:\Users\Erica Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-build\src\CMakeFiles\glfw.dir"
-  OBJECT_FILE_DIR = "C:\Users\Erica Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-build\src\CMakeFiles\glfw.dir"
-  TARGET_COMPILE_PDB = "C:\Users\Erica Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-build\src\CMakeFiles\glfw.dir\glfw.pdb"
-  TARGET_PDB = "C:\Users\Erica Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-build\src\glfw3.pdb"
+  INCLUDES = -IC:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-src\include -IC:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-src\src -IC:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-build\src
+  OBJECT_DIR = C:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-build\src\CMakeFiles\glfw.dir
+  OBJECT_FILE_DIR = C:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-build\src\CMakeFiles\glfw.dir
+  TARGET_COMPILE_PDB = C:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-build\src\CMakeFiles\glfw.dir\glfw.pdb
+  TARGET_PDB = C:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-build\src\glfw3.pdb
 
-build C$:\Users\Erica$ Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-build\src\CMakeFiles\glfw.dir\window.c.obj: C_COMPILER__glfw_unscanned_Debug C$:\Users\Erica$ Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-src\src\window.c || cmake_object_order_depends_target_glfw
+build C$:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-build\src\CMakeFiles\glfw.dir\window.c.obj: C_COMPILER__glfw_unscanned_Debug C$:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-src\src\window.c || cmake_object_order_depends_target_glfw
   DEFINES = -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
   FLAGS = /DWIN32 /D_WINDOWS /W3 /MDd /Ob0 /Od /RTC1 -ZI /W3
-  INCLUDES = -I"C:\Users\Erica Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-src\include" -I"C:\Users\Erica Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-src\src" -I"C:\Users\Erica Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-build\src"
-  OBJECT_DIR = "C:\Users\Erica Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-build\src\CMakeFiles\glfw.dir"
-  OBJECT_FILE_DIR = "C:\Users\Erica Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-build\src\CMakeFiles\glfw.dir"
-  TARGET_COMPILE_PDB = "C:\Users\Erica Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-build\src\CMakeFiles\glfw.dir\glfw.pdb"
-  TARGET_PDB = "C:\Users\Erica Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-build\src\glfw3.pdb"
+  INCLUDES = -IC:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-src\include -IC:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-src\src -IC:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-build\src
+  OBJECT_DIR = C:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-build\src\CMakeFiles\glfw.dir
+  OBJECT_FILE_DIR = C:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-build\src\CMakeFiles\glfw.dir
+  TARGET_COMPILE_PDB = C:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-build\src\CMakeFiles\glfw.dir\glfw.pdb
+  TARGET_PDB = C:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-build\src\glfw3.pdb
 
-build C$:\Users\Erica$ Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-build\src\CMakeFiles\glfw.dir\egl_context.c.obj: C_COMPILER__glfw_unscanned_Debug C$:\Users\Erica$ Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-src\src\egl_context.c || cmake_object_order_depends_target_glfw
+build C$:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-build\src\CMakeFiles\glfw.dir\egl_context.c.obj: C_COMPILER__glfw_unscanned_Debug C$:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-src\src\egl_context.c || cmake_object_order_depends_target_glfw
   DEFINES = -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
   FLAGS = /DWIN32 /D_WINDOWS /W3 /MDd /Ob0 /Od /RTC1 -ZI /W3
-  INCLUDES = -I"C:\Users\Erica Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-src\include" -I"C:\Users\Erica Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-src\src" -I"C:\Users\Erica Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-build\src"
-  OBJECT_DIR = "C:\Users\Erica Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-build\src\CMakeFiles\glfw.dir"
-  OBJECT_FILE_DIR = "C:\Users\Erica Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-build\src\CMakeFiles\glfw.dir"
-  TARGET_COMPILE_PDB = "C:\Users\Erica Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-build\src\CMakeFiles\glfw.dir\glfw.pdb"
-  TARGET_PDB = "C:\Users\Erica Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-build\src\glfw3.pdb"
+  INCLUDES = -IC:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-src\include -IC:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-src\src -IC:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-build\src
+  OBJECT_DIR = C:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-build\src\CMakeFiles\glfw.dir
+  OBJECT_FILE_DIR = C:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-build\src\CMakeFiles\glfw.dir
+  TARGET_COMPILE_PDB = C:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-build\src\CMakeFiles\glfw.dir\glfw.pdb
+  TARGET_PDB = C:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-build\src\glfw3.pdb
 
-build C$:\Users\Erica$ Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-build\src\CMakeFiles\glfw.dir\osmesa_context.c.obj: C_COMPILER__glfw_unscanned_Debug C$:\Users\Erica$ Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-src\src\osmesa_context.c || cmake_object_order_depends_target_glfw
+build C$:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-build\src\CMakeFiles\glfw.dir\osmesa_context.c.obj: C_COMPILER__glfw_unscanned_Debug C$:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-src\src\osmesa_context.c || cmake_object_order_depends_target_glfw
   DEFINES = -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
   FLAGS = /DWIN32 /D_WINDOWS /W3 /MDd /Ob0 /Od /RTC1 -ZI /W3
-  INCLUDES = -I"C:\Users\Erica Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-src\include" -I"C:\Users\Erica Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-src\src" -I"C:\Users\Erica Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-build\src"
-  OBJECT_DIR = "C:\Users\Erica Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-build\src\CMakeFiles\glfw.dir"
-  OBJECT_FILE_DIR = "C:\Users\Erica Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-build\src\CMakeFiles\glfw.dir"
-  TARGET_COMPILE_PDB = "C:\Users\Erica Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-build\src\CMakeFiles\glfw.dir\glfw.pdb"
-  TARGET_PDB = "C:\Users\Erica Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-build\src\glfw3.pdb"
+  INCLUDES = -IC:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-src\include -IC:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-src\src -IC:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-build\src
+  OBJECT_DIR = C:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-build\src\CMakeFiles\glfw.dir
+  OBJECT_FILE_DIR = C:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-build\src\CMakeFiles\glfw.dir
+  TARGET_COMPILE_PDB = C:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-build\src\CMakeFiles\glfw.dir\glfw.pdb
+  TARGET_PDB = C:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-build\src\glfw3.pdb
 
-build C$:\Users\Erica$ Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-build\src\CMakeFiles\glfw.dir\null_init.c.obj: C_COMPILER__glfw_unscanned_Debug C$:\Users\Erica$ Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-src\src\null_init.c || cmake_object_order_depends_target_glfw
+build C$:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-build\src\CMakeFiles\glfw.dir\null_init.c.obj: C_COMPILER__glfw_unscanned_Debug C$:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-src\src\null_init.c || cmake_object_order_depends_target_glfw
   DEFINES = -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
   FLAGS = /DWIN32 /D_WINDOWS /W3 /MDd /Ob0 /Od /RTC1 -ZI /W3
-  INCLUDES = -I"C:\Users\Erica Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-src\include" -I"C:\Users\Erica Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-src\src" -I"C:\Users\Erica Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-build\src"
-  OBJECT_DIR = "C:\Users\Erica Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-build\src\CMakeFiles\glfw.dir"
-  OBJECT_FILE_DIR = "C:\Users\Erica Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-build\src\CMakeFiles\glfw.dir"
-  TARGET_COMPILE_PDB = "C:\Users\Erica Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-build\src\CMakeFiles\glfw.dir\glfw.pdb"
-  TARGET_PDB = "C:\Users\Erica Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-build\src\glfw3.pdb"
+  INCLUDES = -IC:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-src\include -IC:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-src\src -IC:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-build\src
+  OBJECT_DIR = C:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-build\src\CMakeFiles\glfw.dir
+  OBJECT_FILE_DIR = C:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-build\src\CMakeFiles\glfw.dir
+  TARGET_COMPILE_PDB = C:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-build\src\CMakeFiles\glfw.dir\glfw.pdb
+  TARGET_PDB = C:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-build\src\glfw3.pdb
 
-build C$:\Users\Erica$ Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-build\src\CMakeFiles\glfw.dir\null_monitor.c.obj: C_COMPILER__glfw_unscanned_Debug C$:\Users\Erica$ Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-src\src\null_monitor.c || cmake_object_order_depends_target_glfw
+build C$:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-build\src\CMakeFiles\glfw.dir\null_monitor.c.obj: C_COMPILER__glfw_unscanned_Debug C$:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-src\src\null_monitor.c || cmake_object_order_depends_target_glfw
   DEFINES = -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
   FLAGS = /DWIN32 /D_WINDOWS /W3 /MDd /Ob0 /Od /RTC1 -ZI /W3
-  INCLUDES = -I"C:\Users\Erica Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-src\include" -I"C:\Users\Erica Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-src\src" -I"C:\Users\Erica Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-build\src"
-  OBJECT_DIR = "C:\Users\Erica Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-build\src\CMakeFiles\glfw.dir"
-  OBJECT_FILE_DIR = "C:\Users\Erica Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-build\src\CMakeFiles\glfw.dir"
-  TARGET_COMPILE_PDB = "C:\Users\Erica Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-build\src\CMakeFiles\glfw.dir\glfw.pdb"
-  TARGET_PDB = "C:\Users\Erica Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-build\src\glfw3.pdb"
+  INCLUDES = -IC:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-src\include -IC:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-src\src -IC:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-build\src
+  OBJECT_DIR = C:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-build\src\CMakeFiles\glfw.dir
+  OBJECT_FILE_DIR = C:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-build\src\CMakeFiles\glfw.dir
+  TARGET_COMPILE_PDB = C:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-build\src\CMakeFiles\glfw.dir\glfw.pdb
+  TARGET_PDB = C:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-build\src\glfw3.pdb
 
-build C$:\Users\Erica$ Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-build\src\CMakeFiles\glfw.dir\null_window.c.obj: C_COMPILER__glfw_unscanned_Debug C$:\Users\Erica$ Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-src\src\null_window.c || cmake_object_order_depends_target_glfw
+build C$:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-build\src\CMakeFiles\glfw.dir\null_window.c.obj: C_COMPILER__glfw_unscanned_Debug C$:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-src\src\null_window.c || cmake_object_order_depends_target_glfw
   DEFINES = -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
   FLAGS = /DWIN32 /D_WINDOWS /W3 /MDd /Ob0 /Od /RTC1 -ZI /W3
-  INCLUDES = -I"C:\Users\Erica Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-src\include" -I"C:\Users\Erica Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-src\src" -I"C:\Users\Erica Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-build\src"
-  OBJECT_DIR = "C:\Users\Erica Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-build\src\CMakeFiles\glfw.dir"
-  OBJECT_FILE_DIR = "C:\Users\Erica Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-build\src\CMakeFiles\glfw.dir"
-  TARGET_COMPILE_PDB = "C:\Users\Erica Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-build\src\CMakeFiles\glfw.dir\glfw.pdb"
-  TARGET_PDB = "C:\Users\Erica Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-build\src\glfw3.pdb"
+  INCLUDES = -IC:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-src\include -IC:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-src\src -IC:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-build\src
+  OBJECT_DIR = C:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-build\src\CMakeFiles\glfw.dir
+  OBJECT_FILE_DIR = C:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-build\src\CMakeFiles\glfw.dir
+  TARGET_COMPILE_PDB = C:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-build\src\CMakeFiles\glfw.dir\glfw.pdb
+  TARGET_PDB = C:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-build\src\glfw3.pdb
 
-build C$:\Users\Erica$ Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-build\src\CMakeFiles\glfw.dir\null_joystick.c.obj: C_COMPILER__glfw_unscanned_Debug C$:\Users\Erica$ Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-src\src\null_joystick.c || cmake_object_order_depends_target_glfw
+build C$:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-build\src\CMakeFiles\glfw.dir\null_joystick.c.obj: C_COMPILER__glfw_unscanned_Debug C$:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-src\src\null_joystick.c || cmake_object_order_depends_target_glfw
   DEFINES = -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
   FLAGS = /DWIN32 /D_WINDOWS /W3 /MDd /Ob0 /Od /RTC1 -ZI /W3
-  INCLUDES = -I"C:\Users\Erica Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-src\include" -I"C:\Users\Erica Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-src\src" -I"C:\Users\Erica Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-build\src"
-  OBJECT_DIR = "C:\Users\Erica Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-build\src\CMakeFiles\glfw.dir"
-  OBJECT_FILE_DIR = "C:\Users\Erica Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-build\src\CMakeFiles\glfw.dir"
-  TARGET_COMPILE_PDB = "C:\Users\Erica Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-build\src\CMakeFiles\glfw.dir\glfw.pdb"
-  TARGET_PDB = "C:\Users\Erica Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-build\src\glfw3.pdb"
+  INCLUDES = -IC:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-src\include -IC:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-src\src -IC:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-build\src
+  OBJECT_DIR = C:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-build\src\CMakeFiles\glfw.dir
+  OBJECT_FILE_DIR = C:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-build\src\CMakeFiles\glfw.dir
+  TARGET_COMPILE_PDB = C:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-build\src\CMakeFiles\glfw.dir\glfw.pdb
+  TARGET_PDB = C:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-build\src\glfw3.pdb
 
-build C$:\Users\Erica$ Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-build\src\CMakeFiles\glfw.dir\win32_module.c.obj: C_COMPILER__glfw_unscanned_Debug C$:\Users\Erica$ Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-src\src\win32_module.c || cmake_object_order_depends_target_glfw
+build C$:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-build\src\CMakeFiles\glfw.dir\win32_module.c.obj: C_COMPILER__glfw_unscanned_Debug C$:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-src\src\win32_module.c || cmake_object_order_depends_target_glfw
   DEFINES = -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
   FLAGS = /DWIN32 /D_WINDOWS /W3 /MDd /Ob0 /Od /RTC1 -ZI /W3
-  INCLUDES = -I"C:\Users\Erica Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-src\include" -I"C:\Users\Erica Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-src\src" -I"C:\Users\Erica Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-build\src"
-  OBJECT_DIR = "C:\Users\Erica Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-build\src\CMakeFiles\glfw.dir"
-  OBJECT_FILE_DIR = "C:\Users\Erica Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-build\src\CMakeFiles\glfw.dir"
-  TARGET_COMPILE_PDB = "C:\Users\Erica Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-build\src\CMakeFiles\glfw.dir\glfw.pdb"
-  TARGET_PDB = "C:\Users\Erica Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-build\src\glfw3.pdb"
+  INCLUDES = -IC:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-src\include -IC:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-src\src -IC:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-build\src
+  OBJECT_DIR = C:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-build\src\CMakeFiles\glfw.dir
+  OBJECT_FILE_DIR = C:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-build\src\CMakeFiles\glfw.dir
+  TARGET_COMPILE_PDB = C:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-build\src\CMakeFiles\glfw.dir\glfw.pdb
+  TARGET_PDB = C:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-build\src\glfw3.pdb
 
-build C$:\Users\Erica$ Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-build\src\CMakeFiles\glfw.dir\win32_time.c.obj: C_COMPILER__glfw_unscanned_Debug C$:\Users\Erica$ Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-src\src\win32_time.c || cmake_object_order_depends_target_glfw
+build C$:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-build\src\CMakeFiles\glfw.dir\win32_time.c.obj: C_COMPILER__glfw_unscanned_Debug C$:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-src\src\win32_time.c || cmake_object_order_depends_target_glfw
   DEFINES = -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
   FLAGS = /DWIN32 /D_WINDOWS /W3 /MDd /Ob0 /Od /RTC1 -ZI /W3
-  INCLUDES = -I"C:\Users\Erica Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-src\include" -I"C:\Users\Erica Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-src\src" -I"C:\Users\Erica Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-build\src"
-  OBJECT_DIR = "C:\Users\Erica Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-build\src\CMakeFiles\glfw.dir"
-  OBJECT_FILE_DIR = "C:\Users\Erica Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-build\src\CMakeFiles\glfw.dir"
-  TARGET_COMPILE_PDB = "C:\Users\Erica Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-build\src\CMakeFiles\glfw.dir\glfw.pdb"
-  TARGET_PDB = "C:\Users\Erica Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-build\src\glfw3.pdb"
+  INCLUDES = -IC:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-src\include -IC:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-src\src -IC:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-build\src
+  OBJECT_DIR = C:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-build\src\CMakeFiles\glfw.dir
+  OBJECT_FILE_DIR = C:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-build\src\CMakeFiles\glfw.dir
+  TARGET_COMPILE_PDB = C:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-build\src\CMakeFiles\glfw.dir\glfw.pdb
+  TARGET_PDB = C:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-build\src\glfw3.pdb
 
-build C$:\Users\Erica$ Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-build\src\CMakeFiles\glfw.dir\win32_thread.c.obj: C_COMPILER__glfw_unscanned_Debug C$:\Users\Erica$ Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-src\src\win32_thread.c || cmake_object_order_depends_target_glfw
+build C$:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-build\src\CMakeFiles\glfw.dir\win32_thread.c.obj: C_COMPILER__glfw_unscanned_Debug C$:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-src\src\win32_thread.c || cmake_object_order_depends_target_glfw
   DEFINES = -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
   FLAGS = /DWIN32 /D_WINDOWS /W3 /MDd /Ob0 /Od /RTC1 -ZI /W3
-  INCLUDES = -I"C:\Users\Erica Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-src\include" -I"C:\Users\Erica Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-src\src" -I"C:\Users\Erica Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-build\src"
-  OBJECT_DIR = "C:\Users\Erica Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-build\src\CMakeFiles\glfw.dir"
-  OBJECT_FILE_DIR = "C:\Users\Erica Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-build\src\CMakeFiles\glfw.dir"
-  TARGET_COMPILE_PDB = "C:\Users\Erica Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-build\src\CMakeFiles\glfw.dir\glfw.pdb"
-  TARGET_PDB = "C:\Users\Erica Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-build\src\glfw3.pdb"
+  INCLUDES = -IC:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-src\include -IC:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-src\src -IC:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-build\src
+  OBJECT_DIR = C:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-build\src\CMakeFiles\glfw.dir
+  OBJECT_FILE_DIR = C:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-build\src\CMakeFiles\glfw.dir
+  TARGET_COMPILE_PDB = C:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-build\src\CMakeFiles\glfw.dir\glfw.pdb
+  TARGET_PDB = C:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-build\src\glfw3.pdb
 
-build C$:\Users\Erica$ Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-build\src\CMakeFiles\glfw.dir\win32_init.c.obj: C_COMPILER__glfw_unscanned_Debug C$:\Users\Erica$ Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-src\src\win32_init.c || cmake_object_order_depends_target_glfw
+build C$:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-build\src\CMakeFiles\glfw.dir\win32_init.c.obj: C_COMPILER__glfw_unscanned_Debug C$:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-src\src\win32_init.c || cmake_object_order_depends_target_glfw
   DEFINES = -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
   FLAGS = /DWIN32 /D_WINDOWS /W3 /MDd /Ob0 /Od /RTC1 -ZI /W3
-  INCLUDES = -I"C:\Users\Erica Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-src\include" -I"C:\Users\Erica Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-src\src" -I"C:\Users\Erica Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-build\src"
-  OBJECT_DIR = "C:\Users\Erica Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-build\src\CMakeFiles\glfw.dir"
-  OBJECT_FILE_DIR = "C:\Users\Erica Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-build\src\CMakeFiles\glfw.dir"
-  TARGET_COMPILE_PDB = "C:\Users\Erica Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-build\src\CMakeFiles\glfw.dir\glfw.pdb"
-  TARGET_PDB = "C:\Users\Erica Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-build\src\glfw3.pdb"
+  INCLUDES = -IC:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-src\include -IC:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-src\src -IC:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-build\src
+  OBJECT_DIR = C:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-build\src\CMakeFiles\glfw.dir
+  OBJECT_FILE_DIR = C:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-build\src\CMakeFiles\glfw.dir
+  TARGET_COMPILE_PDB = C:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-build\src\CMakeFiles\glfw.dir\glfw.pdb
+  TARGET_PDB = C:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-build\src\glfw3.pdb
 
-build C$:\Users\Erica$ Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-build\src\CMakeFiles\glfw.dir\win32_joystick.c.obj: C_COMPILER__glfw_unscanned_Debug C$:\Users\Erica$ Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-src\src\win32_joystick.c || cmake_object_order_depends_target_glfw
+build C$:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-build\src\CMakeFiles\glfw.dir\win32_joystick.c.obj: C_COMPILER__glfw_unscanned_Debug C$:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-src\src\win32_joystick.c || cmake_object_order_depends_target_glfw
   DEFINES = -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
   FLAGS = /DWIN32 /D_WINDOWS /W3 /MDd /Ob0 /Od /RTC1 -ZI /W3
-  INCLUDES = -I"C:\Users\Erica Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-src\include" -I"C:\Users\Erica Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-src\src" -I"C:\Users\Erica Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-build\src"
-  OBJECT_DIR = "C:\Users\Erica Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-build\src\CMakeFiles\glfw.dir"
-  OBJECT_FILE_DIR = "C:\Users\Erica Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-build\src\CMakeFiles\glfw.dir"
-  TARGET_COMPILE_PDB = "C:\Users\Erica Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-build\src\CMakeFiles\glfw.dir\glfw.pdb"
-  TARGET_PDB = "C:\Users\Erica Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-build\src\glfw3.pdb"
+  INCLUDES = -IC:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-src\include -IC:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-src\src -IC:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-build\src
+  OBJECT_DIR = C:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-build\src\CMakeFiles\glfw.dir
+  OBJECT_FILE_DIR = C:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-build\src\CMakeFiles\glfw.dir
+  TARGET_COMPILE_PDB = C:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-build\src\CMakeFiles\glfw.dir\glfw.pdb
+  TARGET_PDB = C:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-build\src\glfw3.pdb
 
-build C$:\Users\Erica$ Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-build\src\CMakeFiles\glfw.dir\win32_monitor.c.obj: C_COMPILER__glfw_unscanned_Debug C$:\Users\Erica$ Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-src\src\win32_monitor.c || cmake_object_order_depends_target_glfw
+build C$:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-build\src\CMakeFiles\glfw.dir\win32_monitor.c.obj: C_COMPILER__glfw_unscanned_Debug C$:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-src\src\win32_monitor.c || cmake_object_order_depends_target_glfw
   DEFINES = -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
   FLAGS = /DWIN32 /D_WINDOWS /W3 /MDd /Ob0 /Od /RTC1 -ZI /W3
-  INCLUDES = -I"C:\Users\Erica Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-src\include" -I"C:\Users\Erica Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-src\src" -I"C:\Users\Erica Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-build\src"
-  OBJECT_DIR = "C:\Users\Erica Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-build\src\CMakeFiles\glfw.dir"
-  OBJECT_FILE_DIR = "C:\Users\Erica Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-build\src\CMakeFiles\glfw.dir"
-  TARGET_COMPILE_PDB = "C:\Users\Erica Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-build\src\CMakeFiles\glfw.dir\glfw.pdb"
-  TARGET_PDB = "C:\Users\Erica Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-build\src\glfw3.pdb"
+  INCLUDES = -IC:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-src\include -IC:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-src\src -IC:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-build\src
+  OBJECT_DIR = C:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-build\src\CMakeFiles\glfw.dir
+  OBJECT_FILE_DIR = C:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-build\src\CMakeFiles\glfw.dir
+  TARGET_COMPILE_PDB = C:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-build\src\CMakeFiles\glfw.dir\glfw.pdb
+  TARGET_PDB = C:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-build\src\glfw3.pdb
 
-build C$:\Users\Erica$ Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-build\src\CMakeFiles\glfw.dir\win32_window.c.obj: C_COMPILER__glfw_unscanned_Debug C$:\Users\Erica$ Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-src\src\win32_window.c || cmake_object_order_depends_target_glfw
+build C$:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-build\src\CMakeFiles\glfw.dir\win32_window.c.obj: C_COMPILER__glfw_unscanned_Debug C$:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-src\src\win32_window.c || cmake_object_order_depends_target_glfw
   DEFINES = -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
   FLAGS = /DWIN32 /D_WINDOWS /W3 /MDd /Ob0 /Od /RTC1 -ZI /W3
-  INCLUDES = -I"C:\Users\Erica Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-src\include" -I"C:\Users\Erica Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-src\src" -I"C:\Users\Erica Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-build\src"
-  OBJECT_DIR = "C:\Users\Erica Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-build\src\CMakeFiles\glfw.dir"
-  OBJECT_FILE_DIR = "C:\Users\Erica Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-build\src\CMakeFiles\glfw.dir"
-  TARGET_COMPILE_PDB = "C:\Users\Erica Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-build\src\CMakeFiles\glfw.dir\glfw.pdb"
-  TARGET_PDB = "C:\Users\Erica Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-build\src\glfw3.pdb"
+  INCLUDES = -IC:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-src\include -IC:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-src\src -IC:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-build\src
+  OBJECT_DIR = C:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-build\src\CMakeFiles\glfw.dir
+  OBJECT_FILE_DIR = C:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-build\src\CMakeFiles\glfw.dir
+  TARGET_COMPILE_PDB = C:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-build\src\CMakeFiles\glfw.dir\glfw.pdb
+  TARGET_PDB = C:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-build\src\glfw3.pdb
 
-build C$:\Users\Erica$ Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-build\src\CMakeFiles\glfw.dir\wgl_context.c.obj: C_COMPILER__glfw_unscanned_Debug C$:\Users\Erica$ Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-src\src\wgl_context.c || cmake_object_order_depends_target_glfw
+build C$:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-build\src\CMakeFiles\glfw.dir\wgl_context.c.obj: C_COMPILER__glfw_unscanned_Debug C$:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-src\src\wgl_context.c || cmake_object_order_depends_target_glfw
   DEFINES = -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
   FLAGS = /DWIN32 /D_WINDOWS /W3 /MDd /Ob0 /Od /RTC1 -ZI /W3
-  INCLUDES = -I"C:\Users\Erica Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-src\include" -I"C:\Users\Erica Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-src\src" -I"C:\Users\Erica Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-build\src"
-  OBJECT_DIR = "C:\Users\Erica Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-build\src\CMakeFiles\glfw.dir"
-  OBJECT_FILE_DIR = "C:\Users\Erica Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-build\src\CMakeFiles\glfw.dir"
-  TARGET_COMPILE_PDB = "C:\Users\Erica Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-build\src\CMakeFiles\glfw.dir\glfw.pdb"
-  TARGET_PDB = "C:\Users\Erica Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-build\src\glfw3.pdb"
+  INCLUDES = -IC:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-src\include -IC:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-src\src -IC:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-build\src
+  OBJECT_DIR = C:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-build\src\CMakeFiles\glfw.dir
+  OBJECT_FILE_DIR = C:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-build\src\CMakeFiles\glfw.dir
+  TARGET_COMPILE_PDB = C:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-build\src\CMakeFiles\glfw.dir\glfw.pdb
+  TARGET_PDB = C:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-build\src\glfw3.pdb
 
 
 # =============================================================================
@@ -455,204 +455,204 @@ build C$:\Users\Erica$ Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-build
 
 
 #############################################
-# Link the static library C:\Users\Erica Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-build\src\glfw3.lib
+# Link the static library C:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-build\src\glfw3.lib
 
-build C$:\Users\Erica$ Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-build\src\glfw3.lib: C_STATIC_LIBRARY_LINKER__glfw_Debug C$:\Users\Erica$ Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-build\src\CMakeFiles\glfw.dir\context.c.obj C$:\Users\Erica$ Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-build\src\CMakeFiles\glfw.dir\init.c.obj C$:\Users\Erica$ Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-build\src\CMakeFiles\glfw.dir\input.c.obj C$:\Users\Erica$ Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-build\src\CMakeFiles\glfw.dir\monitor.c.obj C$:\Users\Erica$ Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-build\src\CMakeFiles\glfw.dir\platform.c.obj C$:\Users\Erica$ Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-build\src\CMakeFiles\glfw.dir\vulkan.c.obj C$:\Users\Erica$ Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-build\src\CMakeFiles\glfw.dir\window.c.obj C$:\Users\Erica$ Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-build\src\CMakeFiles\glfw.dir\egl_context.c.obj C$:\Users\Erica$ Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-build\src\CMakeFiles\glfw.dir\osmesa_context.c.obj C$:\Users\Erica$ Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-build\src\CMakeFiles\glfw.dir\null_init.c.obj C$:\Users\Erica$ Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-build\src\CMakeFiles\glfw.dir\null_monitor.c.obj C$:\Users\Erica$ Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-build\src\CMakeFiles\glfw.dir\null_window.c.obj C$:\Users\Erica$ Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-build\src\CMakeFiles\glfw.dir\null_joystick.c.obj C$:\Users\Erica$ Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-build\src\CMakeFiles\glfw.dir\win32_module.c.obj C$:\Users\Erica$ Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-build\src\CMakeFiles\glfw.dir\win32_time.c.obj C$:\Users\Erica$ Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-build\src\CMakeFiles\glfw.dir\win32_thread.c.obj C$:\Users\Erica$ Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-build\src\CMakeFiles\glfw.dir\win32_init.c.obj C$:\Users\Erica$ Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-build\src\CMakeFiles\glfw.dir\win32_joystick.c.obj C$:\Users\Erica$ Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-build\src\CMakeFiles\glfw.dir\win32_monitor.c.obj C$:\Users\Erica$ Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-build\src\CMakeFiles\glfw.dir\win32_window.c.obj C$:\Users\Erica$ Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-build\src\CMakeFiles\glfw.dir\wgl_context.c.obj
+build C$:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-build\src\glfw3.lib: C_STATIC_LIBRARY_LINKER__glfw_Debug C$:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-build\src\CMakeFiles\glfw.dir\context.c.obj C$:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-build\src\CMakeFiles\glfw.dir\init.c.obj C$:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-build\src\CMakeFiles\glfw.dir\input.c.obj C$:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-build\src\CMakeFiles\glfw.dir\monitor.c.obj C$:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-build\src\CMakeFiles\glfw.dir\platform.c.obj C$:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-build\src\CMakeFiles\glfw.dir\vulkan.c.obj C$:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-build\src\CMakeFiles\glfw.dir\window.c.obj C$:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-build\src\CMakeFiles\glfw.dir\egl_context.c.obj C$:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-build\src\CMakeFiles\glfw.dir\osmesa_context.c.obj C$:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-build\src\CMakeFiles\glfw.dir\null_init.c.obj C$:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-build\src\CMakeFiles\glfw.dir\null_monitor.c.obj C$:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-build\src\CMakeFiles\glfw.dir\null_window.c.obj C$:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-build\src\CMakeFiles\glfw.dir\null_joystick.c.obj C$:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-build\src\CMakeFiles\glfw.dir\win32_module.c.obj C$:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-build\src\CMakeFiles\glfw.dir\win32_time.c.obj C$:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-build\src\CMakeFiles\glfw.dir\win32_thread.c.obj C$:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-build\src\CMakeFiles\glfw.dir\win32_init.c.obj C$:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-build\src\CMakeFiles\glfw.dir\win32_joystick.c.obj C$:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-build\src\CMakeFiles\glfw.dir\win32_monitor.c.obj C$:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-build\src\CMakeFiles\glfw.dir\win32_window.c.obj C$:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-build\src\CMakeFiles\glfw.dir\wgl_context.c.obj
   LANGUAGE_COMPILE_FLAGS = /DWIN32 /D_WINDOWS /W3 /MDd /Ob0 /Od /RTC1 -ZI
   LINK_FLAGS = /machine:x64
-  OBJECT_DIR = "C:\Users\Erica Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-build\src\CMakeFiles\glfw.dir"
+  OBJECT_DIR = C:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-build\src\CMakeFiles\glfw.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_COMPILE_PDB = "C:\Users\Erica Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-build\src\CMakeFiles\glfw.dir\glfw.pdb"
-  TARGET_FILE = "C:\Users\Erica Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-build\src\glfw3.lib"
-  TARGET_PDB = "C:\Users\Erica Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-build\src\glfw3.pdb"
+  TARGET_COMPILE_PDB = C:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-build\src\CMakeFiles\glfw.dir\glfw.pdb
+  TARGET_FILE = C:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-build\src\glfw3.lib
+  TARGET_PDB = C:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-build\src\glfw3.pdb
 
 
 #############################################
 # Utility command for update_mappings
 
-build C$:\Users\Erica$ Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-build\src\update_mappings: phony C$:\Users\Erica$ Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-build\src\CMakeFiles\update_mappings
+build C$:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-build\src\update_mappings: phony C$:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-build\src\CMakeFiles\update_mappings
 
 
 #############################################
 # Utility command for edit_cache
 
-build C$:\Users\Erica$ Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-build\src\CMakeFiles\edit_cache.util: CUSTOM_COMMAND
-  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D "C:\Users\Erica Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-build\src" && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+build C$:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-build\src\CMakeFiles\edit_cache.util: CUSTOM_COMMAND
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-build\src && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
   DESC = No interactive CMake dialog available...
   restat = 1
 
-build C$:\Users\Erica$ Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-build\src\edit_cache: phony C$:\Users\Erica$ Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-build\src\CMakeFiles\edit_cache.util
+build C$:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-build\src\edit_cache: phony C$:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-build\src\CMakeFiles\edit_cache.util
 
 
 #############################################
 # Utility command for rebuild_cache
 
-build C$:\Users\Erica$ Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-build\src\CMakeFiles\rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D "C:\Users\Erica Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-build\src" && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" --regenerate-during-build -S"C:\Users\Erica Barundia\source\repos\CMake-GDGRAP1" -B"C:\Users\Erica Barundia\source\repos\CMake-GDGRAP1\out\build\x64-debug""
+build C$:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-build\src\CMakeFiles\rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-build\src && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" --regenerate-during-build -SC:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT -BC:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\out\build\x64-debug"
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
 
-build C$:\Users\Erica$ Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-build\src\rebuild_cache: phony C$:\Users\Erica$ Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-build\src\CMakeFiles\rebuild_cache.util
+build C$:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-build\src\rebuild_cache: phony C$:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-build\src\CMakeFiles\rebuild_cache.util
 
 
 #############################################
 # Utility command for list_install_components
 
-build C$:\Users\Erica$ Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-build\src\list_install_components: phony
+build C$:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-build\src\list_install_components: phony
 
 
 #############################################
 # Utility command for install
 
-build C$:\Users\Erica$ Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-build\src\CMakeFiles\install.util: CUSTOM_COMMAND C$:\Users\Erica$ Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-build\src\all
-  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D "C:\Users\Erica Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-build\src" && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -P cmake_install.cmake"
+build C$:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-build\src\CMakeFiles\install.util: CUSTOM_COMMAND C$:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-build\src\all
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-build\src && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -P cmake_install.cmake"
   DESC = Install the project...
   pool = console
   restat = 1
 
-build C$:\Users\Erica$ Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-build\src\install: phony C$:\Users\Erica$ Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-build\src\CMakeFiles\install.util
+build C$:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-build\src\install: phony C$:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-build\src\CMakeFiles\install.util
 
 
 #############################################
 # Utility command for install/local
 
-build C$:\Users\Erica$ Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-build\src\CMakeFiles\install\local.util: CUSTOM_COMMAND C$:\Users\Erica$ Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-build\src\all
-  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D "C:\Users\Erica Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-build\src" && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
+build C$:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-build\src\CMakeFiles\install\local.util: CUSTOM_COMMAND C$:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-build\src\all
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-build\src && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
   DESC = Installing only the local directory...
   pool = console
   restat = 1
 
-build C$:\Users\Erica$ Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-build\src\install\local: phony C$:\Users\Erica$ Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-build\src\CMakeFiles\install\local.util
+build C$:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-build\src\install\local: phony C$:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-build\src\CMakeFiles\install\local.util
 
 
 #############################################
-# Custom command for C:\Users\Erica Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-build\src\CMakeFiles\update_mappings
+# Custom command for C:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-build\src\CMakeFiles\update_mappings
 
-build C$:\Users\Erica$ Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-build\src\CMakeFiles\update_mappings: CUSTOM_COMMAND
-  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D "C:\Users\Erica Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-src\src" && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -P "C:/Users/Erica Barundia/source/repos/CMake-GDGRAP1/thirdparty/glfw-src/CMake/GenerateMappings.cmake" mappings.h.in mappings.h"
+build C$:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-build\src\CMakeFiles\update_mappings: CUSTOM_COMMAND
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-src\src && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -P C:/Users/erica/OneDrive/Documents/_Acads/gdgrapGIT/thirdparty/glfw-src/CMake/GenerateMappings.cmake mappings.h.in mappings.h"
   DESC = Updating gamepad mappings from upstream repository
 
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
-# C:/Users/Erica Barundia/source/repos/CMake-GDGRAP1/CMakeLists.txt
+# C:/Users/erica/OneDrive/Documents/_Acads/gdgrapGIT/CMakeLists.txt
 # =============================================================================
 
 
 #############################################
 # Utility command for edit_cache
 
-build C$:\Users\Erica$ Barundia\source\repos\CMake-GDGRAP1\thirdparty\glad-build\CMakeFiles\edit_cache.util: CUSTOM_COMMAND
-  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D "C:\Users\Erica Barundia\source\repos\CMake-GDGRAP1\thirdparty\glad-build" && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+build C$:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glad-build\CMakeFiles\edit_cache.util: CUSTOM_COMMAND
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glad-build && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
   DESC = No interactive CMake dialog available...
   restat = 1
 
-build C$:\Users\Erica$ Barundia\source\repos\CMake-GDGRAP1\thirdparty\glad-build\edit_cache: phony C$:\Users\Erica$ Barundia\source\repos\CMake-GDGRAP1\thirdparty\glad-build\CMakeFiles\edit_cache.util
+build C$:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glad-build\edit_cache: phony C$:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glad-build\CMakeFiles\edit_cache.util
 
 
 #############################################
 # Utility command for rebuild_cache
 
-build C$:\Users\Erica$ Barundia\source\repos\CMake-GDGRAP1\thirdparty\glad-build\CMakeFiles\rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D "C:\Users\Erica Barundia\source\repos\CMake-GDGRAP1\thirdparty\glad-build" && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" --regenerate-during-build -S"C:\Users\Erica Barundia\source\repos\CMake-GDGRAP1" -B"C:\Users\Erica Barundia\source\repos\CMake-GDGRAP1\out\build\x64-debug""
+build C$:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glad-build\CMakeFiles\rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glad-build && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" --regenerate-during-build -SC:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT -BC:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\out\build\x64-debug"
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
 
-build C$:\Users\Erica$ Barundia\source\repos\CMake-GDGRAP1\thirdparty\glad-build\rebuild_cache: phony C$:\Users\Erica$ Barundia\source\repos\CMake-GDGRAP1\thirdparty\glad-build\CMakeFiles\rebuild_cache.util
+build C$:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glad-build\rebuild_cache: phony C$:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glad-build\CMakeFiles\rebuild_cache.util
 
 
 #############################################
 # Utility command for list_install_components
 
-build C$:\Users\Erica$ Barundia\source\repos\CMake-GDGRAP1\thirdparty\glad-build\list_install_components: phony
+build C$:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glad-build\list_install_components: phony
 
 
 #############################################
 # Utility command for install
 
-build C$:\Users\Erica$ Barundia\source\repos\CMake-GDGRAP1\thirdparty\glad-build\CMakeFiles\install.util: CUSTOM_COMMAND C$:\Users\Erica$ Barundia\source\repos\CMake-GDGRAP1\thirdparty\glad-build\all
-  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D "C:\Users\Erica Barundia\source\repos\CMake-GDGRAP1\thirdparty\glad-build" && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -P cmake_install.cmake"
+build C$:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glad-build\CMakeFiles\install.util: CUSTOM_COMMAND C$:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glad-build\all
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glad-build && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -P cmake_install.cmake"
   DESC = Install the project...
   pool = console
   restat = 1
 
-build C$:\Users\Erica$ Barundia\source\repos\CMake-GDGRAP1\thirdparty\glad-build\install: phony C$:\Users\Erica$ Barundia\source\repos\CMake-GDGRAP1\thirdparty\glad-build\CMakeFiles\install.util
+build C$:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glad-build\install: phony C$:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glad-build\CMakeFiles\install.util
 
 
 #############################################
 # Utility command for install/local
 
-build C$:\Users\Erica$ Barundia\source\repos\CMake-GDGRAP1\thirdparty\glad-build\CMakeFiles\install\local.util: CUSTOM_COMMAND C$:\Users\Erica$ Barundia\source\repos\CMake-GDGRAP1\thirdparty\glad-build\all
-  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D "C:\Users\Erica Barundia\source\repos\CMake-GDGRAP1\thirdparty\glad-build" && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
+build C$:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glad-build\CMakeFiles\install\local.util: CUSTOM_COMMAND C$:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glad-build\all
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glad-build && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
   DESC = Installing only the local directory...
   pool = console
   restat = 1
 
-build C$:\Users\Erica$ Barundia\source\repos\CMake-GDGRAP1\thirdparty\glad-build\install\local: phony C$:\Users\Erica$ Barundia\source\repos\CMake-GDGRAP1\thirdparty\glad-build\CMakeFiles\install\local.util
+build C$:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glad-build\install\local: phony C$:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glad-build\CMakeFiles\install\local.util
 
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
-# C:/Users/Erica Barundia/source/repos/CMake-GDGRAP1/CMakeLists.txt
+# C:/Users/erica/OneDrive/Documents/_Acads/gdgrapGIT/CMakeLists.txt
 # =============================================================================
 
 
 #############################################
 # Utility command for edit_cache
 
-build C$:\Users\Erica$ Barundia\source\repos\CMake-GDGRAP1\thirdparty\glm-build\CMakeFiles\edit_cache.util: CUSTOM_COMMAND
-  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D "C:\Users\Erica Barundia\source\repos\CMake-GDGRAP1\thirdparty\glm-build" && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+build C$:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glm-build\CMakeFiles\edit_cache.util: CUSTOM_COMMAND
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glm-build && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
   DESC = No interactive CMake dialog available...
   restat = 1
 
-build C$:\Users\Erica$ Barundia\source\repos\CMake-GDGRAP1\thirdparty\glm-build\edit_cache: phony C$:\Users\Erica$ Barundia\source\repos\CMake-GDGRAP1\thirdparty\glm-build\CMakeFiles\edit_cache.util
+build C$:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glm-build\edit_cache: phony C$:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glm-build\CMakeFiles\edit_cache.util
 
 
 #############################################
 # Utility command for rebuild_cache
 
-build C$:\Users\Erica$ Barundia\source\repos\CMake-GDGRAP1\thirdparty\glm-build\CMakeFiles\rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D "C:\Users\Erica Barundia\source\repos\CMake-GDGRAP1\thirdparty\glm-build" && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" --regenerate-during-build -S"C:\Users\Erica Barundia\source\repos\CMake-GDGRAP1" -B"C:\Users\Erica Barundia\source\repos\CMake-GDGRAP1\out\build\x64-debug""
+build C$:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glm-build\CMakeFiles\rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glm-build && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" --regenerate-during-build -SC:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT -BC:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\out\build\x64-debug"
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
 
-build C$:\Users\Erica$ Barundia\source\repos\CMake-GDGRAP1\thirdparty\glm-build\rebuild_cache: phony C$:\Users\Erica$ Barundia\source\repos\CMake-GDGRAP1\thirdparty\glm-build\CMakeFiles\rebuild_cache.util
+build C$:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glm-build\rebuild_cache: phony C$:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glm-build\CMakeFiles\rebuild_cache.util
 
 
 #############################################
 # Utility command for list_install_components
 
-build C$:\Users\Erica$ Barundia\source\repos\CMake-GDGRAP1\thirdparty\glm-build\list_install_components: phony
+build C$:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glm-build\list_install_components: phony
 
 
 #############################################
 # Utility command for install
 
-build C$:\Users\Erica$ Barundia\source\repos\CMake-GDGRAP1\thirdparty\glm-build\CMakeFiles\install.util: CUSTOM_COMMAND C$:\Users\Erica$ Barundia\source\repos\CMake-GDGRAP1\thirdparty\glm-build\all
-  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D "C:\Users\Erica Barundia\source\repos\CMake-GDGRAP1\thirdparty\glm-build" && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -P cmake_install.cmake"
+build C$:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glm-build\CMakeFiles\install.util: CUSTOM_COMMAND C$:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glm-build\all
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glm-build && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -P cmake_install.cmake"
   DESC = Install the project...
   pool = console
   restat = 1
 
-build C$:\Users\Erica$ Barundia\source\repos\CMake-GDGRAP1\thirdparty\glm-build\install: phony C$:\Users\Erica$ Barundia\source\repos\CMake-GDGRAP1\thirdparty\glm-build\CMakeFiles\install.util
+build C$:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glm-build\install: phony C$:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glm-build\CMakeFiles\install.util
 
 
 #############################################
 # Utility command for install/local
 
-build C$:\Users\Erica$ Barundia\source\repos\CMake-GDGRAP1\thirdparty\glm-build\CMakeFiles\install\local.util: CUSTOM_COMMAND C$:\Users\Erica$ Barundia\source\repos\CMake-GDGRAP1\thirdparty\glm-build\all
-  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D "C:\Users\Erica Barundia\source\repos\CMake-GDGRAP1\thirdparty\glm-build" && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
+build C$:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glm-build\CMakeFiles\install\local.util: CUSTOM_COMMAND C$:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glm-build\all
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glm-build && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
   DESC = Installing only the local directory...
   pool = console
   restat = 1
 
-build C$:\Users\Erica$ Barundia\source\repos\CMake-GDGRAP1\thirdparty\glm-build\install\local: phony C$:\Users\Erica$ Barundia\source\repos\CMake-GDGRAP1\thirdparty\glm-build\CMakeFiles\install\local.util
+build C$:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glm-build\install\local: phony C$:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glm-build\CMakeFiles\install\local.util
 
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
-# C:/Users/Erica Barundia/source/repos/CMake-GDGRAP1/thirdparty/glm-src/CMakeLists.txt
+# C:/Users/erica/OneDrive/Documents/_Acads/gdgrapGIT/thirdparty/glm-src/CMakeLists.txt
 # =============================================================================
 
 # =============================================================================
@@ -664,13 +664,13 @@ build C$:\Users\Erica$ Barundia\source\repos\CMake-GDGRAP1\thirdparty\glm-build\
 
 build cmake_object_order_depends_target_glm: phony || .
 
-build C$:\Users\Erica$ Barundia\source\repos\CMake-GDGRAP1\thirdparty\glm-build\glm\CMakeFiles\glm.dir\detail\glm.cpp.obj: CXX_COMPILER__glm_unscanned_Debug C$:\Users\Erica$ Barundia\source\repos\CMake-GDGRAP1\thirdparty\glm-src\glm\detail\glm.cpp || cmake_object_order_depends_target_glm
+build C$:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glm-build\glm\CMakeFiles\glm.dir\detail\glm.cpp.obj: CXX_COMPILER__glm_unscanned_Debug C$:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glm-src\glm\detail\glm.cpp || cmake_object_order_depends_target_glm
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Ob0 /Od /RTC1 -std:c++20 -ZI /Za /fp:precise
-  INCLUDES = -I"C:\Users\Erica Barundia\source\repos\CMake-GDGRAP1\thirdparty\glm-src"
-  OBJECT_DIR = "C:\Users\Erica Barundia\source\repos\CMake-GDGRAP1\thirdparty\glm-build\glm\CMakeFiles\glm.dir"
-  OBJECT_FILE_DIR = "C:\Users\Erica Barundia\source\repos\CMake-GDGRAP1\thirdparty\glm-build\glm\CMakeFiles\glm.dir\detail"
-  TARGET_COMPILE_PDB = "C:\Users\Erica Barundia\source\repos\CMake-GDGRAP1\thirdparty\glm-build\glm\CMakeFiles\glm.dir\glm.pdb"
-  TARGET_PDB = "C:\Users\Erica Barundia\source\repos\CMake-GDGRAP1\thirdparty\glm-build\glm\glm.pdb"
+  INCLUDES = -IC:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glm-src
+  OBJECT_DIR = C:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glm-build\glm\CMakeFiles\glm.dir
+  OBJECT_FILE_DIR = C:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glm-build\glm\CMakeFiles\glm.dir\detail
+  TARGET_COMPILE_PDB = C:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glm-build\glm\CMakeFiles\glm.dir\glm.pdb
+  TARGET_PDB = C:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glm-build\glm\glm.pdb
 
 
 # =============================================================================
@@ -678,70 +678,70 @@ build C$:\Users\Erica$ Barundia\source\repos\CMake-GDGRAP1\thirdparty\glm-build\
 
 
 #############################################
-# Link the static library C:\Users\Erica Barundia\source\repos\CMake-GDGRAP1\thirdparty\glm-build\glm\glm.lib
+# Link the static library C:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glm-build\glm\glm.lib
 
-build C$:\Users\Erica$ Barundia\source\repos\CMake-GDGRAP1\thirdparty\glm-build\glm\glm.lib: CXX_STATIC_LIBRARY_LINKER__glm_Debug C$:\Users\Erica$ Barundia\source\repos\CMake-GDGRAP1\thirdparty\glm-build\glm\CMakeFiles\glm.dir\detail\glm.cpp.obj
+build C$:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glm-build\glm\glm.lib: CXX_STATIC_LIBRARY_LINKER__glm_Debug C$:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glm-build\glm\CMakeFiles\glm.dir\detail\glm.cpp.obj
   LANGUAGE_COMPILE_FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Ob0 /Od /RTC1 -ZI
   LINK_FLAGS = /machine:x64
-  OBJECT_DIR = "C:\Users\Erica Barundia\source\repos\CMake-GDGRAP1\thirdparty\glm-build\glm\CMakeFiles\glm.dir"
+  OBJECT_DIR = C:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glm-build\glm\CMakeFiles\glm.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_COMPILE_PDB = "C:\Users\Erica Barundia\source\repos\CMake-GDGRAP1\thirdparty\glm-build\glm\CMakeFiles\glm.dir\glm.pdb"
-  TARGET_FILE = "C:\Users\Erica Barundia\source\repos\CMake-GDGRAP1\thirdparty\glm-build\glm\glm.lib"
-  TARGET_PDB = "C:\Users\Erica Barundia\source\repos\CMake-GDGRAP1\thirdparty\glm-build\glm\glm.pdb"
+  TARGET_COMPILE_PDB = C:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glm-build\glm\CMakeFiles\glm.dir\glm.pdb
+  TARGET_FILE = C:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glm-build\glm\glm.lib
+  TARGET_PDB = C:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glm-build\glm\glm.pdb
 
 
 #############################################
 # Utility command for edit_cache
 
-build C$:\Users\Erica$ Barundia\source\repos\CMake-GDGRAP1\thirdparty\glm-build\glm\CMakeFiles\edit_cache.util: CUSTOM_COMMAND
-  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D "C:\Users\Erica Barundia\source\repos\CMake-GDGRAP1\thirdparty\glm-build\glm" && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+build C$:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glm-build\glm\CMakeFiles\edit_cache.util: CUSTOM_COMMAND
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glm-build\glm && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
   DESC = No interactive CMake dialog available...
   restat = 1
 
-build C$:\Users\Erica$ Barundia\source\repos\CMake-GDGRAP1\thirdparty\glm-build\glm\edit_cache: phony C$:\Users\Erica$ Barundia\source\repos\CMake-GDGRAP1\thirdparty\glm-build\glm\CMakeFiles\edit_cache.util
+build C$:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glm-build\glm\edit_cache: phony C$:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glm-build\glm\CMakeFiles\edit_cache.util
 
 
 #############################################
 # Utility command for rebuild_cache
 
-build C$:\Users\Erica$ Barundia\source\repos\CMake-GDGRAP1\thirdparty\glm-build\glm\CMakeFiles\rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D "C:\Users\Erica Barundia\source\repos\CMake-GDGRAP1\thirdparty\glm-build\glm" && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" --regenerate-during-build -S"C:\Users\Erica Barundia\source\repos\CMake-GDGRAP1" -B"C:\Users\Erica Barundia\source\repos\CMake-GDGRAP1\out\build\x64-debug""
+build C$:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glm-build\glm\CMakeFiles\rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glm-build\glm && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" --regenerate-during-build -SC:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT -BC:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\out\build\x64-debug"
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
 
-build C$:\Users\Erica$ Barundia\source\repos\CMake-GDGRAP1\thirdparty\glm-build\glm\rebuild_cache: phony C$:\Users\Erica$ Barundia\source\repos\CMake-GDGRAP1\thirdparty\glm-build\glm\CMakeFiles\rebuild_cache.util
+build C$:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glm-build\glm\rebuild_cache: phony C$:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glm-build\glm\CMakeFiles\rebuild_cache.util
 
 
 #############################################
 # Utility command for list_install_components
 
-build C$:\Users\Erica$ Barundia\source\repos\CMake-GDGRAP1\thirdparty\glm-build\glm\list_install_components: phony
+build C$:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glm-build\glm\list_install_components: phony
 
 
 #############################################
 # Utility command for install
 
-build C$:\Users\Erica$ Barundia\source\repos\CMake-GDGRAP1\thirdparty\glm-build\glm\CMakeFiles\install.util: CUSTOM_COMMAND C$:\Users\Erica$ Barundia\source\repos\CMake-GDGRAP1\thirdparty\glm-build\glm\all
-  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D "C:\Users\Erica Barundia\source\repos\CMake-GDGRAP1\thirdparty\glm-build\glm" && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -P cmake_install.cmake"
+build C$:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glm-build\glm\CMakeFiles\install.util: CUSTOM_COMMAND C$:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glm-build\glm\all
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glm-build\glm && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -P cmake_install.cmake"
   DESC = Install the project...
   pool = console
   restat = 1
 
-build C$:\Users\Erica$ Barundia\source\repos\CMake-GDGRAP1\thirdparty\glm-build\glm\install: phony C$:\Users\Erica$ Barundia\source\repos\CMake-GDGRAP1\thirdparty\glm-build\glm\CMakeFiles\install.util
+build C$:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glm-build\glm\install: phony C$:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glm-build\glm\CMakeFiles\install.util
 
 
 #############################################
 # Utility command for install/local
 
-build C$:\Users\Erica$ Barundia\source\repos\CMake-GDGRAP1\thirdparty\glm-build\glm\CMakeFiles\install\local.util: CUSTOM_COMMAND C$:\Users\Erica$ Barundia\source\repos\CMake-GDGRAP1\thirdparty\glm-build\glm\all
-  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D "C:\Users\Erica Barundia\source\repos\CMake-GDGRAP1\thirdparty\glm-build\glm" && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
+build C$:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glm-build\glm\CMakeFiles\install\local.util: CUSTOM_COMMAND C$:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glm-build\glm\all
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glm-build\glm && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
   DESC = Installing only the local directory...
   pool = console
   restat = 1
 
-build C$:\Users\Erica$ Barundia\source\repos\CMake-GDGRAP1\thirdparty\glm-build\glm\install\local: phony C$:\Users\Erica$ Barundia\source\repos\CMake-GDGRAP1\thirdparty\glm-build\glm\CMakeFiles\install\local.util
+build C$:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glm-build\glm\install\local: phony C$:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glm-build\glm\CMakeFiles\install\local.util
 
 # =============================================================================
 # Target aliases.
@@ -750,17 +750,17 @@ build CMakeProjectGRAP1: phony CMakeProjectGRAP1.exe
 
 build glad_gl_core_46: phony glad_gl_core_46.lib
 
-build glfw: phony C$:\Users\Erica$ Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-build\src\glfw3.lib
+build glfw: phony C$:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-build\src\glfw3.lib
 
-build glfw3.lib: phony C$:\Users\Erica$ Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-build\src\glfw3.lib
+build glfw3.lib: phony C$:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-build\src\glfw3.lib
 
-build glm: phony C$:\Users\Erica$ Barundia\source\repos\CMake-GDGRAP1\thirdparty\glm-build\glm\glm.lib
+build glm: phony C$:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glm-build\glm\glm.lib
 
-build glm.lib: phony C$:\Users\Erica$ Barundia\source\repos\CMake-GDGRAP1\thirdparty\glm-build\glm\glm.lib
+build glm.lib: phony C$:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glm-build\glm\glm.lib
 
-build uninstall: phony C$:\Users\Erica$ Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-build\uninstall
+build uninstall: phony C$:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-build\uninstall
 
-build update_mappings: phony C$:\Users\Erica$ Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-build\src\update_mappings
+build update_mappings: phony C$:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-build\src\update_mappings
 
 # =============================================================================
 # Folder targets.
@@ -768,44 +768,44 @@ build update_mappings: phony C$:\Users\Erica$ Barundia\source\repos\CMake-GDGRAP
 # =============================================================================
 
 #############################################
-# Folder: C:/Users/Erica Barundia/source/repos/CMake-GDGRAP1/out/build/x64-debug
+# Folder: C:/Users/erica/OneDrive/Documents/_Acads/gdgrapGIT/out/build/x64-debug
 
-build all: phony glad_gl_core_46.lib CMakeProjectGRAP1.exe C$:\Users\Erica$ Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-build\all C$:\Users\Erica$ Barundia\source\repos\CMake-GDGRAP1\thirdparty\glad-build\all C$:\Users\Erica$ Barundia\source\repos\CMake-GDGRAP1\thirdparty\glm-build\all
-
-# =============================================================================
-
-#############################################
-# Folder: C:/Users/Erica Barundia/source/repos/CMake-GDGRAP1/thirdparty/glad-build
-
-build C$:\Users\Erica$ Barundia\source\repos\CMake-GDGRAP1\thirdparty\glad-build\all: phony
+build all: phony glad_gl_core_46.lib CMakeProjectGRAP1.exe C$:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-build\all C$:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glad-build\all C$:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glm-build\all
 
 # =============================================================================
 
 #############################################
-# Folder: C:/Users/Erica Barundia/source/repos/CMake-GDGRAP1/thirdparty/glfw-build
+# Folder: C:/Users/erica/OneDrive/Documents/_Acads/gdgrapGIT/thirdparty/glad-build
 
-build C$:\Users\Erica$ Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-build\all: phony C$:\Users\Erica$ Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-build\src\all
-
-# =============================================================================
-
-#############################################
-# Folder: C:/Users/Erica Barundia/source/repos/CMake-GDGRAP1/thirdparty/glfw-build/src
-
-build C$:\Users\Erica$ Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-build\src\all: phony C$:\Users\Erica$ Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-build\src\glfw3.lib
+build C$:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glad-build\all: phony
 
 # =============================================================================
 
 #############################################
-# Folder: C:/Users/Erica Barundia/source/repos/CMake-GDGRAP1/thirdparty/glm-build
+# Folder: C:/Users/erica/OneDrive/Documents/_Acads/gdgrapGIT/thirdparty/glfw-build
 
-build C$:\Users\Erica$ Barundia\source\repos\CMake-GDGRAP1\thirdparty\glm-build\all: phony C$:\Users\Erica$ Barundia\source\repos\CMake-GDGRAP1\thirdparty\glm-build\glm\all
+build C$:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-build\all: phony C$:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-build\src\all
 
 # =============================================================================
 
 #############################################
-# Folder: C:/Users/Erica Barundia/source/repos/CMake-GDGRAP1/thirdparty/glm-build/glm
+# Folder: C:/Users/erica/OneDrive/Documents/_Acads/gdgrapGIT/thirdparty/glfw-build/src
 
-build C$:\Users\Erica$ Barundia\source\repos\CMake-GDGRAP1\thirdparty\glm-build\glm\all: phony C$:\Users\Erica$ Barundia\source\repos\CMake-GDGRAP1\thirdparty\glm-build\glm\glm.lib
+build C$:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-build\src\all: phony C$:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-build\src\glfw3.lib
+
+# =============================================================================
+
+#############################################
+# Folder: C:/Users/erica/OneDrive/Documents/_Acads/gdgrapGIT/thirdparty/glm-build
+
+build C$:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glm-build\all: phony C$:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glm-build\glm\all
+
+# =============================================================================
+
+#############################################
+# Folder: C:/Users/erica/OneDrive/Documents/_Acads/gdgrapGIT/thirdparty/glm-build/glm
+
+build C$:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glm-build\glm\all: phony C$:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glm-build\glm\glm.lib
 
 # =============================================================================
 # Built-in targets
@@ -814,14 +814,14 @@ build C$:\Users\Erica$ Barundia\source\repos\CMake-GDGRAP1\thirdparty\glm-build\
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\BasicConfigVersion-SameMajorVersion.cmake.in C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeCCompiler.cmake.in C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeCCompilerABI.c C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeCInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeCXXCompiler.cmake.in C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeCXXCompilerABI.cpp C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeCXXInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeCommonLanguageInclude.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeCompilerIdDetection.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeDependentOption.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeDetermineCCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeDetermineCXXCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeDetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeDetermineCompilerABI.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeDetermineCompilerId.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeDetermineCompilerSupport.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeDetermineRCCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeDetermineSystem.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeFindBinUtils.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeGenericSystem.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeInitializeConfigs.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeLanguageInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakePackageConfigHelpers.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeParseImplicitIncludeInfo.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeParseImplicitLinkInfo.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeParseLibraryArchitecture.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeRCCompiler.cmake.in C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeRCInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeSystem.cmake.in C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeSystemSpecificInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeSystemSpecificInitialize.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeTestCCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeTestCXXCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeTestCompilerCommon.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeTestRCCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CheckCSourceCompiles.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CheckIncludeFile.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CheckLibraryExists.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\ADSP-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\ARMCC-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\ARMClang-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\AppleClang-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\Borland-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\Bruce-C-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\CMakeCommonCompilerMacros.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\Clang-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\Clang-DetermineCompilerInternal.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\Compaq-C-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\Cray-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\CrayClang-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\Embarcadero-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\Fujitsu-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\FujitsuClang-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\GHS-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\GNU-C-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\HP-C-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\HP-CXX-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\IAR-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\IBMClang-C-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\IBMClang-CXX-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\Intel-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\LCC-C-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\LCC-CXX-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\MSVC-C.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\MSVC-CXX-CXXImportStd.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\MSVC-CXX.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\MSVC-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\MSVC.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\NVHPC-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\NVIDIA-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\OrangeC-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\PGI-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\PathScale-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\SCO-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\SDCC-C-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\SunPro-C-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\TI-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\TIClang-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\Tasking-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\Watcom-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\XL-C-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\XL-CXX-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\XLClang-C-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\zOS-C-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\ExternalProject\shared_internal_commands.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\FetchContent.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\FetchContent\CMakeLists.cmake.in C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\FindGit.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\FindOpenGL.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\FindPackageHandleStandardArgs.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\FindPackageMessage.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\FindPython.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\FindPython\Support.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\FindThreads.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\GNUInstallDirs.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Internal\CMakeCLinkerInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Internal\CMakeCXXLinkerInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Internal\CMakeCommonLinkerInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Internal\CMakeDetermineLinkerId.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Internal\CheckSourceCompiles.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Internal\FeatureTesting.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Platform\Linker\GNU.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Platform\Linker\Windows-C.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Platform\Linker\Windows-CXX.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Platform\Linker\Windows-GNU-C.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Platform\Linker\Windows-GNU-CXX.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Platform\Linker\Windows-GNU.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Platform\Windows-Determine-CXX.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Platform\Windows-Initialize.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Platform\Windows-MSVC-C.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Platform\Windows-MSVC-CXX.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Platform\Windows-MSVC.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Platform\Windows.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Platform\WindowsPaths.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\WriteBasicConfigVersionFile.cmake C$:\Users\Erica$ Barundia\source\repos\CMake-GDGRAP1\CMakeLists.txt C$:\Users\Erica$ Barundia\source\repos\CMake-GDGRAP1\thirdparty\glad-src\cmake\CMakeLists.txt C$:\Users\Erica$ Barundia\source\repos\CMake-GDGRAP1\thirdparty\glad-src\cmake\GladConfig.cmake C$:\Users\Erica$ Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-src\CMakeLists.txt C$:\Users\Erica$ Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-src\CMake\cmake_uninstall.cmake.in C$:\Users\Erica$ Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-src\CMake\glfw3.pc.in C$:\Users\Erica$ Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-src\CMake\glfw3Config.cmake.in C$:\Users\Erica$ Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-src\src\CMakeLists.txt C$:\Users\Erica$ Barundia\source\repos\CMake-GDGRAP1\thirdparty\glm-src\CMakeLists.txt C$:\Users\Erica$ Barundia\source\repos\CMake-GDGRAP1\thirdparty\glm-src\glm\CMakeLists.txt CMakeCache.txt CMakeFiles\3.31.6-msvc6\CMakeCCompiler.cmake CMakeFiles\3.31.6-msvc6\CMakeCXXCompiler.cmake CMakeFiles\3.31.6-msvc6\CMakeRCCompiler.cmake CMakeFiles\3.31.6-msvc6\CMakeSystem.cmake
+build build.ninja: RERUN_CMAKE | C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\BasicConfigVersion-SameMajorVersion.cmake.in C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeCInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeCXXInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeCommonLanguageInclude.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeDependentOption.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeGenericSystem.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeInitializeConfigs.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeLanguageInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakePackageConfigHelpers.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeRCInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeSystemSpecificInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeSystemSpecificInitialize.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CheckCSourceCompiles.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CheckIncludeFile.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CheckLibraryExists.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\CMakeCommonCompilerMacros.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\MSVC-C.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\MSVC-CXX.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\MSVC.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\ExternalProject\shared_internal_commands.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\FetchContent.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\FetchContent\CMakeLists.cmake.in C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\FindGit.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\FindOpenGL.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\FindPackageHandleStandardArgs.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\FindPackageMessage.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\FindPython.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\FindPython\Support.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\FindThreads.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\GNUInstallDirs.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Internal\CMakeCLinkerInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Internal\CMakeCXXLinkerInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Internal\CMakeCommonLinkerInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Internal\CheckSourceCompiles.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Platform\Linker\GNU.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Platform\Linker\Windows-C.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Platform\Linker\Windows-CXX.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Platform\Linker\Windows-GNU-C.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Platform\Linker\Windows-GNU-CXX.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Platform\Linker\Windows-GNU.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Platform\Windows-Initialize.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Platform\Windows-MSVC-C.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Platform\Windows-MSVC-CXX.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Platform\Windows-MSVC.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Platform\Windows.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Platform\WindowsPaths.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\WriteBasicConfigVersionFile.cmake C$:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\CMakeLists.txt C$:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glad-src\cmake\CMakeLists.txt C$:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glad-src\cmake\GladConfig.cmake C$:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-src\CMakeLists.txt C$:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-src\CMake\cmake_uninstall.cmake.in C$:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-src\CMake\glfw3.pc.in C$:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-src\CMake\glfw3Config.cmake.in C$:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-src\src\CMakeLists.txt C$:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glm-src\CMakeLists.txt C$:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glm-src\glm\CMakeLists.txt CMakeCache.txt CMakeFiles\3.31.6-msvc6\CMakeCCompiler.cmake CMakeFiles\3.31.6-msvc6\CMakeCXXCompiler.cmake CMakeFiles\3.31.6-msvc6\CMakeRCCompiler.cmake CMakeFiles\3.31.6-msvc6\CMakeSystem.cmake
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\BasicConfigVersion-SameMajorVersion.cmake.in C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeCCompiler.cmake.in C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeCCompilerABI.c C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeCInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeCXXCompiler.cmake.in C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeCXXCompilerABI.cpp C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeCXXInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeCommonLanguageInclude.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeCompilerIdDetection.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeDependentOption.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeDetermineCCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeDetermineCXXCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeDetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeDetermineCompilerABI.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeDetermineCompilerId.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeDetermineCompilerSupport.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeDetermineRCCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeDetermineSystem.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeFindBinUtils.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeGenericSystem.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeInitializeConfigs.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeLanguageInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakePackageConfigHelpers.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeParseImplicitIncludeInfo.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeParseImplicitLinkInfo.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeParseLibraryArchitecture.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeRCCompiler.cmake.in C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeRCInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeSystem.cmake.in C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeSystemSpecificInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeSystemSpecificInitialize.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeTestCCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeTestCXXCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeTestCompilerCommon.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeTestRCCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CheckCSourceCompiles.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CheckIncludeFile.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CheckLibraryExists.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\ADSP-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\ARMCC-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\ARMClang-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\AppleClang-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\Borland-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\Bruce-C-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\CMakeCommonCompilerMacros.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\Clang-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\Clang-DetermineCompilerInternal.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\Compaq-C-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\Cray-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\CrayClang-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\Embarcadero-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\Fujitsu-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\FujitsuClang-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\GHS-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\GNU-C-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\HP-C-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\HP-CXX-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\IAR-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\IBMClang-C-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\IBMClang-CXX-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\Intel-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\LCC-C-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\LCC-CXX-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\MSVC-C.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\MSVC-CXX-CXXImportStd.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\MSVC-CXX.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\MSVC-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\MSVC.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\NVHPC-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\NVIDIA-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\OrangeC-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\PGI-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\PathScale-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\SCO-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\SDCC-C-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\SunPro-C-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\TI-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\TIClang-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\Tasking-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\Watcom-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\XL-C-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\XL-CXX-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\XLClang-C-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\zOS-C-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\ExternalProject\shared_internal_commands.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\FetchContent.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\FetchContent\CMakeLists.cmake.in C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\FindGit.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\FindOpenGL.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\FindPackageHandleStandardArgs.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\FindPackageMessage.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\FindPython.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\FindPython\Support.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\FindThreads.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\GNUInstallDirs.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Internal\CMakeCLinkerInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Internal\CMakeCXXLinkerInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Internal\CMakeCommonLinkerInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Internal\CMakeDetermineLinkerId.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Internal\CheckSourceCompiles.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Internal\FeatureTesting.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Platform\Linker\GNU.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Platform\Linker\Windows-C.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Platform\Linker\Windows-CXX.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Platform\Linker\Windows-GNU-C.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Platform\Linker\Windows-GNU-CXX.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Platform\Linker\Windows-GNU.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Platform\Windows-Determine-CXX.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Platform\Windows-Initialize.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Platform\Windows-MSVC-C.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Platform\Windows-MSVC-CXX.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Platform\Windows-MSVC.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Platform\Windows.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Platform\WindowsPaths.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\WriteBasicConfigVersionFile.cmake C$:\Users\Erica$ Barundia\source\repos\CMake-GDGRAP1\CMakeLists.txt C$:\Users\Erica$ Barundia\source\repos\CMake-GDGRAP1\thirdparty\glad-src\cmake\CMakeLists.txt C$:\Users\Erica$ Barundia\source\repos\CMake-GDGRAP1\thirdparty\glad-src\cmake\GladConfig.cmake C$:\Users\Erica$ Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-src\CMakeLists.txt C$:\Users\Erica$ Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-src\CMake\cmake_uninstall.cmake.in C$:\Users\Erica$ Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-src\CMake\glfw3.pc.in C$:\Users\Erica$ Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-src\CMake\glfw3Config.cmake.in C$:\Users\Erica$ Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-src\src\CMakeLists.txt C$:\Users\Erica$ Barundia\source\repos\CMake-GDGRAP1\thirdparty\glm-src\CMakeLists.txt C$:\Users\Erica$ Barundia\source\repos\CMake-GDGRAP1\thirdparty\glm-src\glm\CMakeLists.txt CMakeCache.txt CMakeFiles\3.31.6-msvc6\CMakeCCompiler.cmake CMakeFiles\3.31.6-msvc6\CMakeCXXCompiler.cmake CMakeFiles\3.31.6-msvc6\CMakeRCCompiler.cmake CMakeFiles\3.31.6-msvc6\CMakeSystem.cmake: phony
+build C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\BasicConfigVersion-SameMajorVersion.cmake.in C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeCInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeCXXInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeCommonLanguageInclude.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeDependentOption.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeGenericSystem.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeInitializeConfigs.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeLanguageInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakePackageConfigHelpers.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeRCInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeSystemSpecificInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeSystemSpecificInitialize.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CheckCSourceCompiles.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CheckIncludeFile.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CheckLibraryExists.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\CMakeCommonCompilerMacros.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\MSVC-C.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\MSVC-CXX.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\MSVC.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\ExternalProject\shared_internal_commands.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\FetchContent.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\FetchContent\CMakeLists.cmake.in C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\FindGit.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\FindOpenGL.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\FindPackageHandleStandardArgs.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\FindPackageMessage.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\FindPython.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\FindPython\Support.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\FindThreads.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\GNUInstallDirs.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Internal\CMakeCLinkerInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Internal\CMakeCXXLinkerInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Internal\CMakeCommonLinkerInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Internal\CheckSourceCompiles.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Platform\Linker\GNU.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Platform\Linker\Windows-C.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Platform\Linker\Windows-CXX.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Platform\Linker\Windows-GNU-C.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Platform\Linker\Windows-GNU-CXX.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Platform\Linker\Windows-GNU.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Platform\Windows-Initialize.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Platform\Windows-MSVC-C.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Platform\Windows-MSVC-CXX.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Platform\Windows-MSVC.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Platform\Windows.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Platform\WindowsPaths.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\WriteBasicConfigVersionFile.cmake C$:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\CMakeLists.txt C$:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glad-src\cmake\CMakeLists.txt C$:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glad-src\cmake\GladConfig.cmake C$:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-src\CMakeLists.txt C$:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-src\CMake\cmake_uninstall.cmake.in C$:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-src\CMake\glfw3.pc.in C$:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-src\CMake\glfw3Config.cmake.in C$:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-src\src\CMakeLists.txt C$:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glm-src\CMakeLists.txt C$:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glm-src\glm\CMakeLists.txt CMakeCache.txt CMakeFiles\3.31.6-msvc6\CMakeCCompiler.cmake CMakeFiles\3.31.6-msvc6\CMakeCXXCompiler.cmake CMakeFiles\3.31.6-msvc6\CMakeRCCompiler.cmake CMakeFiles\3.31.6-msvc6\CMakeSystem.cmake: phony
 
 
 #############################################

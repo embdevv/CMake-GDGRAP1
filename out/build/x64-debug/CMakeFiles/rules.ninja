@@ -121,7 +121,7 @@ rule CXX_SCAN__glm_Debug
 # Rule to generate ninja dyndep files for CXX.
 
 rule CXX_DYNDEP__glm_Debug
-  command = "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E cmake_ninja_dyndep --tdi="C:\Users\Erica Barundia\source\repos\CMake-GDGRAP1\thirdparty\glm-build\glm\CMakeFiles\glm.dir\CXXDependInfo.json" --lang=CXX --modmapfmt=msvc --dd=$out @$out.rsp
+  command = "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E cmake_ninja_dyndep --tdi=C:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glm-build\glm\CMakeFiles\glm.dir\CXXDependInfo.json --lang=CXX --modmapfmt=msvc --dd=$out @$out.rsp
   description = Generating CXX dyndep file $out
   rspfile = $out.rsp
   rspfile_content = $in
@@ -159,7 +159,7 @@ rule CXX_STATIC_LIBRARY_LINKER__glm_Debug
 # Rule for re-running cmake.
 
 rule RERUN_CMAKE
-  command = "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" --regenerate-during-build -S"C:\Users\Erica Barundia\source\repos\CMake-GDGRAP1" -B"C:\Users\Erica Barundia\source\repos\CMake-GDGRAP1\out\build\x64-debug"
+  command = "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" --regenerate-during-build -SC:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT -BC:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\out\build\x64-debug
   description = Re-running CMake...
   generator = 1
 

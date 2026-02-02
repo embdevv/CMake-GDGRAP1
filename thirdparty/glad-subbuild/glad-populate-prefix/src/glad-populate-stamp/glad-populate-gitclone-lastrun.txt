@@ -3,9 +3,9 @@
 # No other meaning or use of this file is supported.
 
 method=git
-command=C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/bin/cmake.exe;-DCMAKE_MESSAGE_LOG_LEVEL=VERBOSE;-P;C:/Users/Erica Barundia/source/repos/CMake-GDGRAP1/thirdparty/glad-subbuild/glad-populate-prefix/tmp/glad-populate-gitclone.cmake
-source_dir=C:/Users/Erica Barundia/source/repos/CMake-GDGRAP1/thirdparty/glad-src
-work_dir=C:/Users/Erica Barundia/source/repos/CMake-GDGRAP1/thirdparty
+command=C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/bin/cmake.exe;-DCMAKE_MESSAGE_LOG_LEVEL=VERBOSE;-P;C:/Users/erica/OneDrive/Documents/_Acads/gdgrapGIT/thirdparty/glad-subbuild/glad-populate-prefix/tmp/glad-populate-gitclone.cmake
+source_dir=C:/Users/erica/OneDrive/Documents/_Acads/gdgrapGIT/thirdparty/glad-src
+work_dir=C:/Users/erica/OneDrive/Documents/_Acads/gdgrapGIT/thirdparty
 repository=https://github.com/Dav1dde/glad.git
 remote=origin
 init_submodules=TRUE

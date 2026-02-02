@@ -23,7 +23,7 @@ rule CUSTOM_COMMAND
 # Rule for re-running cmake.
 
 rule RERUN_CMAKE
-  command = "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" --regenerate-during-build -S"C:\Users\Erica Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-subbuild" -B"C:\Users\Erica Barundia\source\repos\CMake-GDGRAP1\thirdparty\glfw-subbuild"
+  command = "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" --regenerate-during-build -SC:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-subbuild -BC:\Users\erica\OneDrive\Documents\_Acads\gdgrapGIT\thirdparty\glfw-subbuild
   description = Re-running CMake...
   generator = 1
 

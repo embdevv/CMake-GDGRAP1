@@ -1,1 +1,1 @@
---out-path "C:/Users/Erica Barundia/source/repos/CMake-GDGRAP1/out/build/x64-debug/gladsources/glad_gl_core_46" --api gl:core=4.6 --reproducible c --loader 
+--out-path C:/Users/erica/OneDrive/Documents/_Acads/gdgrapGIT/out/build/x64-debug/gladsources/glad_gl_core_46 --api gl:core=4.6 --reproducible c --loader 

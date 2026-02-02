@@ -1,46 +1,78 @@
 # ninja log v6
-22	50	7912843067170146	clean	8c45b54705a541e8
-72	712	7912843068285841	C:/Users/Erica Barundia/source/repos/CMake-GDGRAP1/thirdparty/glfw-build/src/CMakeFiles/glfw.dir/vulkan.c.obj	d925d6eebecb8e31
-92	727	7912843068481571	C:/Users/Erica Barundia/source/repos/CMake-GDGRAP1/thirdparty/glfw-build/src/CMakeFiles/glfw.dir/osmesa_context.c.obj	8b54d2d1767f7475
-110	744	7912843068664358	C:/Users/Erica Barundia/source/repos/CMake-GDGRAP1/thirdparty/glfw-build/src/CMakeFiles/glfw.dir/null_window.c.obj	9155c0e1891eeb22
-66	761	7912843068219209	C:/Users/Erica Barundia/source/repos/CMake-GDGRAP1/thirdparty/glfw-build/src/CMakeFiles/glfw.dir/platform.c.obj	31471a75ccf935a2
-79	779	7912843068351121	C:/Users/Erica Barundia/source/repos/CMake-GDGRAP1/thirdparty/glfw-build/src/CMakeFiles/glfw.dir/window.c.obj	4637a8179e6d9095
-116	795	7912843068724706	C:/Users/Erica Barundia/source/repos/CMake-GDGRAP1/thirdparty/glfw-build/src/CMakeFiles/glfw.dir/null_joystick.c.obj	83c27bb2ba32a729
-61	811	7912843068169104	C:/Users/Erica Barundia/source/repos/CMake-GDGRAP1/thirdparty/glfw-build/src/CMakeFiles/glfw.dir/monitor.c.obj	53b0d113b201a43d
-44	823	7912843068003372	C:/Users/Erica Barundia/source/repos/CMake-GDGRAP1/thirdparty/glfw-build/src/CMakeFiles/glfw.dir/context.c.obj	c34def753eeb109c
-49	836	7912843068058578	C:/Users/Erica Barundia/source/repos/CMake-GDGRAP1/thirdparty/glfw-build/src/CMakeFiles/glfw.dir/init.c.obj	6143fa3c03ab93f
-104	850	7912843068607011	C:/Users/Erica Barundia/source/repos/CMake-GDGRAP1/thirdparty/glfw-build/src/CMakeFiles/glfw.dir/null_monitor.c.obj	f06a800fdc755e19
-86	858	7912843068421284	C:/Users/Erica Barundia/source/repos/CMake-GDGRAP1/thirdparty/glfw-build/src/CMakeFiles/glfw.dir/egl_context.c.obj	de83dd0b96999e0f
-55	865	7912843068103696	C:/Users/Erica Barundia/source/repos/CMake-GDGRAP1/thirdparty/glfw-build/src/CMakeFiles/glfw.dir/input.c.obj	e7af2f5e6fbdd810
-98	871	7912843068541875	C:/Users/Erica Barundia/source/repos/CMake-GDGRAP1/thirdparty/glfw-build/src/CMakeFiles/glfw.dir/null_init.c.obj	e5d67d5012737192
-744	1214	7912843075006575	C:/Users/Erica Barundia/source/repos/CMake-GDGRAP1/thirdparty/glfw-build/src/CMakeFiles/glfw.dir/win32_thread.c.obj	3f8033743918a499
-714	1220	7912843074709435	C:/Users/Erica Barundia/source/repos/CMake-GDGRAP1/thirdparty/glfw-build/src/CMakeFiles/glfw.dir/win32_module.c.obj	aca8135941128a4c
-728	1229	7912843074850126	C:/Users/Erica Barundia/source/repos/CMake-GDGRAP1/thirdparty/glfw-build/src/CMakeFiles/glfw.dir/win32_time.c.obj	2c289579c9d23326
-781	1246	7912843075373181	C:/Users/Erica Barundia/source/repos/CMake-GDGRAP1/thirdparty/glfw-build/src/CMakeFiles/glfw.dir/win32_joystick.c.obj	f4ff898524ebec07
-812	1253	7912843075684118	C:/Users/Erica Barundia/source/repos/CMake-GDGRAP1/thirdparty/glfw-build/src/CMakeFiles/glfw.dir/win32_window.c.obj	e36258b27410164b
-762	1297	7912843075182434	C:/Users/Erica Barundia/source/repos/CMake-GDGRAP1/thirdparty/glfw-build/src/CMakeFiles/glfw.dir/win32_init.c.obj	e5de71f9d17b8b9e
-823	1310	7912843075794549	C:/Users/Erica Barundia/source/repos/CMake-GDGRAP1/thirdparty/glfw-build/src/CMakeFiles/glfw.dir/wgl_context.c.obj	3a3ec8a941dc33e5
-795	1353	7912843075523667	C:/Users/Erica Barundia/source/repos/CMake-GDGRAP1/thirdparty/glfw-build/src/CMakeFiles/glfw.dir/win32_monitor.c.obj	eb72e411bcfb99ca
-1353	1444	7912843081099570	C:/Users/Erica Barundia/source/repos/CMake-GDGRAP1/thirdparty/glfw-build/src/glfw3.lib	1f052536ff04d0e6
-837	2749	7912843075940641	C:/Users/Erica Barundia/source/repos/CMake-GDGRAP1/thirdparty/glm-build/glm/CMakeFiles/glm.dir/detail/glm.cpp.obj	b1564a4a7087843a
-2751	2819	7912843095074998	C:/Users/Erica Barundia/source/repos/CMake-GDGRAP1/thirdparty/glm-build/glm/glm.lib	a7da327d44da465
-34	4201	7912843109535645	gladsources/glad_gl_core_46/include/KHR/khrplatform.h	d3722eddda3559f8
-34	4201	7912843109535645	gladsources/glad_gl_core_46/include/glad/gl.h	d3722eddda3559f8
-34	4201	7912843109535645	gladsources/glad_gl_core_46/src/gl.c	d3722eddda3559f8
-34	4201	7912843109535645	gladsources/glad_gl_core_46/args.txt	d3722eddda3559f8
-34	4201	7912843109535645	C:/Users/Erica Barundia/source/repos/CMake-GDGRAP1/out/build/x64-debug/gladsources/glad_gl_core_46/include/KHR/khrplatform.h	d3722eddda3559f8
-34	4201	7912843109535645	C:/Users/Erica Barundia/source/repos/CMake-GDGRAP1/out/build/x64-debug/gladsources/glad_gl_core_46/include/glad/gl.h	d3722eddda3559f8
-34	4201	7912843109535645	C:/Users/Erica Barundia/source/repos/CMake-GDGRAP1/out/build/x64-debug/gladsources/glad_gl_core_46/src/gl.c	d3722eddda3559f8
-34	4201	7912843109535645	C:/Users/Erica Barundia/source/repos/CMake-GDGRAP1/out/build/x64-debug/gladsources/glad_gl_core_46/args.txt	d3722eddda3559f8
-4202	4662	7912843109575697	CMakeFiles/glad_gl_core_46.dir/gladsources/glad_gl_core_46/src/gl.c.obj	57e2f35b6e642d8b
-4663	4729	7912843114186555	glad_gl_core_46.lib	dc84bfea9480050b
-4206	5975	7912843109625932	CMakeFiles/CMakeProjectGRAP1.dir/CMakeProjectGRAP1.cpp.obj	ce7fb90d4cc9e8f9
-5976	6463	7912843127322123	CMakeProjectGRAP1.exe	530ea6ef4438c025
-34	1931	7912843532176103	CMakeFiles/CMakeProjectGRAP1.dir/CMakeProjectGRAP1.cpp.obj	ce7fb90d4cc9e8f9
-1932	2223	7912843551149852	CMakeProjectGRAP1.exe	530ea6ef4438c025
-51	2274	7912889715993156	CMakeFiles/CMakeProjectGRAP1.dir/CMakeProjectGRAP1.cpp.obj	ce7fb90d4cc9e8f9
-2276	2763	7912889738242977	CMakeProjectGRAP1.exe	530ea6ef4438c025
-75	2072	7912890053597531	CMakeFiles/CMakeProjectGRAP1.dir/CMakeProjectGRAP1.cpp.obj	ce7fb90d4cc9e8f9
-2074	2379	7912890073595792	CMakeProjectGRAP1.exe	530ea6ef4438c025
-64	1853	7912894350458468	CMakeFiles/CMakeProjectGRAP1.dir/CMakeProjectGRAP1.cpp.obj	ce7fb90d4cc9e8f9
-1854	2209	7912894368355042	CMakeProjectGRAP1.exe	530ea6ef4438c025
+679	2204	7917028814354969	C:/Users/erica/OneDrive/Documents/_Acads/gdgrapGIT/thirdparty/glm-build/glm/CMakeFiles/glm.dir/detail/glm.cpp.obj	1d45236e68df5981
+16	59	7917029836313099	clean	8c45b54705a541e8
+162	722	7917028809188384	C:/Users/erica/OneDrive/Documents/_Acads/gdgrapGIT/thirdparty/glfw-build/src/CMakeFiles/glfw.dir/win32_module.c.obj	6619fbc8648e060c
+108	693	7917028808633892	C:/Users/erica/OneDrive/Documents/_Acads/gdgrapGIT/thirdparty/glfw-build/src/CMakeFiles/glfw.dir/egl_context.c.obj	77e1fa3ec25f9a30
+134	607	7917028808910736	C:/Users/erica/OneDrive/Documents/_Acads/gdgrapGIT/thirdparty/glfw-build/src/CMakeFiles/glfw.dir/null_monitor.c.obj	d36f8ceca0a0492b
+116	716	7917028808726507	C:/Users/erica/OneDrive/Documents/_Acads/gdgrapGIT/thirdparty/glfw-build/src/CMakeFiles/glfw.dir/osmesa_context.c.obj	2d5f6281f0506e56
+40	2635	7917028833881423	gladsources/glad_gl_core_46/include/glad/gl.h	85551b84ce7454d2
+181	704	7917028809372581	C:/Users/erica/OneDrive/Documents/_Acads/gdgrapGIT/thirdparty/glfw-build/src/CMakeFiles/glfw.dir/win32_thread.c.obj	764bab50c18147bb
+125	663	7917028808813194	C:/Users/erica/OneDrive/Documents/_Acads/gdgrapGIT/thirdparty/glfw-build/src/CMakeFiles/glfw.dir/null_init.c.obj	ea12ed5d749cb0d4
+190	699	7917028809453632	C:/Users/erica/OneDrive/Documents/_Acads/gdgrapGIT/thirdparty/glfw-build/src/CMakeFiles/glfw.dir/win32_init.c.obj	cbc44c05bdd078d8
+663	1087	7917028814195460	C:/Users/erica/OneDrive/Documents/_Acads/gdgrapGIT/thirdparty/glfw-build/src/CMakeFiles/glfw.dir/wgl_context.c.obj	d7d86c6037dd40f8
+2643	4372	7917028833996769	CMakeFiles/CMakeProjectGRAP1.dir/CMakeProjectGRAP1.cpp.obj	6786d70d4b2ec779
+72	737	7917028808281908	C:/Users/erica/OneDrive/Documents/_Acads/gdgrapGIT/thirdparty/glfw-build/src/CMakeFiles/glfw.dir/monitor.c.obj	f1d5a94775c10e
+172	647	7917028809273398	C:/Users/erica/OneDrive/Documents/_Acads/gdgrapGIT/thirdparty/glfw-build/src/CMakeFiles/glfw.dir/win32_time.c.obj	8899cf86aa0d33be
+144	742	7917028809001111	C:/Users/erica/OneDrive/Documents/_Acads/gdgrapGIT/thirdparty/glfw-build/src/CMakeFiles/glfw.dir/null_window.c.obj	6b31b6cc89b82d72
+647	1081	7917028814034039	C:/Users/erica/OneDrive/Documents/_Acads/gdgrapGIT/thirdparty/glfw-build/src/CMakeFiles/glfw.dir/win32_window.c.obj	b9434fab227e416c
+58	732	7917028808141904	C:/Users/erica/OneDrive/Documents/_Acads/gdgrapGIT/thirdparty/glfw-build/src/CMakeFiles/glfw.dir/init.c.obj	51ca5e14cf65b5f8
+609	1074	7917028813653194	C:/Users/erica/OneDrive/Documents/_Acads/gdgrapGIT/thirdparty/glfw-build/src/CMakeFiles/glfw.dir/win32_joystick.c.obj	ceb2f282dd376a33
+153	629	7917028809091297	C:/Users/erica/OneDrive/Documents/_Acads/gdgrapGIT/thirdparty/glfw-build/src/CMakeFiles/glfw.dir/null_joystick.c.obj	b79d55bb62cd2c8e
+40	2635	7917028833881423	gladsources/glad_gl_core_46/src/gl.c	85551b84ce7454d2
+51	747	7917028808072954	C:/Users/erica/OneDrive/Documents/_Acads/gdgrapGIT/thirdparty/glfw-build/src/CMakeFiles/glfw.dir/context.c.obj	264fbaf6d32fa415
+87	804	7917028808432223	C:/Users/erica/OneDrive/Documents/_Acads/gdgrapGIT/thirdparty/glfw-build/src/CMakeFiles/glfw.dir/vulkan.c.obj	a3ec4fc778a7c8aa
+65	710	7917028808209185	C:/Users/erica/OneDrive/Documents/_Acads/gdgrapGIT/thirdparty/glfw-build/src/CMakeFiles/glfw.dir/input.c.obj	6cd92f7ca849b292
+79	679	7917028808355137	C:/Users/erica/OneDrive/Documents/_Acads/gdgrapGIT/thirdparty/glfw-build/src/CMakeFiles/glfw.dir/platform.c.obj	2a00c01f323a607f
+40	2635	7917028833881423	C:/Users/erica/OneDrive/Documents/_Acads/gdgrapGIT/out/build/x64-debug/gladsources/glad_gl_core_46/src/gl.c	85551b84ce7454d2
+98	727	7917028808547431	C:/Users/erica/OneDrive/Documents/_Acads/gdgrapGIT/thirdparty/glfw-build/src/CMakeFiles/glfw.dir/window.c.obj	9744f34479c7b2d8
+629	1117	7917028813849118	C:/Users/erica/OneDrive/Documents/_Acads/gdgrapGIT/thirdparty/glfw-build/src/CMakeFiles/glfw.dir/win32_monitor.c.obj	7e8388c3c2337f7a
+1117	1187	7917028818724909	C:/Users/erica/OneDrive/Documents/_Acads/gdgrapGIT/thirdparty/glfw-build/src/glfw3.lib	43a0745b42d68482
+2205	2271	7917028829611658	C:/Users/erica/OneDrive/Documents/_Acads/gdgrapGIT/thirdparty/glm-build/glm/glm.lib	1d63b4b5e62fd974
+40	2635	7917028833881423	gladsources/glad_gl_core_46/include/KHR/khrplatform.h	85551b84ce7454d2
+40	2635	7917028833881423	gladsources/glad_gl_core_46/args.txt	85551b84ce7454d2
+40	2635	7917028833881423	C:/Users/erica/OneDrive/Documents/_Acads/gdgrapGIT/out/build/x64-debug/gladsources/glad_gl_core_46/include/KHR/khrplatform.h	85551b84ce7454d2
+40	2635	7917028833881423	C:/Users/erica/OneDrive/Documents/_Acads/gdgrapGIT/out/build/x64-debug/gladsources/glad_gl_core_46/include/glad/gl.h	85551b84ce7454d2
+40	2635	7917028833881423	C:/Users/erica/OneDrive/Documents/_Acads/gdgrapGIT/out/build/x64-debug/gladsources/glad_gl_core_46/args.txt	85551b84ce7454d2
+2636	3036	7917028833925068	CMakeFiles/glad_gl_core_46.dir/gladsources/glad_gl_core_46/src/gl.c.obj	74fb3852d1050737
+3037	3106	7917028837923401	glad_gl_core_46.lib	dc84bfea9480050b
+4373	4713	7917028851282520	CMakeProjectGRAP1.exe	6cd4d6fe3daaef8e
+142	625	7917029838300990	C:/Users/erica/OneDrive/Documents/_Acads/gdgrapGIT/thirdparty/glfw-build/src/CMakeFiles/glfw.dir/null_monitor.c.obj	d36f8ceca0a0492b
+86	644	7917029837735019	C:/Users/erica/OneDrive/Documents/_Acads/gdgrapGIT/thirdparty/glfw-build/src/CMakeFiles/glfw.dir/platform.c.obj	2a00c01f323a607f
+180	660	7917029838681021	C:/Users/erica/OneDrive/Documents/_Acads/gdgrapGIT/thirdparty/glfw-build/src/CMakeFiles/glfw.dir/win32_time.c.obj	8899cf86aa0d33be
+77	676	7917029837648084	C:/Users/erica/OneDrive/Documents/_Acads/gdgrapGIT/thirdparty/glfw-build/src/CMakeFiles/glfw.dir/monitor.c.obj	f1d5a94775c10e
+105	691	7917029837923164	C:/Users/erica/OneDrive/Documents/_Acads/gdgrapGIT/thirdparty/glfw-build/src/CMakeFiles/glfw.dir/window.c.obj	9744f34479c7b2d8
+161	707	7917029838484751	C:/Users/erica/OneDrive/Documents/_Acads/gdgrapGIT/thirdparty/glfw-build/src/CMakeFiles/glfw.dir/null_joystick.c.obj	b79d55bb62cd2c8e
+133	712	7917029838207312	C:/Users/erica/OneDrive/Documents/_Acads/gdgrapGIT/thirdparty/glfw-build/src/CMakeFiles/glfw.dir/null_init.c.obj	ea12ed5d749cb0d4
+170	718	7917029838582515	C:/Users/erica/OneDrive/Documents/_Acads/gdgrapGIT/thirdparty/glfw-build/src/CMakeFiles/glfw.dir/win32_module.c.obj	6619fbc8648e060c
+95	724	7917029837839266	C:/Users/erica/OneDrive/Documents/_Acads/gdgrapGIT/thirdparty/glfw-build/src/CMakeFiles/glfw.dir/vulkan.c.obj	a3ec4fc778a7c8aa
+198	729	7917029838864320	C:/Users/erica/OneDrive/Documents/_Acads/gdgrapGIT/thirdparty/glfw-build/src/CMakeFiles/glfw.dir/win32_init.c.obj	cbc44c05bdd078d8
+63	734	7917029837507764	C:/Users/erica/OneDrive/Documents/_Acads/gdgrapGIT/thirdparty/glfw-build/src/CMakeFiles/glfw.dir/init.c.obj	51ca5e14cf65b5f8
+114	739	7917029838015090	C:/Users/erica/OneDrive/Documents/_Acads/gdgrapGIT/thirdparty/glfw-build/src/CMakeFiles/glfw.dir/egl_context.c.obj	77e1fa3ec25f9a30
+55	744	7917029837429497	C:/Users/erica/OneDrive/Documents/_Acads/gdgrapGIT/thirdparty/glfw-build/src/CMakeFiles/glfw.dir/context.c.obj	264fbaf6d32fa415
+151	749	7917029838382401	C:/Users/erica/OneDrive/Documents/_Acads/gdgrapGIT/thirdparty/glfw-build/src/CMakeFiles/glfw.dir/null_window.c.obj	6b31b6cc89b82d72
+124	754	7917029838119692	C:/Users/erica/OneDrive/Documents/_Acads/gdgrapGIT/thirdparty/glfw-build/src/CMakeFiles/glfw.dir/osmesa_context.c.obj	2d5f6281f0506e56
+189	758	7917029838772629	C:/Users/erica/OneDrive/Documents/_Acads/gdgrapGIT/thirdparty/glfw-build/src/CMakeFiles/glfw.dir/win32_thread.c.obj	764bab50c18147bb
+69	763	7917029837569492	C:/Users/erica/OneDrive/Documents/_Acads/gdgrapGIT/thirdparty/glfw-build/src/CMakeFiles/glfw.dir/input.c.obj	6cd92f7ca849b292
+627	1065	7917029843152642	C:/Users/erica/OneDrive/Documents/_Acads/gdgrapGIT/thirdparty/glfw-build/src/CMakeFiles/glfw.dir/win32_joystick.c.obj	ceb2f282dd376a33
+676	1070	7917029843644073	C:/Users/erica/OneDrive/Documents/_Acads/gdgrapGIT/thirdparty/glfw-build/src/CMakeFiles/glfw.dir/wgl_context.c.obj	d7d86c6037dd40f8
+661	1082	7917029843489288	C:/Users/erica/OneDrive/Documents/_Acads/gdgrapGIT/thirdparty/glfw-build/src/CMakeFiles/glfw.dir/win32_window.c.obj	b9434fab227e416c
+644	1110	7917029843328502	C:/Users/erica/OneDrive/Documents/_Acads/gdgrapGIT/thirdparty/glfw-build/src/CMakeFiles/glfw.dir/win32_monitor.c.obj	7e8388c3c2337f7a
+1111	1181	7917029847991477	C:/Users/erica/OneDrive/Documents/_Acads/gdgrapGIT/thirdparty/glfw-build/src/glfw3.lib	43a0745b42d68482
+691	2188	7917029843797506	C:/Users/erica/OneDrive/Documents/_Acads/gdgrapGIT/thirdparty/glm-build/glm/CMakeFiles/glm.dir/detail/glm.cpp.obj	1d45236e68df5981
+2189	2254	7917029858763854	C:/Users/erica/OneDrive/Documents/_Acads/gdgrapGIT/thirdparty/glm-build/glm/glm.lib	1d63b4b5e62fd974
+45	2648	7917029863327409	gladsources/glad_gl_core_46/include/KHR/khrplatform.h	85551b84ce7454d2
+45	2648	7917029863327409	gladsources/glad_gl_core_46/include/glad/gl.h	85551b84ce7454d2
+45	2648	7917029863327409	gladsources/glad_gl_core_46/src/gl.c	85551b84ce7454d2
+45	2648	7917029863327409	gladsources/glad_gl_core_46/args.txt	85551b84ce7454d2
+45	2648	7917029863327409	C:/Users/erica/OneDrive/Documents/_Acads/gdgrapGIT/out/build/x64-debug/gladsources/glad_gl_core_46/include/KHR/khrplatform.h	85551b84ce7454d2
+45	2648	7917029863327409	C:/Users/erica/OneDrive/Documents/_Acads/gdgrapGIT/out/build/x64-debug/gladsources/glad_gl_core_46/include/glad/gl.h	85551b84ce7454d2
+45	2648	7917029863327409	C:/Users/erica/OneDrive/Documents/_Acads/gdgrapGIT/out/build/x64-debug/gladsources/glad_gl_core_46/src/gl.c	85551b84ce7454d2
+45	2648	7917029863327409	C:/Users/erica/OneDrive/Documents/_Acads/gdgrapGIT/out/build/x64-debug/gladsources/glad_gl_core_46/args.txt	85551b84ce7454d2
+2649	3060	7917029863378901	CMakeFiles/glad_gl_core_46.dir/gladsources/glad_gl_core_46/src/gl.c.obj	74fb3852d1050737
+3061	3130	7917029867486954	glad_gl_core_46.lib	dc84bfea9480050b
+2658	4334	7917029863460553	CMakeFiles/CMakeProjectGRAP1.dir/CMakeProjectGRAP1.cpp.obj	6786d70d4b2ec779
+4334	4652	7917029880224063	CMakeProjectGRAP1.exe	6cd4d6fe3daaef8e
+28	1703	7917031146423262	CMakeFiles/CMakeProjectGRAP1.dir/CMakeProjectGRAP1.cpp.obj	6786d70d4b2ec779
+1704	2023	7917031163179963	CMakeProjectGRAP1.exe	6cd4d6fe3daaef8e
+48	1697	7917031910668637	CMakeFiles/CMakeProjectGRAP1.dir/CMakeProjectGRAP1.cpp.obj	6786d70d4b2ec779
+1698	2066	7917031927156942	CMakeProjectGRAP1.exe	6cd4d6fe3daaef8e
