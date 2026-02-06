@@ -27,13 +27,23 @@ using namespace std;
 
 float SCALE_VALUE = 1.f;
 
+class Model3D {
+
+public:
+    glm::vec3 position(x,y,z);
+    float x_scale, y_scale, z_scale;
+    float theta;
+    float axisv_x, axisv_y, axisv_z;
+};
+
+Model3D::position(0.0f, 0.0f, 0.0f);
+//Model3D::x_scale
+
 // Initialize transformation values
-float x = 0.0f, y = 0.0f, z = 0.0f;
+float x = 0.0f, y = 0.0f, z = 0.0f; // can be rewritten as glm::vec3 position
 float x_scale = SCALE_VALUE, y_scale = SCALE_VALUE, z_scale = SCALE_VALUE;
 float theta = 0.0f;
 float axisv_x = 0.0f, axisv_y = 1.0f, axisv_z = 0.0f;
-
-//float x_mod = 0, z_mod = -5.f;
 
 // Key callback function for handling input
 void Key_Callback(GLFWwindow* window, // Pointer to GLFW window
