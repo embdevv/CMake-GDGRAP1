@@ -42,9 +42,34 @@ public:
 
     glm::vec3 setPosition(glm::vec3 pos) { position = pos;  };
     glm::vec3 getPosition() const { return position; };
-};
+};Model3D model;
 
-Model3D model;
+class Camera {
+private:
+    glm::vec3 position;
+    glm::vec3 target;
+    glm::vec3 up;
+    float fov;
+    float aspect;
+    float nearPlane;
+    float farPlane;
+public:
+    Camera(glm::vec3 pos, glm::vec3 tgt, glm::vec3 upVec, float fov = 60.0f) :
+        position(pos), target(tgt), up(upVec), fov(fov),
+        aspect(800.f / 800.f), nearPlane(0.1f), farPlane(100.f){}
+
+    glm::mat4 getViewMatrix() const {
+        return glm::lookAt(position, target, up);
+    }
+
+    glm::mat4 getProjectionMatrix() const {
+        return glm::perspective(glm::radians(fov), aspect, nearPlane, farPlane);
+    }
+
+    void setPosition(glm::vec3 pos) { position = pos; }
+    void setTarget(glm::vec3 tgt) { target = tgt; }
+    glm::vec3 getPosition()const { return position; }
+};
 
 string loadShaderFromFile(const string& filepath)
 {
@@ -313,43 +338,9 @@ int main(void)
 	// Enable 2 for our UV / Texture Coordinates
     glEnableVertexAttribArray(2);
 
-
-
-    /*
-		FOR VISUALIZATION PURPOSES 
-
-
-        2
-         -------------------
-        | -2                | 2
-
-
-
-
-
-
-         --------------------
-        -2
-    
-		The SMALLER the value, the more zoomed IN the model will be.
-		The LARGER the value, the more zoomed OUT the model will be.
-    */
-
-    //glm::mat4 projection = glm::ortho(
-    //    -2.f, // Left
-    //    2.f,  // Right
-    //    -2.f, // Down
-    //    2.f,  // Up
-    //    -1.f, // Near
-    //    1.f   // Far
-    //);
-
-    //   BEHIND CAMERA   CAMERA         FRONT CAMERA
-	//    5.0             0.0         0.1        -5,0f        100.0
-	//    Bunny          Camera    Near Plane    Bunny      Far Plane
     glm::mat4 projection = glm::perspective(
         glm::radians(60.0f),               // Field of View Angle - DEFAULT 60
-        windowWidth / windowHeight,        // Aspect Ratio
+        WINDOW_WIDTH / WINDOW_HEIGHT,        // Aspect Ratio
 		0.1f,                              // Near Plane (must be > 0)
         100.0f                             // Far Plane
     );
