@@ -86,7 +86,7 @@ string loadShaderFromFile(const string& filepath)
     return buffer.str();
 }
 
-string loadAndCompileShaders(const string& vertpath, const string& fragpath)
+GLuint loadAndCompileShaders(const string& vertpath, const string& fragpath)
 {
     // Load shaders
     string vertString = loadShaderFromFile(vertpath);
@@ -98,7 +98,20 @@ string loadAndCompileShaders(const string& vertpath, const string& fragpath)
     GLuint vertexShader = glCreateShader(GL_VERTEX_SHADER);
     GLuint fragmentShader = glCreateShader(GL_FRAGMENT_SHADER);
     glShaderSource(vertexShader, 1, &vertChar, NULL);
-    
+    glShaderSource(fragmentShader, 1, &fragChar, NULL);
+
+    glCompileShader(vertexShader);
+    glCompileShader(fragmentShader);
+
+    GLuint shaderProgram = glCreateProgram();
+    glAttachShader(shaderProgram, vertexShader);
+    glAttachShader(shaderProgram, fragmentShader);
+
+    glLinkProgram(shaderProgram);
+    glDeleteShader(vertexShader);
+    glDeleteShader(fragmentShader);
+
+    return shaderProgram;
 }
 
 
@@ -281,20 +294,7 @@ int main(void)
         path.c_str()
     );
 
-	// Compile vertex and fragment shaders
-	GLuint vertexShader = glCreateShader(GL_VERTEX_SHADER);
-	glShaderSource(vertexShader, 1, &vertChar, NULL);
-    glCompileShader(vertexShader);
-
-    GLuint fragmentShader = glCreateShader(GL_FRAGMENT_SHADER);
-	glShaderSource(fragmentShader, 1, &fragChar, NULL);
-	glCompileShader(fragmentShader);
-
-	GLuint shaderProgram = glCreateProgram();
-	glAttachShader(shaderProgram, vertexShader);
-	glAttachShader(shaderProgram, fragmentShader);
-	
-    glLinkProgram(shaderProgram);
+    GLuint shaderProgram = loadAndCompileShaders(VERT_PATH, FRAG_PATH);
 
     // EBO array
     vector<GLuint> mesh_indices;
