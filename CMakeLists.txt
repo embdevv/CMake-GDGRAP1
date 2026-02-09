@@ -76,6 +76,41 @@ add_executable(CMakeProjectGRAP1 "CMakeProjectGRAP1.cpp"
 "tiny_obj_loader.h" 
 "stb_image.h")
 
+add_executable(Quiz2 "Quiz2.cpp"
+"tiny_obj_loader.h")
+
+target_link_libraries(Quiz2
+    glfw
+    OpenGL::GL
+    glad_gl_core_46
+    glm::glm
+)
+
+add_custom_command(
+    TARGET Quiz2
+    POST_BUILD
+    COMMAND ${CMAKE_COMMAND} -E copy_directory
+        "${CMAKE_CURRENT_SOURCE_DIR}/3D"
+        "$<TARGET_FILE_DIR:CMakeProjectGRAP1>/3D"
+    COMMENT "Copying assets to build directory"
+)
+
+add_custom_command(
+    TARGET Quiz2
+    POST_BUILD
+    COMMAND ${CMAKE_COMMAND} -E copy_directory
+        "${CMAKE_CURRENT_SOURCE_DIR}/Shaders"
+        "$<TARGET_FILE_DIR:CMakeProjectGRAP1>/Shaders"
+    COMMENT "Copying assets to build directory"
+)
+
+
+
+if (CMAKE_VERSION VERSION_GREATER 3.12)
+    set_property(TARGET Quiz2 PROPERTY CXX_STANDARD 20)
+endif()
+
+
 
 # Link the required libraries
 target_link_libraries(CMakeProjectGRAP1
@@ -84,6 +119,7 @@ target_link_libraries(CMakeProjectGRAP1
     glad_gl_core_46
     glm::glm
 )
+
 
 add_custom_command(
     TARGET CMakeProjectGRAP1
