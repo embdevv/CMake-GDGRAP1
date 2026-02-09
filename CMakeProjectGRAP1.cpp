@@ -36,6 +36,9 @@ const float ZOOM_SPEED = 0.1f;
 const float WINDOW_WIDTH = 800.0f;
 const float WINDOW_HEIGHT = 800.0f;
 
+const string VERT_PATH = "Shaders/sample.vert";
+const string FRAG_PATH = "Shaders/sample.frag";
+
 class Model3D {
 public:
     glm::vec3 position = glm::vec3(0.0f, 0.0f, 0.0f);
@@ -82,6 +85,22 @@ string loadShaderFromFile(const string& filepath)
 
     return buffer.str();
 }
+
+string loadAndCompileShaders(const string& vertpath, const string& fragpath)
+{
+    // Load shaders
+    string vertString = loadShaderFromFile(vertpath);
+    const char* vertChar = vertString.c_str();
+    string fragString = loadShaderFromFile(fragpath);
+    const char* fragChar = fragString.c_str();
+
+    // Compile shaders
+    GLuint vertexShader = glCreateShader(GL_VERTEX_SHADER);
+    GLuint fragmentShader = glCreateShader(GL_FRAGMENT_SHADER);
+    glShaderSource(vertexShader, 1, &vertChar, NULL);
+    
+}
+
 
 GLFWwindow* createWindow(float width, float height)
 {

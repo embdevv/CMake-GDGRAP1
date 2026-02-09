@@ -39,3 +39,7 @@ out/build/x64-debug/CMakeFiles/TargetDirectories.txt
 /.vs/CMake-GDGRAP1/CopilotIndices
 /.vs/CMake-GDGRAP1/CopilotIndices
 .vs/CMake-GDGRAP1/CopilotIndices/17.14.1561.44479/SemanticSymbols.db-shm
+*.db-shm
+*.db-wal
+*.db-wal
+.vs/CMake-GDGRAP1/v17/.wsuo
