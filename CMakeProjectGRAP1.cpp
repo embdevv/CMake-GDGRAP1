@@ -33,6 +33,9 @@ const float MOVEMENT_SPEED = 0.1f;
 const float ROTATION_SPEED = 5.0f;
 const float ZOOM_SPEED = 0.1f;
 
+const float WINDOW_WIDTH = 800.0f;
+const float WINDOW_HEIGHT = 800.0f;
+
 class Model3D {
 public:
     glm::vec3 position = glm::vec3(0.0f, 0.0f, 0.0f);
@@ -80,6 +83,22 @@ string loadShaderFromFile(const string& filepath)
     return buffer.str();
 }
 
+GLFWwindow* createWindow(float width, float height)
+{
+    if (!glfwInit()) {
+        return nullptr;
+    }
+
+    GLFWwindow* window = glfwCreateWindow(width, height, "Erica Barundia", NULL, NULL);
+    if (!window)
+    {
+        glfwTerminate();
+        return nullptr;
+    }
+
+    glfwMakeContextCurrent(window);
+    return window;
+}
 // Key callback function for handling input
 void Key_Callback(GLFWwindow* window, int key, int scancode, int action, int mods)      
 {
@@ -144,27 +163,7 @@ void Key_Callback(GLFWwindow* window, int key, int scancode, int action, int mod
 
 int main(void)
 {
-    // Initialize GLFW
-    GLFWwindow* window;
-
-    if (!glfwInit())
-        return -1;
-    
-    const float WINDOW_WIDTH = 800.0f;
-    const float WINDOW_HEIGHT = 800.0f;
-    int img_width,
-        img_height,
-        colorChannels;
-    
-    /* Create a windowed mode window and its OpenGL context */
-    window = glfwCreateWindow(WINDOW_WIDTH, WINDOW_HEIGHT, "Erica Barundia", NULL, NULL);
-    if (!window)
-    {
-        glfwTerminate();
-        return -1;
-    }
-
-    glfwMakeContextCurrent(window);
+    GLFWwindow* window = createWindow(WINDOW_WIDTH, WINDOW_HEIGHT);   
     gladLoadGL(glfwGetProcAddress);
 	glfwSetKeyCallback(window, Key_Callback);
 
@@ -190,6 +189,10 @@ int main(void)
     };
 
     stbi_set_flip_vertically_on_load(true);
+
+    int img_width,
+        img_height,
+        colorChannels;
 
     unsigned char* tex_bytes = 
 		stbi_load("3D/ayaya.png",       // path to image
@@ -339,10 +342,10 @@ int main(void)
     glEnableVertexAttribArray(2);
 
     glm::mat4 projection = glm::perspective(
-        glm::radians(60.0f),               // Field of View Angle - DEFAULT 60
-        WINDOW_WIDTH / WINDOW_HEIGHT,        // Aspect Ratio
-		0.1f,                              // Near Plane (must be > 0)
-        100.0f                             // Far Plane
+        glm::radians(60.0f),               
+        WINDOW_WIDTH / WINDOW_HEIGHT,       
+		0.1f,                             
+        100.0f                             
     );
 
 	model.position.z = -5.0f; // Move the model away from the camera
