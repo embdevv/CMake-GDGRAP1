@@ -1,458 +1,454 @@
-﻿// CMakeProjectGRAP1.cpp
-// Main cpp file (removed comments for clarity)
-// Last modified: 02/09/2026
+﻿/**
+ * @file CMakeProjectGRAP1.cpp
+ * @author Erica Barundia
+ * @date February 2026
+ *
+ * GDGRAP1 Programming Challenge 1
+ *
+ * Description:
+ * This program demonstrates 3D rendering with object-oriented design:
+ * - Custom Model3D class for managing individual model instances
+ * - FPS camera with WASD keyboard controls
+ * - Model spawning system (Space key) with 3-second cooldown
+ * - Perspective projection (45° FOV)
+ * - Single vertex and fragment shader for all models
+ *
+ * 3D Model Credit:
+ * Low-Poly Mccree by Youssef Zidan
+ * Source: https://sketchfab.com/3d-models/low-poly-mccree-38aedc02c0b2412babdc4d0eac7c6803
+ * License: CC Attribution
+ *
+ * Controls:
+ * - W/S: Move forward/backward
+ * - A/D: Strafe left/right
+ * - Arrow Keys: Rotate camera view
+ * - Space: Spawn model in front of camera (3 second cooldown)
+ * - ESC: Exit application
+ */
 
 #include <iostream>
-#include <math.h>
 #include <string>
 #include <fstream>
 #include <sstream>
 #include <vector>
+#include <chrono>
 
-// GLM (math)
+ // GLM (mathematics library)
 #include <glm/glm.hpp>
 #include <glm/gtc/matrix_transform.hpp>
 #include <glm/gtc/type_ptr.hpp>
 
-// OpenGL/GLFW 
+// OpenGL/GLFW
 #include <glad/gl.h>
 #include <GLFW/glfw3.h>
 
-// TinyObjLoader
+// File loading
 #define TINYOBJLOADER_IMPLEMENTATION
 #include "tiny_obj_loader.h"
 
-// STB Image
-#define STB_IMAGE_IMPLEMENTATION
-#include "stb_image.h"
+// Custom classes
+#include "Model3D.h"
+#include "Camera.h"
 
 using namespace std;
 
-const float SCALE_VALUE = 1.0f;
-const float MOVEMENT_SPEED = 0.1f;
-const float ROTATION_SPEED = 5.0f;
-const float ZOOM_SPEED = 0.1f;
+// ===== WINDOW CONSTANTS =====
+const float WINDOW_WIDTH = 1280.0f;
+const float WINDOW_HEIGHT = 720.0f;
+const string WINDOW_TITLE = "GDGRAP1 - Programming Challenge 1 - Barundia";
 
-const float WINDOW_WIDTH = 800.0f;
-const float WINDOW_HEIGHT = 800.0f;
+// ===== FILE PATHS =====
+const string SHADER_VERT_PATH = "Shaders/sample.vert";
+const string SHADER_FRAG_PATH = "Shaders/sample.frag";
+const string MODEL_PATH = "3D/mccree.obj";
+const string MODEL_MTL_DIR = "3D/";
 
-const string VERT_PATH = "Shaders/sample.vert";
-const string FRAG_PATH = "Shaders/sample.frag";
+// ===== GLOBAL VARIABLES =====
+Camera* g_camera = nullptr;
+vector<Model3D> g_spawnedModels;
+GLuint g_shaderProgram = 0;
 
-class Model3D {
-public:
-    glm::vec3 position = glm::vec3(0.0f, 0.0f, 0.0f);
-    glm::vec3 scale = glm::vec3(SCALE_VALUE, SCALE_VALUE, SCALE_VALUE);
-    float theta = 0.0f;
-    glm::vec3 axisRotation = glm::vec3(0.0f, 1.0f, 0.0f);
+// Timing for spawn cooldown
+auto g_lastSpawnTime = chrono::high_resolution_clock::now();
+const float SPAWN_COOLDOWN = 3.0f;  // 3 seconds between spawns
 
-    glm::vec3 setPosition(glm::vec3 pos) { position = pos;  };
-    glm::vec3 getPosition() const { return position; };
-};Model3D model;
+// ===== SHADER LOADING UTILITIES =====
 
-class Camera {
-private:
-    glm::vec3 position;
-    glm::vec3 target;
-    glm::vec3 up;
-    float fov;
-    float aspect;
-    float nearPlane;
-    float farPlane;
-public:
-    Camera(glm::vec3 pos, glm::vec3 tgt, glm::vec3 upVec, float fov = 60.0f) :
-        position(pos), target(tgt), up(upVec), fov(fov),
-        aspect(800.f / 800.f), nearPlane(0.1f), farPlane(100.f){}
-
-    glm::mat4 getViewMatrix() const {
-        return glm::lookAt(position, target, up);
-    }
-
-    glm::mat4 getProjectionMatrix() const {
-        return glm::perspective(glm::radians(fov), aspect, nearPlane, farPlane);
-    }
-
-    void setPosition(glm::vec3 pos) { position = pos; }
-    void setTarget(glm::vec3 tgt) { target = tgt; }
-    glm::vec3 getPosition()const { return position; }
-};
-
+/**
+ * Load shader source code from file
+ * @param filepath Path to shader file
+ * @return Shader source as string, empty if failed
+ */
 string loadShaderFromFile(const string& filepath)
 {
     fstream file(filepath);
+    if (!file.is_open())
+    {
+        cerr << "ERROR: Could not open shader file: " << filepath << endl;
+        return "";
+    }
+
     stringstream buffer;
     buffer << file.rdbuf();
-
     return buffer.str();
 }
 
-GLuint loadAndCompileShaders(const string& vertpath, const string& fragpath)
+/**
+ * Compile and link vertex and fragment shaders into a program
+ * @param vertPath Path to vertex shader file
+ * @param fragPath Path to fragment shader file
+ * @return OpenGL shader program ID, or 0 if failed
+ */
+GLuint loadAndCompileShaders(const string& vertPath, const string& fragPath)
 {
-    // Load shaders
-    string vertString = loadShaderFromFile(vertpath);
+    // Load shader source code
+    string vertString = loadShaderFromFile(vertPath);
+    string fragString = loadShaderFromFile(fragPath);
+
+    if (vertString.empty() || fragString.empty())
+    {
+        cerr << "ERROR: Failed to load shader files" << endl;
+        return 0;
+    }
+
     const char* vertChar = vertString.c_str();
-    string fragString = loadShaderFromFile(fragpath);
     const char* fragChar = fragString.c_str();
 
-    // Compile shaders
+    // Compile vertex shader
     GLuint vertexShader = glCreateShader(GL_VERTEX_SHADER);
-    GLuint fragmentShader = glCreateShader(GL_FRAGMENT_SHADER);
     glShaderSource(vertexShader, 1, &vertChar, NULL);
-    glShaderSource(fragmentShader, 1, &fragChar, NULL);
-
     glCompileShader(vertexShader);
+
+    // Check vertex shader for compilation errors
+    int success;
+    char infoLog[512];
+    glGetShaderiv(vertexShader, GL_COMPILE_STATUS, &success);
+    if (!success)
+    {
+        glGetShaderInfoLog(vertexShader, 512, NULL, infoLog);
+        cerr << "ERROR: Vertex shader compilation failed:\n" << infoLog << endl;
+    }
+
+    // Compile fragment shader
+    GLuint fragmentShader = glCreateShader(GL_FRAGMENT_SHADER);
+    glShaderSource(fragmentShader, 1, &fragChar, NULL);
     glCompileShader(fragmentShader);
 
+    // Check fragment shader for compilation errors
+    glGetShaderiv(fragmentShader, GL_COMPILE_STATUS, &success);
+    if (!success)
+    {
+        glGetShaderInfoLog(fragmentShader, 512, NULL, infoLog);
+        cerr << "ERROR: Fragment shader compilation failed:\n" << infoLog << endl;
+    }
+
+    // Link shader program
     GLuint shaderProgram = glCreateProgram();
     glAttachShader(shaderProgram, vertexShader);
     glAttachShader(shaderProgram, fragmentShader);
-
     glLinkProgram(shaderProgram);
+
+    // Check linking errors
+    glGetProgramiv(shaderProgram, GL_LINK_STATUS, &success);
+    if (!success)
+    {
+        glGetProgramInfoLog(shaderProgram, 512, NULL, infoLog);
+        cerr << "ERROR: Shader program linking failed:\n" << infoLog << endl;
+    }
+
+    // Delete shader objects (program has them compiled now)
     glDeleteShader(vertexShader);
     glDeleteShader(fragmentShader);
 
+    cout << "Shaders compiled and linked successfully" << endl;
     return shaderProgram;
 }
 
+// ===== MODEL LOADING =====
 
-GLFWwindow* createWindow(float width, float height)
+/**
+ * Load 3D model from OBJ file using tinyobjloader
+ * Automatically loads associated .mtl material file if referenced
+ * @param filepath Path to .obj file
+ * @param outVertices Output vector for vertex positions (as floats)
+ * @param outIndices Output vector for face indices
+ * @return True if loading successful, false otherwise
+ */
+bool loadOBJModel(const string& filepath, vector<float>& outVertices, vector<unsigned int>& outIndices)
 {
-    if (!glfwInit()) {
+    tinyobj::attrib_t attributes;
+    vector<tinyobj::shape_t> shapes;
+    vector<tinyobj::material_t> materials;
+    string error;
+
+    // Load OBJ file with material directory specified
+    bool success = tinyobj::LoadObj(
+        &attributes,
+        &shapes,
+        &materials,
+        &error,
+        filepath.c_str(),
+        MODEL_MTL_DIR.c_str()
+    );
+
+    if (!success)
+    {
+        cerr << "ERROR: Failed to load OBJ file: " << error << endl;
+        return false;
+    }
+
+    if (shapes.empty())
+    {
+        cerr << "ERROR: OBJ file contains no shapes" << endl;
+        return false;
+    }
+
+    // Extract vertex positions directly as floats
+    outVertices = attributes.vertices;
+
+    // Extract face indices from first shape
+    for (size_t i = 0; i < shapes[0].mesh.indices.size(); i++)
+    {
+        outIndices.push_back(shapes[0].mesh.indices[i].vertex_index);
+    }
+
+    cout << "Model loaded successfully:" << endl;
+    cout << "  - Vertices: " << (outVertices.size() / 3) << endl;
+    cout << "  - Indices: " << outIndices.size() << endl;
+
+    return true;
+}
+
+// ===== WINDOW MANAGEMENT =====
+
+/**
+ * Create GLFW window and initialize OpenGL context
+ * @param width Window width in pixels
+ * @param height Window height in pixels
+ * @param title Window title
+ * @return GLFW window pointer, or nullptr if failed
+ */
+GLFWwindow* createWindow(float width, float height, const string& title)
+{
+    // Initialize GLFW
+    if (!glfwInit())
+    {
+        cerr << "ERROR: GLFW initialization failed" << endl;
         return nullptr;
     }
 
-    GLFWwindow* window = glfwCreateWindow(width, height, "Erica Barundia", NULL, NULL);
+    // Create window
+    GLFWwindow* window = glfwCreateWindow((int)width, (int)height, title.c_str(), NULL, NULL);
     if (!window)
     {
+        cerr << "ERROR: Window creation failed" << endl;
         glfwTerminate();
         return nullptr;
     }
 
     glfwMakeContextCurrent(window);
+    glfwSwapInterval(1);  // Enable vsync
+
+    // Load OpenGL function pointers using Glad
+    if (!gladLoadGL(glfwGetProcAddress))
+    {
+        cerr << "ERROR: Failed to load OpenGL functions" << endl;
+        return nullptr;
+    }
+
+    cout << "Window created and OpenGL initialized successfully" << endl;
     return window;
 }
-// Key callback function for handling input
-void Key_Callback(GLFWwindow* window, int key, int scancode, int action, int mods)      
+
+// ===== INPUT CALLBACKS =====
+
+/**
+ * Keyboard input callback
+ * Handles:
+ * - WASD for camera movement (forward/backward, strafe)
+ * - Arrow keys for camera rotation
+ * - Space to spawn models with cooldown
+ * - ESC to exit
+ */
+void keyCallback(GLFWwindow* window, int key, int scancode, int action, int mods)
 {
-	bool down = (action == GLFW_PRESS) || (action == GLFW_REPEAT);
-               
-	// WASD = Movement X/Y 
-	if (key == GLFW_KEY_W && down)
-		model.position.y += MOVEMENT_SPEED;
-	if (key == GLFW_KEY_S && down)
-		model.position.y -= MOVEMENT_SPEED;
-	if (key == GLFW_KEY_A && down)
-		model.position.x -= MOVEMENT_SPEED;
-	if (key == GLFW_KEY_D && down)
-        model.position.x += MOVEMENT_SPEED;
+    // Only process key presses and repeats, not releases
+    bool pressed = (action == GLFW_PRESS) || (action == GLFW_REPEAT);
+    if (!pressed) return;
 
-    // QE = Increase or Decrease Scale
-    if (key == GLFW_KEY_Q && down)
+    // ===== CAMERA MOVEMENT (WASD) =====
+    if (key == GLFW_KEY_W)
+        g_camera->moveForward(1.0f);
+    if (key == GLFW_KEY_S)
+        g_camera->moveForward(-1.0f);
+    if (key == GLFW_KEY_A)
+        g_camera->moveRight(-1.0f);
+    if (key == GLFW_KEY_D)
+        g_camera->moveRight(1.0f);
+
+    // ===== CAMERA ROTATION (ARROW KEYS) =====
+    if (key == GLFW_KEY_UP)
+        g_camera->rotate(0.0f, 5.0f);    // Look up
+    if (key == GLFW_KEY_DOWN)
+        g_camera->rotate(0.0f, -5.0f);   // Look down
+    if (key == GLFW_KEY_LEFT)
+        g_camera->rotate(-5.0f, 0.0f);   // Look left
+    if (key == GLFW_KEY_RIGHT)
+        g_camera->rotate(5.0f, 0.0f);    // Look right
+
+    // ===== MODEL SPAWNING (SPACE) =====
+    if (key == GLFW_KEY_SPACE)
     {
-        model.scale.x -= MOVEMENT_SPEED;
-        model.scale.y -= MOVEMENT_SPEED;
-        model.scale.z -= MOVEMENT_SPEED;
-    }
-    if (key == GLFW_KEY_E && down)
-    {
-		model.scale.x += MOVEMENT_SPEED;
-        model.scale.y += MOVEMENT_SPEED;
-		model.scale.z += MOVEMENT_SPEED;
-    }
-   
-	// Arrow Keys = Rotate Model 
-    if (key == GLFW_KEY_UP && down)
-    {
-        model.axisRotation = glm::vec3(1.0f, 0.0f, 0.0f);
-        model.theta -= 5.0f;
-	}
-    if (key == GLFW_KEY_LEFT && down)
-    {
-        model.axisRotation = glm::vec3(0.0f, 1.0f, 0.0f);
-        model.theta -= ROTATION_SPEED;
-    }
-    if (key == GLFW_KEY_RIGHT && down)
-    {
-        model.axisRotation = glm::vec3(0.0f, 1.0f, 0.0f);
-        model.theta += ROTATION_SPEED;
-    }
-    if (key == GLFW_KEY_DOWN && down)
-    {
-        model.axisRotation = glm::vec3(1.0f, 0.0f, 0.0f);
-        model.theta += ROTATION_SPEED;
+        auto currentTime = chrono::high_resolution_clock::now();
+        float elapsed = chrono::duration<float>(currentTime - g_lastSpawnTime).count();
+
+        // Check if 3-second cooldown has passed
+        if (elapsed >= SPAWN_COOLDOWN)
+        {
+            // Create new model instance
+            Model3D newModel;
+
+            // Position in front of camera (5 units forward)
+            glm::vec3 spawnPos = g_camera->getPosition() + g_camera->getFront() * 5.0f;
+            newModel.setPosition(spawnPos);
+            newModel.setScale(glm::vec3(1.0f, 1.0f, 1.0f));
+            newModel.setRotation(glm::vec3(0.0f, 0.0f, 0.0f));
+
+            // Add to spawned models list (no need to initialize mesh - uses static)
+            g_spawnedModels.push_back(newModel);
+            g_lastSpawnTime = currentTime;
+
+            cout << "Model spawned at (" << spawnPos.x << ", " << spawnPos.y << ", " << spawnPos.z << ")" << endl;
+            cout << "Total models: " << g_spawnedModels.size() << endl;
+        }
     }
 
-	// Zoom In/Out = Z/C
-    if (key == GLFW_KEY_Z && down)
-		model.position.z += ZOOM_SPEED;
-	if (key == GLFW_KEY_C && down)
-		model.position.z -= ZOOM_SPEED;
-
-	// Escape Key = Close Window
-    if (key == GLFW_KEY_ESCAPE && down)
-		glfwSetWindowShouldClose(window, GLFW_TRUE);
+    // ===== EXIT (ESC) =====
+    if (key == GLFW_KEY_ESCAPE)
+        glfwSetWindowShouldClose(window, GLFW_TRUE);
 }
+
+// ===== MAIN PROGRAM =====
 
 int main(void)
 {
-    GLFWwindow* window = createWindow(WINDOW_WIDTH, WINDOW_HEIGHT);   
-    gladLoadGL(glfwGetProcAddress);
-	glfwSetKeyCallback(window, Key_Callback);
+    cout << "========================================" << endl;
+    cout << "GDGRAP1 Programming Challenge 1" << endl;
+    cout << "3D Model Viewer with FPS Camera" << endl;
+    cout << "========================================" << endl << endl;
 
-    GLfloat vertices[]{
-        0.f,  0.5f, 0.f,  //> [0] (0, 0.5, 0)    top vertex
-        -1.f, -0.5f, 0.f, //> [1] (-1, -0.5, 0)  bottom left verteex
-        0.5f, -0.5f, 0.f  //> [2] (0.5, -0.5, 0) bottom right vertex
-    };
+    // Create window and initialize OpenGL
+    cout << "Initializing window..." << endl;
+    GLFWwindow* window = createWindow(WINDOW_WIDTH, WINDOW_HEIGHT, WINDOW_TITLE);
+    if (!window)
+        return -1;
 
-    GLuint indices[]{
-        0,1,2
-    };
+    cout << "\nInitializing camera..." << endl;
+    // Initialize camera at (0, 2, 8) looking towards origin
+    g_camera = new Camera(glm::vec3(0.0f, 2.0f, 8.0f));
+    g_camera->setAspectRatio(WINDOW_WIDTH / WINDOW_HEIGHT);
+    g_camera->setFOV(45.0f);  // 45 degree field of view
 
-    GLfloat UV[]{
-        0.f, 1.f,
-        0.f, 0.f,
-        1.f, 1.f,
-        1.f, 0.f,
-        1.f, 1.f,
-        1.f, 0.f,
-        0.f, 1.f,
-        0.f, 0.f
-    };
+    // Set input callback
+    glfwSetKeyCallback(window, keyCallback);
 
-    stbi_set_flip_vertically_on_load(true);
-
-    int img_width,
-        img_height,
-        colorChannels;
-
-    unsigned char* tex_bytes = 
-		stbi_load("3D/ayaya.png",       // path to image
-			      &img_width,           // fills out the image width
-			      &img_height,          // fills out the image height
-                  &colorChannels,       // fills out the color channel (3 | 4)
-                  0                     // border (fills out the color channel)
-		);
-
-	// Load/dump texture into OpenGL from unsigned char array 
-	// OpenGL texture reference
-    GLuint texture;
-    // Generate a reference
-	glGenTextures(1, &texture);
-	// Set the current texture to the one we just generated/working on (Texture 0)
-    glActiveTexture(GL_TEXTURE0);
-	// Bind our next tasks to Texture 0
-    // To our current reference
-	// Similar to what we're doing to VAO/VBO/EBO
-	glBindTexture(GL_TEXTURE_2D, texture);
-
-	// Assign the loaded image to the OpenGL Texture or the OpenGL reference
-    glTexImage2D(GL_TEXTURE_2D,
-        0,                              // Texture 0
-        GL_RGBA,                        // or RGB - target color format of the texture | PNG: RGBA, JPG: RGB
-        img_width,              
-        img_height,
-		0,                              // Border
-		GL_RGBA,                        // or RGB - format of the loaded image (should match above) | PNG: RGBA, JPG: RGB
-		GL_UNSIGNED_BYTE,               // Type of data
-		tex_bytes                       // The actual image data
-    );
-
-	// Generate Mipmaps to the current texture
-    glGenerateMipmap(GL_TEXTURE_2D);
-    // Free up the loaded bytes
-	stbi_image_free(tex_bytes);
-
-    glEnable(GL_DEPTH_TEST);
-
-    // Load the vertex shader file
-    fstream vertSrc("Shaders/sample.vert");
-    stringstream vertBuffer;
-	vertBuffer << vertSrc.rdbuf();
-	string vertString = vertBuffer.str();
-    const char* vertChar = vertString.c_str();
-
-    // Load the fragment shader file
-	fstream fragSrc("Shaders/sample.frag");
-	stringstream fragBuffer;
-	fragBuffer << fragSrc.rdbuf();
-	string fragString = fragBuffer.str();
-	const char* fragChar = fragString.c_str();
-
-    // Load .obj file
-    string path = "3D/myCube.obj";
-	vector<tinyobj::shape_t> shapes;
-	vector<tinyobj::material_t> material;
-    string error;
-	tinyobj::attrib_t attributes;
-
-    bool success = tinyobj::LoadObj(
-        &attributes,
-        &shapes,
-        &material,
-        &error,
-        path.c_str()
-    );
-
-    GLuint shaderProgram = loadAndCompileShaders(VERT_PATH, FRAG_PATH);
-
-    // EBO array
-    vector<GLuint> mesh_indices;
-
-    // For loop for all indices
-    for (int i = 0; i < shapes[0].mesh.indices.size(); i++)
+    // Load shaders
+    cout << "Loading shaders..." << endl;
+    g_shaderProgram = loadAndCompileShaders(SHADER_VERT_PATH, SHADER_FRAG_PATH);
+    if (g_shaderProgram == 0)
     {
-        mesh_indices.push_back(
-            shapes[0].mesh.indices[i].vertex_index
-        );
+        cerr << "FATAL ERROR: Failed to load shaders" << endl;
+        glfwTerminate();
+        return -1;
     }
 
-	// add a new VBO for the UVs
-    GLuint VAO, VBO, EBO, VBO_UV;
-    glGenVertexArrays(1, &VAO);
-	glGenBuffers(1, &VBO);
-    glGenBuffers(1, &VBO_UV);
-    glGenBuffers(1, &EBO);
-	
-	glBindVertexArray(VAO);
-    glBindBuffer(GL_ARRAY_BUFFER, VBO);
+    // Load 3D model
+    cout << "Loading 3D model..." << endl;
+    vector<float> modelVertices;
+    vector<unsigned int> modelIndices;
+    if (!loadOBJModel(MODEL_PATH, modelVertices, modelIndices))
+    {
+        cerr << "FATAL ERROR: Failed to load model" << endl;
+        glfwTerminate();
+        return -1;
+    }
 
-    glBufferData(GL_ARRAY_BUFFER,
-		         sizeof(GLfloat) * attributes.vertices.size(),
-                 &attributes.vertices[0],
-	             GL_STATIC_DRAW
-                );
+    // Initialize the shared mesh (call once before creating any models)
+    cout << "Initializing shared mesh..." << endl;
+    Model3D::initializeSharedMesh(modelVertices.data(), modelVertices.size() / 3,
+        modelIndices.data(), modelIndices.size());
 
-	glVertexAttribPointer(
-		                0,
-		                3,
-		                GL_FLOAT,
-                        GL_FALSE,
-                        3 * sizeof(GLfloat),
-                        (void*)0
-	);
+    // Enable depth testing for 3D rendering
+    glEnable(GL_DEPTH_TEST);
+    glClearColor(0.1f, 0.1f, 0.15f, 1.0f);
 
-    glEnableVertexAttribArray(0);
+    // Spawn initial model
+    cout << "Spawning initial model..." << endl;
+    Model3D initialModel;
+    initialModel.setPosition(glm::vec3(0.0f, 0.0f, -5.0f));
+    initialModel.setScale(glm::vec3(1.0f, 1.0f, 1.0f));
+    initialModel.setRotation(glm::vec3(0.0f, 0.0f, 0.0f));
+    g_spawnedModels.push_back(initialModel);
 
-	glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, EBO);
-    glBufferData(GL_ELEMENT_ARRAY_BUFFER,
-                 sizeof(GLuint) * mesh_indices.size(),
-                 mesh_indices.data(),
-                 GL_STATIC_DRAW	    );
+    cout << "\n========================================" << endl;
+    cout << "Controls:" << endl;
+    cout << "  W/S     - Move forward/backward" << endl;
+    cout << "  A/D     - Strafe left/right" << endl;
+    cout << "  Arrows  - Rotate camera view" << endl;
+    cout << "  Space   - Spawn model (3s cooldown)" << endl;
+    cout << "  ESC     - Exit application" << endl;
+    cout << "========================================\n" << endl;
 
-    glBindBuffer(GL_ARRAY_BUFFER, VBO_UV);
-
-    glBufferData(GL_ARRAY_BUFFER,
-        sizeof(GLfloat) * (sizeof(UV) / sizeof(UV[0])),
-        &UV[0],
-        GL_DYNAMIC_DRAW
-    );
-
-	// Add in how to interpret the UV data
-    glVertexAttribPointer(2, 
-        2, 
-        GL_FLOAT, 
-        GL_FALSE, 
-        2 * sizeof(float), 
-        (void*)0
-    );
-
-	// Enable 2 for our UV / Texture Coordinates
-    glEnableVertexAttribArray(2);
-
-    glm::mat4 projection = glm::perspective(
-        glm::radians(60.0f),               
-        WINDOW_WIDTH / WINDOW_HEIGHT,       
-		0.1f,                             
-        100.0f                             
-    );
-
-	model.position.z = -5.0f; // Move the model away from the camera
-
-    /* Loop until the user closes the window */
+    // ===== MAIN RENDER LOOP =====
     while (!glfwWindowShouldClose(window))
     {
+        // Clear color and depth buffers
         glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
-		glm::mat4 identity_matrix = glm::mat4(1.0f);
-		glm::mat4 transformation_matrix = glm::translate(identity_matrix, glm::vec3(model.position.x, model.position.y, model.position.z));
-        transformation_matrix = glm::scale(transformation_matrix, glm::vec3(model.scale.x, model.scale.y, model.scale.z));
-		transformation_matrix = glm::rotate(transformation_matrix, glm::radians(model.theta), glm::vec3(model.axisRotation.x, model.axisRotation.y, model.axisRotation.z));
 
-        /* Render here */
-		glm::vec3 cameraPos = glm::vec3(0.0f, 0.0f, 10.0f);
-        glm::mat4 cameraPosMatrix =
-			glm::translate(identity_matrix, cameraPos * -1.0f);
+        // Use the shader program
+        glUseProgram(g_shaderProgram);
 
-		glm::vec3 WorldUp = glm::vec3(0.0f, 1.0f, 0.0f);
-        glm::vec3 cameraCenter = glm::vec3(0.0f, 3.f, 0.f);
+        // Get uniform locations
+        GLint transformLoc = glGetUniformLocation(g_shaderProgram, "transform");
+        GLint viewLoc = glGetUniformLocation(g_shaderProgram, "view");
+        GLint projLoc = glGetUniformLocation(g_shaderProgram, "projection");
 
-        // F - model
-        glm::vec3 F = cameraCenter - cameraPos;
-		F = glm::normalize(F);
-        
-        // R - view
-		glm::vec3 R = glm::cross(F, WorldUp);
-		R = glm::normalize(R);
-
-        // U - projection
-		glm::vec3 U = glm::cross(R, F);
-		U = glm::normalize(U);
-
-        // Construct the orientation matrix
-		glm::mat4 cameraRotationMatrix = glm::mat4(1.0f); // identity matrix
-        
-        // Matrix [Col] [Row]
-		// R
-        cameraRotationMatrix[0][0] = R.x;
-		cameraRotationMatrix[1][0] = R.y;
-		cameraRotationMatrix[2][0] = R.z;
-		// U
-        cameraRotationMatrix[0][1] = U.x;
-        cameraRotationMatrix[1][1] = U.y;
-        cameraRotationMatrix[2][1] = U.z;
-		// -F
-        cameraRotationMatrix[0][2] = -F.x;
-        cameraRotationMatrix[1][2] = -F.y;
-        cameraRotationMatrix[2][2] = -F.z;
-
-        // V = cR * cP
-		//glm::mat4 view = cameraRotationMatrix * cameraPosMatrix;
-        
-        glm::mat4 view = glm::lookAt(cameraPos, cameraCenter, WorldUp);
-
-        GLuint tex0Address = glGetUniformLocation(shaderProgram, "tex0");
-        glBindTexture(GL_TEXTURE_2D, texture);
-        glUniform1i(tex0Address, 0);
-
-		// Activate the shader program BEFORE setting uniforms
-        glUseProgram(shaderProgram);
-		unsigned int transformLoc = glGetUniformLocation(shaderProgram, "transform");
-        glUniformMatrix4fv(transformLoc, 1, GL_FALSE, glm::value_ptr(transformation_matrix));
-
-		// Get location of projection matrix uniform and set matrix
-		unsigned int projLoc = glGetUniformLocation(shaderProgram, "projection");
-		// Apply the projection matrix
-        glUniformMatrix4fv(projLoc, 1, GL_FALSE, glm::value_ptr(projection));
-
-        // Get location of view matrix uniform and set matrix
-        unsigned int viewLoc = glGetUniformLocation(shaderProgram, "view");
-        // Apply the view matrix
+        // Calculate and set view matrix from camera
+        glm::mat4 view = g_camera->getViewMatrix();
         glUniformMatrix4fv(viewLoc, 1, GL_FALSE, glm::value_ptr(view));
 
-		glBindVertexArray(VAO);
-        glDrawElements(GL_TRIANGLES, mesh_indices.size(), GL_UNSIGNED_INT, 0);                                                                                  
+        // Calculate and set perspective projection matrix
+        glm::mat4 projection = g_camera->getProjectionMatrix();
+        glUniformMatrix4fv(projLoc, 1, GL_FALSE, glm::value_ptr(projection));
 
-        /* Swap front and back buffers */
+        // Draw all spawned models
+        for (auto& model : g_spawnedModels)
+        {
+            model.draw(g_shaderProgram, transformLoc);
+        }
+
+        // Swap front and back buffers
         glfwSwapBuffers(window);
-        /* Poll for and process events */
+
+        // Process events (like keyboard input)
         glfwPollEvents();
     }
 
-    // Clean-up
-	glDeleteVertexArrays(1, &VAO);
-	glDeleteBuffers(1, &VBO);
-	glDeleteBuffers(1, &EBO);
+    // ===== CLEANUP =====
+    cout << "\nCleaning up..." << endl;
 
+    // Clean up shared mesh resources
+    Model3D::cleanupSharedMesh();
+
+    // Delete shader program
+    glDeleteProgram(g_shaderProgram);
+
+    // Clean up camera
+    delete g_camera;
+
+    // Terminate GLFW
     glfwTerminate();
+
+    cout << "Application terminated successfully" << endl;
     return 0;
 }
